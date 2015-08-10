@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>怪盗C</title>
+</head>
+<body>
+
+パスワード再発行<br />
+<br />
+<form method="post" action="forget_check.php">
+名前を入力してください。<br>
+<input type="text" name="name" style="width:200px"><br><br>
+秘密の質問を一つ選んで、答えてください。<br>
+<select name="secret">
+	<option value="1">ペットの名前は？</option>
+	<option value="2">母親の旧姓は？</option>
+	<option value="3">嫌いな食べ物は？</option>
+</select>
+<input type="text" name="secret_answer" style="width:200px"><br><br>
+新しいパスワードを入力してください。<br>
+<input type="password" name="newpass" style="width:100px"><br><br>
+
+
+<input type="button" onclick="history.back()" value="戻る">
+<input type="submit" value="OK">
+</form>
+</body>
+</html>

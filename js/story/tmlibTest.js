@@ -25,6 +25,7 @@ var sankaku = null;
 var nextTriangle = null;
 var message = null;
 var speaker = null;
+var skipButton = null;
 
 var ASSETS = {
 	"washitsu" : "../../storyImg/background01.jpg",
@@ -356,6 +357,15 @@ tm.define("MainScene", {
             });
             LINK_chapterMenu.addChildTo(this);
         }       
+
+        tm.ui.GlossyButton.DEFAULT_ALPHA = 0.7;
+        skipButton = tm.app.GlossyButton(300,50,"red", "ストーリーをスキップ！");
+		skipButton.setAlpha(0.7);
+        skipButton.setPosition(1000,40);
+        skipButton.addEventListener("pointingend", function(e) {
+			document.location.href = document.getElementById("next").innerHTML;;
+		});
+        skipButton.addChildTo(this);
 
 
         //画面内をクリックされたときの動き

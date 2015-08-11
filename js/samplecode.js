@@ -55,6 +55,9 @@ var Exsample231 ='line(1);line(2);line(3);ANIME_sengen_dainyu("int","x","5");lin
 var Exsample241 ='line(1);line(2);line(3);ANIME_sengen("int","x");line(4);ANIME_dainyu("x","3");line(5);ANIME_printf(["xは","%d","です"],["x"]);setPrintf("xは3です");line(6);line(7)';
 var Exsample311 ='line(1);line(2);line(3);ANIME_sengen_dainyu("int","x","3");line(4);line(5);ANIME_printf("xは5より小さいです");setPrintf("xは5より小さいです");line(6);line(7);line(8)';
 var Exsample312 ='line(1);line(2);line(3);ANIME_sengen("int","x");line(4);ANIME_scanf_ex();setPrintf(5);ANIME_dainyu("x","5");line(5);line(6);ANIME_printf("xは０か５です");setPrintf("xは０か５です");line(7);line(8);line(9);line(10);line(11);line(12)';
+
+//４章５章サンプル実行　中谷がやる
+
 //ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー実はこれより上は使ってませんーーーーーーーーーーーーーーーーーーーーーーーーーーー
 
 /*

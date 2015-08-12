@@ -590,7 +590,7 @@ function answer_check(num){
 			if(hantei_6(user_code,0,0,0,1,0,2, "250.33333333333334") != true){ miss_answer("計算を確認してみよう！"); return 0;}
 			else if(hantei_6(user_code,1,0,1,1,1,2, "88.33333333333333") != true){ miss_answer("計算を確認してみよう！"); return 0;}
 			else if(hantei_6(user_code,0,0,0,2,1,1, "245") != true){ miss_answer("計算を確認してみよう！"); return 0;}
-			else if(hantei_6(user_code,0,1,1,0,1,2, "93.66666666666667") != true){ miss_answer("計算を確認してみよう！"); return 0;}
+			else if(hantei_6(user_code,0,1,1,0,1,2, "93.66666666666667") != true){ miss_answer("計算を確認してみよう！"); return 0;
 			}else {
 					flagArr.push(true);
 				} 
@@ -617,7 +617,7 @@ function answer_check(num){
 				}else {
 					flagArr.push(true);
 				} 
-			}else {miss_answer("コードを見直してみよう！"); return 0;}
+				}else {miss_answer("コードを見直してみよう！"); return 0;}
 		break;
 	}
 	var flen = flagArr.length;

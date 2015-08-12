@@ -276,15 +276,15 @@ function answer_check(num){
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
 		case 321:
-		/*
-			re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
-			re = new RegExp(/newscanfnext\(x,\d\)/);answer_pattern_array.push(re);
-			re = new RegExp(/if_js\("(x >= 20)|(20 <= x)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs("成人")/);answer_pattern_array.push(re);
-			re = new RegExp(/else_js\(\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs("未成人")/);answer_pattern_array.push(re);
-			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
-			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
+			/*
+				re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
+				re = new RegExp(/newscanfnext\(x,\d\)/);answer_pattern_array.push(re);
+				re = new RegExp(/if_js\("(x >= 20)|(20 <= x)"\)/);answer_pattern_array.push(re);
+				re = new RegExp(/printf_djs("成人")/);answer_pattern_array.push(re);
+				re = new RegExp(/else_js\(\)/);answer_pattern_array.push(re);
+				re = new RegExp(/printf_djs("未成人")/);answer_pattern_array.push(re);
+				re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
+				flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 			*/
 			var user_code = parser_judge.parse(codeOfUser);
 			if(hantei_1(user_code,19, "未成年") != true){ miss_answer("コードを見直してみよう！"); return 0;}
@@ -371,7 +371,8 @@ function answer_check(num){
 			var temp = getPatternLine(user_pattern_array,answer_pattern_array,0);flagArr.push(temp);
 		break;
 		case 4112:
-			re = new RegExp(/for_js\("false,a,1","a <= 10",.+\)/);answer_pattern_array.push(re);
+			re = new RegExp(/for_js\(".+\)/);answer_pattern_array.push(re);
+			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 			var temparr = document.getElementById("console").value.split("\n");
 			var array = ["2","4","6","8","10"];
 			var len = temparr.length;

@@ -574,6 +574,7 @@ function answer_check(num){
 			else if( hantei_2(user_code,1, 0,"4") != true){ miss_answer("コードを見直してみよう！"); return 0;}
 			else if( hantei_2(user_code,2, 0,"7") != true){ miss_answer("コードを見直してみよう！"); return 0;}
 			else if( hantei_2(user_code,2, 2,"9") != true){ miss_answer("コードを見直してみよう！"); return 0;}
+			else if( codeOfUser.indexOf("[3][3]") == -1 ){ miss_answer("配列の大きさを確認してみよう！"); return 0;}
 			else { flagArr.push(true); } 
 		break;
 		case 5211:

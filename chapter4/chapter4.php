@@ -53,21 +53,21 @@ else{
     <input type="image" value="お手本１" onclick="location.href='./ex4-1-1.php'" src = "../img/exbtn/ex1btn_on.png" id = "ex12"><div id = "explan12" style="display:inline;"></div>&nbsp;&nbsp;
     <input type="image" value="問題１" onclick="location.href='./q4-1-1.php'" src = "../img/qbtn/q1btn_off.png" id = "q18" disabled><div id = "question19" style="display:inline;"></div>&nbsp;&nbsp;
     <input type="image" value="問題２" onclick="location.href='./q4-1-2.php'" src = "../img/qbtn/q2btn_off.png"id = "q19" disabled><div id = "question20" style="display:inline;"></div>&nbsp;&nbsp;<br />
-追加問題&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="image" value="追加１" onclick="location.href='./q4-1-1a.php'" src = "../img/qbtn/add1btn_off.png" id = "411a" disabled><input type="image" value="追加２" onclick="location.href='./q4-1-1b.php'" src = "../img/qbtn/add2btn_off.png" id = "411b" disabled>&emsp;&emsp;&emsp;&emsp;
- <input type="image" value="追加１" onclick="location.href='./q4-1-2a.php'" src = "../img/qbtn/add1btn_off.png" id = "412a" disabled><input type="image" value="追加２" onclick="location.href='./q4-1-2b.php'" src = "../img/qbtn/add2btn_off.png" id = "412b" disabled>
+<!--追加問題&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="image" value="追加１" onclick="location.href='./q4-1-1a.php'" src = "../img/qbtn/add1btn_off.png" id = "411a" disabled><input type="image" value="追加２" onclick="location.href='./q4-1-1b.php'" src = "../img/qbtn/add2btn_off.png" id = "411b" disabled>&emsp;&emsp;&emsp;&emsp;
+ <input type="image" value="追加１" onclick="location.href='./q4-1-2a.php'" src = "../img/qbtn/add1btn_off.png" id = "412a" disabled><input type="image" value="追加２" onclick="location.href='./q4-1-2b.php'" src = "../img/qbtn/add2btn_off.png" id = "412b" disabled>-->
  
     <br><br>
     <h3>第二節　while</h3><br>
     <input type="image" value="お手本１" onclick="location.href='./ex4-2-1.php'" src = "../img/exbtn/ex1btn_off.png" id = "ex13" disabled><div id = "explan13" style="display:inline;"></div>&nbsp;&nbsp;
     <input type="image" value="問題１" onclick="location.href='./q4-2-1.php'" src = "../img/qbtn/q1btn_off.png" disabled id = "q20"><div id = "question21" style="display:inline;"></div>&nbsp;&nbsp;
     <input type="image" value="問題２" onclick="location.href='./q4-2-2.php'" src = "../img/qbtn/q2btn_off.png" disabled id = "q21"><div id = "question22" style="display:inline;"></div><br />
-追加問題&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="image" value="追加１" onclick="location.href='./q4-2-1a.php'" src = "../img/qbtn/add1btn_off.png" id = "421a" disabled><input type="image" value="追加２" onclick="location.href='./q4-2-1b.php'" src = "../img/qbtn/add2btn_off.png" id = "421b" disabled>&emsp;&emsp;&emsp;&emsp;
- <input type="image" value="追加１" onclick="location.href='./q4-2-2a.php'" src = "../img/qbtn/add1btn_off.png" id = "422a" disabled><input type="image" value="追加２" onclick="location.href='./q4-2-2b.php'" src = "../img/qbtn/add2btn_off.png" id = "422b" disabled>
+<!--追加問題&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="image" value="追加１" onclick="location.href='./q4-2-1a.php'" src = "../img/qbtn/add1btn_off.png" id = "421a" disabled><input type="image" value="追加２" onclick="location.href='./q4-2-1b.php'" src = "../img/qbtn/add2btn_off.png" id = "421b" disabled>&emsp;&emsp;&emsp;&emsp;
+ <input type="image" value="追加１" onclick="location.href='./q4-2-2a.php'" src = "../img/qbtn/add1btn_off.png" id = "422a" disabled><input type="image" value="追加２" onclick="location.href='./q4-2-2b.php'" src = "../img/qbtn/add2btn_off.png" id = "422b" disabled>-->
     <br><br>
     <h3>第三節　二重ループ</h3><br>
     <input type="image" value="お手本１" onclick="location.href='./ex4-3-1.php'" src = "../img/exbtn/ex1btn_off.png" id = "ex14" disabled><div id = "explan14" style="display:inline;"></div>&nbsp;&nbsp;
     <input type="image" value="問題１" onclick="location.href='./q4-3-1.php'" src = "../img/qbtn/q1btn_off.png" disabled id = "q22"><div id = "question23" style="display:inline;"></div><br />
-追加問題&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="image" value="追加１" onclick="location.href='./q4-3-1a.php'" src = "../img/qbtn/add1btn_off.png" id = "431a" disabled><input type="image" value="追加２" onclick="location.href='./q4-3-1b.php'" src = "../img/qbtn/add2btn_off.png" id = "431b" disabled>
+<!--追加問題&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;<input type="image" value="追加１" onclick="location.href='./q4-3-1a.php'" src = "../img/qbtn/add1btn_off.png" id = "431a" disabled><input type="image" value="追加２" onclick="location.href='./q4-3-1b.php'" src = "../img/qbtn/add2btn_off.png" id = "431b" disabled>-->
     <br><br>
     <h3>第四章　まとめ問題</h3><br>
     <input type="image" value="まとめ問題１" onclick="location.href='./c4-matome1.php'" src = "../img/qbtn/matomebtn_off.png" disabled id = "q23"><div id = "question24" style="display:inline;"></div>&nbsp;&nbsp;

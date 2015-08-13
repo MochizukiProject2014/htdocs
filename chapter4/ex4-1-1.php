@@ -73,12 +73,12 @@ else{
 			<textarea style="resize: none;" id="text" rows="25" cols="70" readonly="readonly" >
 #include<stdio.h>
 int main(void){
-    int a;
-    int b;
-    for(a=1; a<=2;a++){
+    int i;
+    int j;
+    for(i=1; i<=2;i++){
       printf("こん\n");
     }
-    for(b=2; b>=1; b--){
+    for(j=2; j>=1; j--){
       printf("たぬ\n");
     }
   return 0;

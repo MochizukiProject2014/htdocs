@@ -764,7 +764,9 @@ function ANIME_compare(expressions,bools,total){
 							})
 							.wait(1000*LOCAL_SPEED)
 							.call(function(){
-								enzan(exSpace[cnt].text,bools[cnt]);
+								if(exSpace[cnt].text.match(/:/)){
+									enzan(exSpace[cnt].text,bools[cnt]);
+								}
 							})
 							.wait(3000*LOCAL_SPEED)
 							.call(function(){

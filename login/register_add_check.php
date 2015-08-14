@@ -18,6 +18,9 @@ $register_pass2=$post['pass2'];
 $register_gender=$post['gender'];
 $register_secret=$post['secret'];
 $register_secret_answer=$post['secret_answer'];
+$register_secret=$post['secret'];
+$register_programming=$post['programming'];
+
 
 if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
 	$dsn='mysql:dbname=mochiken2015;host=db.ne.senshu-u.ac.jp;charset=utf8';
@@ -111,9 +114,20 @@ else
 	print '<br />';
 }
 
+if($register_programming=='')
+{
+	print 'アンケートが入力されていません。<br />';
+}
+else
+{
+	print 'アンケートの答え：';
+	print $register_programming;
+	print '<br />';
+}
+
 
 if($register_name=='' || $register_pass=='' || $register_pass!=$register_pass2 ||  
-	$register_gender=='' ||  $register_secret=='' ||  $register_secret_answer=='' || $rec==true)
+	$register_gender=='' ||  $register_secret=='' ||  $register_secret_answer=='' || $register_programming == '' || $rec==true)
 {
 	print '<form>';
 	print '<input type="button" onclick="history.back()" value="戻る">';
@@ -128,6 +142,7 @@ else
 	print '<input type="hidden" name="gender" value="'.$register_gender.'">';
 	print '<input type="hidden" name="secret" value="'.$register_secret.'">';
 	print '<input type="hidden" name="secret_answer" value="'.$register_secret_answer.'">';
+	print '<input type="hidden" name="programming" value="'.$register_programming.'">';
 	print '<br />';
 	print '<input type="button" onclick="history.back()" value="戻る">';
 	print '<input type="submit" value="ＯＫ">';

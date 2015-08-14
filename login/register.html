@@ -6,7 +6,7 @@
 </head>
 <body>
 
-新規登録<br />
+<b>新規会員登録</b><br />
 <br />
 <form method="post" action="register_add_check.php">
 名前を入力してください。<br>
@@ -25,7 +25,15 @@
 	<option value="3">嫌いな食べ物は？</option>
 </select>
 <input type="text" name="secret_answer" style="width:200px">
-<br>
+<br><br />
+続けてアンケートの回答をお願いいたします。
+<br /><br />
+<b>アンケート</b><br />
+プログラミングをやったことはありますか？<br />
+<input type="radio" name="programming" value="ある">1.ある<br />
+<input type="radio" name="programming" value="ちょっとある">2.ちょっとある<br />
+<input type="radio" name="programming" value="やったことはないが興味はある">3.やったことはないが興味はある<br />
+<input type="radio" name="programming" value="ない">4.ない<br /><br /><br />
 
 <input type="button" onclick="history.back()" value="戻る">
 <input type="submit" value="OK">

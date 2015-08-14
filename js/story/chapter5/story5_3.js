@@ -420,7 +420,7 @@ var frame28 = {
 			.clear()
 			.wait(500)
 			.moveBy(-2000,0,1500)
-		button.hide();
+		endButton.hide();
 		goNext.hide();
 	}
 }
@@ -436,9 +436,9 @@ var frame29 = {
 		frontChara.hide();
 		leftChara.hide();
 		rightChara.hide();
-		button.show();
+		endButton.show();
 		goNext.show();
-		button.addEventListener("pointingend", function(e) {
+		endButton.addEventListener("pointingend", function(e) {
 			document.location.href = "../chapter5.php";
 		});
 	}

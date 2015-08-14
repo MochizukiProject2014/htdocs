@@ -277,13 +277,17 @@ tm.define("MainScene", {
     		//ANIME_twoDarray_sengen("int","a",3,5);
     		//ANIME_twoDarray_sengen_dainyu("int","a",2,2,["1"],["1"]);
     		//ANIME_twoDarray_sengen_dainyu("int","a",2,2,["0","1","2","3"],["0","1","2","3"])
-    		//ANIME_compare(["x:+:1:==:2","||","2:+:2:>:3","||","x"/*,"&&","x","&&","y:==:2","x:+:y:==:5"*/],[false,true,true/*,false,true,false*/],true);
+    		//ANIME_compare(["x:+:1:==:2","||","2:+:2:>:3","||","x","&&","x","&&","y:==:2","x:+:y:==:5"],[false,true,true,false,true,false],true);
     		//ANIME_compare(["x:+:1:==:2","||","2:+:2:>:3","||","x"],[false,true,true],true);
-    		//ANIME_compare(["(x>3||y>3&&z"],[true],true)
+    		//ANIME_compare(["(x>3)||y>3&&z"],[true],true)
+			//ANIME_compare(["x:+:1:!=:y"],[true],true)
     	},10000);
     	window.setTimeout(function(){
     		//ANIME_sengen_dainyu("int","x",4);
-    		//ANIME_compare(["(x>3||y>3&&z)"],[true],true)
+    		//ANIME_compare(["(x>3)||y>3&&z)"],[true],true)
+    		//ANIME_compare(["(:3:+:3:):*:2:>:1"],[true],true)
+    		//ANIME_sengen_dainyu("int","x",5);
+    		//ANIME_sengen_dainyu("int","y",1);
     	},1000)
     },
 });
@@ -699,13 +703,24 @@ function here(){
  *  比較のアニメ
  */
 
+
 function ANIME_compare(expressions,bools,total){
+
+	/*
+	*	引数の例
+	*	expressions : ["x:+:1:==:2","||","2:+:2:>:3","||","x"] ["(x>3||y) && Z>13"]
+	*	bools : [false,true,true]
+	*	total : true
+	*/
+
+	//console.log("比較アニメ開始");
+	//console.log(expressions)
 	SPEED_BOARD.text=(DEFAULT_SPEED/SPEED)+"倍速";
 
-		var LOCAL_SPEED = SPEED;
-		var between = 500/(expressions.length+1); //between:文字同士の幅
-		var exSpace = [];
-		var objects = [];
+		var LOCAL_SPEED = SPEED; //今回のアニメで使うスピード
+		var between = 500/(expressions.length+1); //文字同士の幅
+		var exSpace = []; 
+		var objects = []; //受け取った式を":"ごとに区切った文字列の配列（&&と||は入れない)
 
 		for(var i=0;i<expressions.length;i++){
 			var ex = tm.app.Shape(100,50); 
@@ -713,12 +728,14 @@ function ANIME_compare(expressions,bools,total){
 			//ex.setPosition(300+i*120,100);
 			ex.setPosition((between+(i*between))+200,100);
 
+			//元の式を表示するために、:を取り除いた文字列のラベルを作る
 			ex.Label = tm.app.Label(expressions[i].replace(/:/g,"")).addChildTo(ex);
 			ex.Label
 				.setFillStyle("rgba(45,45,45,1)")
 				.setFontSize(20)
 				.setPosition(ex.canvas.centerX-50,ex.canvas.centerY-25);
 			
+
 			if(expressions[i]!=="||" && expressions[i]!=="&&"){
 				exSpace.push(ex);
 			}
@@ -728,11 +745,11 @@ function ANIME_compare(expressions,bools,total){
 			app.currentScene.addChild(ex);
 		}
 		
-		var twn = tm.app.Shape(0,0);
+		var twn = tm.app.Shape(0,0); //tweenerするためだけに存在するオブジェクト
 		app.currentScene.addChild(twn);
 
-
 		if(expressions.length!==1){
+			//console.log("比較アニメ：条件式が複数の場合");
 			twn.tweener
 				.clear()
 				.wait(2000*LOCAL_SPEED)
@@ -747,7 +764,9 @@ function ANIME_compare(expressions,bools,total){
 							})
 							.wait(1000*LOCAL_SPEED)
 							.call(function(){
-								enzan(exSpace[cnt].text,bools[cnt]);
+								if(exSpace[cnt].text.match(/:/)){
+									enzan(exSpace[cnt].text,bools[cnt]);
+								}
 							})
 							.wait(3000*LOCAL_SPEED)
 							.call(function(){
@@ -763,7 +782,7 @@ function ANIME_compare(expressions,bools,total){
 							.wait(2000*LOCAL_SPEED)
 					}
 					twn.tweener
-						.wait(1000*LOCAL_SPEED)
+						//.wait(1000*LOCAL_SPEED)
 						.call(function(){
 							var result;
 							if(total){
@@ -775,7 +794,7 @@ function ANIME_compare(expressions,bools,total){
 							app.currentScene.addChild(result);
 							objects.push(result);
 						})
-						.wait(2000*LOCAL_SPEED)
+						.wait(1000*LOCAL_SPEED)
 						.call(function(){
 							for(var i=0;i<objects.length;i++){
 								objects[i].remove();
@@ -784,7 +803,7 @@ function ANIME_compare(expressions,bools,total){
 						});
 				});
 		}else{
-			//console.log("条件式がひとつの場合")
+			//console.log("比較アニメ：条件式がひとつの場合")
 			twn.tweener
 				.clear()
 				.wait(1000*LOCAL_SPEED)
@@ -792,7 +811,9 @@ function ANIME_compare(expressions,bools,total){
 						twn.tweener
 							.clear()
 							.call(function(){
-								enzan(exSpace[0].text,bools[0]);
+								if(exSpace[0].text.match(/:/)){
+									enzan(exSpace[0].text,bools[0]);
+								}	
 							})
 							.wait(3000*LOCAL_SPEED)
 							.call(function(){
@@ -818,6 +839,7 @@ function ANIME_compare(expressions,bools,total){
 				})
 		}
 
+	//条件式が複数のとき、今現在アニメを行っている条件式にアンダーラインをひくfunc
 	function underLine(obj){
 		var line = tm.app.Shape(100,10);
 		line.canvas.drawLine(0,0,100,0);
@@ -862,8 +884,70 @@ function ANIME_compare(expressions,bools,total){
 		app.currentScene.addChild(false_S);
 	}
 
+
 	function enzan(ex,result){
-		var space = tm.app.Shape(400,200); //printfの表示領域オブジェクトspaceを生成
+		/* 引数
+		 * ex : "x:+:1:>:y"　など、単一の条件式をコロンで区切った文字列
+		 * result : exのTrue or False
+		 */
+
+		//var keisan = ex.replace(/:/g,"") 
+
+		var keisan = ex;
+		var kigou = null;
+
+		if(keisan.match(/>=/)) {
+			keisan = keisan.split(">=");
+			kigou = ">=";
+		}else if(keisan.match(/>/)){
+			keisan = keisan.split(">");
+			kigou = ">";
+		}else if(keisan.match(/<=/)){
+			keisan = keisan.split("<=");
+			kigou = "<=";
+		}else if(keisan.match(/</)){
+			keisan = keisan.split("<");
+			kigou = "<";
+		}else if(keisan.match(/==/)){
+			keisan = keisan.split("==");
+			kigou = "==";
+		}else if(keisan.match(/!=/)){
+			keisan = keisan.split("!=");
+			kigou = "!=";
+		}
+		
+		for(var i=0;i<keisan.length;i++){
+			//keisan[i] = keisan[i].replace(/:/g,"");
+			work = keisan[i].split(":");
+			for(var j=0;j<work.length;j++){
+				for(var k=0;k<promin_array.length;k++){
+					if(work[j]===promin_array[k].name){
+						work[j] = promin_array[k].value;
+					}
+				}
+			}
+			keisan[i] = "";
+			for(l=0;l<work.length;l++){
+				keisan[i] = keisan[i]+work[l];
+			}
+		}
+
+		var k3; //k3（計算した結果）
+		if(kigou){
+			keisan[0] = eval(keisan[0]);
+			keisan[1] = eval(keisan[1]);
+			k3 = keisan[0]+"  "+kigou+"  "+keisan[1];
+		}else{
+			keisan[1] = "";
+			k3 = keisan[0];
+		}
+
+		//console.log(keisan[0]+kigou+keisan[1])
+		//console.log(k3); //計算結果を出力
+
+		/*console.log("比較アニメenzan ex↓");
+		console.log(ex);*/
+		var space = tm.app.Shape(400,200); //演算全体の表示領域オブジェクトspaceを生成
 		space.setPosition(525,260); //初期位置の設定（上部)
 		//space.canvas.clearColor("blue");
 		app.currentScene.addChild(space); //spaceをカレントシーンにに追加
@@ -955,7 +1039,7 @@ function ANIME_compare(expressions,bools,total){
 		}else if(cnt>0){
 			space.tweener
 				.clear()
-				.wait(2000*LOCAL_SPEED)
+				.wait(1000*LOCAL_SPEED)
 				.call(function(){
 					for(var i=0;i<P.length;i++){
 						P[i].Label.text = C[i].value;
@@ -964,19 +1048,17 @@ function ANIME_compare(expressions,bools,total){
 				})
 				.wait(1000*LOCAL_SPEED) 
 				.call(function(){
-					var promin;
-					for(var i=0;i<promin_array.length;i++){
-						if(name===promin_array[i].name){
-							promin = promin_array[i];
-							break;
-						}
-					}
+					space.removeChildren();
+					var Label = tm.app.Label(k3).addChildTo(space);
+					Label.setFillStyle("black");
+					Label.fontSize =20; //フォントサイズ設定
+					Label.setPosition(space.canvas.centerX-250,space.canvas.centerY-80)
 				})
-				.wait(1000*LOCAL_SPEED)
+				.wait(2000*LOCAL_SPEED)
 				.call(function(){space.removeChildren();});
 		}else{
 			space.tweener
-				.wait(2000*LOCAL_SPEED)
+				.wait(1000*LOCAL_SPEED)
 				.call(function(){
 					for(var i=0;i<P.length;i++){
 						P[i].Label.text = C[i].value;
@@ -985,15 +1067,13 @@ function ANIME_compare(expressions,bools,total){
 				})
 				.wait(1000*LOCAL_SPEED) 
 				.call(function(){
-					var promin;
-					for(var i=0;i<promin_array.length;i++){
-						if(name===promin_array[i].name){
-							promin = promin_array[i];
-							break;
-						}
-					}
+					space.removeChildren();
+					var Label = tm.app.Label(k3).addChildTo(space);
+					Label.setFillStyle("black");
+					Label.fontSize =20; //フォントサイズ設定
+					Label.setPosition(space.canvas.centerX-250,space.canvas.centerY-80)
 				})
-				.wait(1000*LOCAL_SPEED)
+				.wait(2000*LOCAL_SPEED)
 				.call(function(){space.removeChildren();});
 		}
 	}

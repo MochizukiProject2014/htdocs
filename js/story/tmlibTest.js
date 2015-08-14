@@ -19,6 +19,7 @@ var chosenzyo = null;
 var chosenMessage = null;
 var goNext=null;
 var button = null;
+var endButton = null;
 var picture = tm.app.Shape(300,300);
 var picLabel = null;
 var sankaku = null;
@@ -294,6 +295,12 @@ tm.define("MainScene", {
         //button.setAlpha(1)
         goNext.hide();
         button.hide();
+
+        endButton = tm.app.GlossyButton(400,200,"blue", "お　　わ　　り");
+        endButton.addChildTo(this);
+        endButton.position.set(600,450);
+        //button.setAlpha(1)
+        endButton.hide();
 
         sankaku = tm.display.CircleShape(200,200);
         sankaku.setPosition(600,150);

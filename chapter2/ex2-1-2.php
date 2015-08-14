@@ -1,5 +1,22 @@
 <?php session_start();session_regenerate_id(true);
-header("Content-Type:text/html; charset=UTF-8");?>
+header("Content-Type:text/html; charset=UTF-8");
+if(isset($_SESSION['login'])==false){
+	print'ログインされていません。<br />';
+	print'<a href="../login/login.html">ログイン画面へ</a>';
+	exit();
+}
+else{
+	require_once('../common.php'); 
+	$user_id = $_SESSION['user_id'];
+	$a = menu($user_id);
+	if($a >= 3){
+	}else{
+		print'<br />前の問題から順に解かないとこの問題はできません。';
+		print'<a href="./chapter2.php">戻る</a>';
+		exit();
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
  <head>
@@ -42,17 +59,17 @@ header("Content-Type:text/html; charset=UTF-8");?>
         第一節 変数の宣言・代入 お手本２&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php
 if(isset($_SESSION['login'])==false){
-	print'ログインされていません。<br />';
-	print'<a href="login.html">ログイン画面へ</a>';
-	exit();
+	
 }
 else{
+	
 	print $_SESSION['user_name'];
 	print'さん&nbsp;&nbspログイン中&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp';
 	print '<a href="../login/logout.php">ログアウト</a><br />';
+
 }
 ?></div>
-                <a href="../img/screen_img/reidai-1.jpg" data-lightbox="group1" title="説明１" style = "float:right;padding:0px 15px;" id = "click_data"><img src='./img/new_button/b005.png' alt="画面説明" onMouseOver=this.src='./img/new_button/b005-2.png' onMouseOut=this.src='./img/new_button/b005.png'></a>
+                <a href="../img/screen_img/reidai-1.jpg" data-lightbox="group1" title="説明１" style = "float:right;padding:0px 15px;" id = "click_data"><img src='../img/new_button/b005.png' alt="画面説明" onMouseOver=this.src='../img/new_button/b005-2.png' onMouseOut=this.src='../img/new_button/b005.png'></a>
 <a href="../img/screen_img/reidai-2.jpg" data-lightbox="group1" title="説明2"></a>
 <a href="../img/screen_img/reidai-3.jpg" data-lightbox="group1" title="説明3"></a>
 <a href="../img/screen_img/reidai-4.jpg" data-lightbox="group1" title="説明4"></a>

@@ -1,5 +1,22 @@
 <?php session_start();session_regenerate_id(true);
-header("Content-Type:text/html; charset=UTF-8");?>
+header("Content-Type:text/html; charset=UTF-8");
+if(isset($_SESSION['login'])==false){
+	print'ログインされていません。<br />';
+	print'<a href="../login/login.html">ログイン画面へ</a>';
+	exit();
+}
+else{
+	require_once('../common.php'); 
+	$user_id = $_SESSION['user_id'];
+	$a = menu($user_id);
+	if($a >= 36){
+	}else{
+		print'<br />前の問題から順に解かないとこの問題はできません。';
+		print'<a href="./chapter4.php">戻る</a>';
+		exit();
+	}
+}
+?>
 <!DOCTYPE html>
 <html lang="ja">
  <head>
@@ -47,9 +64,7 @@ header("Content-Type:text/html; charset=UTF-8");?>
     	 まとめ 問題１&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php
 if(isset($_SESSION['login'])==false){
-	print'ログインされていません。<br />';
-	print'<a href="login.html">ログイン画面へ</a>';
-	exit();
+	
 }
 else{
 	print $_SESSION['user_name'];

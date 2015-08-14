@@ -155,7 +155,7 @@ function menu3(state){
 	}
 	if(state >= 22){
 		document.getElementById("explan9").innerHTML = "<img border='0' src='../img/clear.png' style = 'height:40px;width:40px;'>";
-		document.getElementById("q14").src = "../img/qbtn/q3btn_on.png";
+		document.getElementById("q14").src = "../img/qbtn/q4btn_on.png";
 		document.getElementById("q14").disabled = false;
 	}
 	if(state >= 23){

@@ -56,9 +56,9 @@ else{
  <body id = "c2">
  
 	<div class = "menu-box">
-		<div class = "menu"><a href="../index.html">TOP</a> <span id="divider">></span> 
-    		<a href="../login/top.php">MENU</a> <span id="divider">></span>
-   	    	<a href="../chapter2/chapter2.php">第二章 変数</a> <span id="divider">></span> 
+		<div class = "menu"><a href="../index.html">TOP</a> <span id="divider">&nbsp;>&nbsp;</span> 
+    		<a href="../login/top.php">MENU</a> <span id="divider">&nbsp;>&nbsp;</span>
+   	    	<a href="../chapter2/chapter2.php">第二章 変数</a> <span id="divider">&nbsp;>&nbsp;</span> 
     	第一節 変数の宣言・代入 問題１&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php
 if(isset($_SESSION['login'])==false){

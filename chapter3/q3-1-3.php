@@ -59,9 +59,9 @@ else{
 
 
 <div class = "menu-box">
-		<div class = "menu"><a href="../index.html">TOP</a> <span id="divider">/</span> 
-    	<a href="../login/top.php">MENU</a> <span id="divider">/</span>
-   	    <a href="./chapter3.php">第三章 条件分岐</a> <span id="divider">/</span> 
+		<div class = "menu"><a href="../index.html">TOP</a> <span id="divider">&nbsp;>&nbsp;</span> 
+    	<a href="../login/top.php">MENU</a> <span id="divider">&nbsp;>&nbsp;</span>
+   	    <a href="./chapter3.php">第三章 条件分岐</a> <span id="divider">&nbsp;>&nbsp;</span> 
     	 第一節 if 問題３&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php
 if(isset($_SESSION['login'])==false){

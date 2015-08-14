@@ -88,7 +88,7 @@ else{
 	</div>	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br />　double型のaを5.5で初期化しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br />　double型の変数aを5.5で初期化しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq2_1_3();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

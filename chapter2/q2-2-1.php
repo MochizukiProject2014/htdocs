@@ -91,7 +91,7 @@ else{
 	</div>	
 
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　int型の変数xに、</br>　キーボードから5を入力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br />　int型の変数xに、5を入力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq2_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

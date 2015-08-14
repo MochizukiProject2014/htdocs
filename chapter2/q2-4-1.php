@@ -94,7 +94,7 @@ else{
 	</div>
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　int型の変数にキーボードから値を入力し、<br>　入力された変数をprintfで出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br />　int型の変数に値を入力し、<br>　入力された変数をprintfで出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq2_4_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -146,7 +146,8 @@ int main(void){
   			<tr>
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
-    			<td><input type="button" value="１" onClick="hintq2_4_1()"></td>
+    			<td><input type="button" value="１" onClick="hintq2_4_1_1()"></td>
+    			<td><input type="button" value="２" onClick="hintq2_4_1_2()"></td>
     		</tr>
     	</table>
 	</div>

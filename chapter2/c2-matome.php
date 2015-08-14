@@ -93,7 +93,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question">問題<br /><br>　int型の変数にキーボードから値を入力し、<br>　入力された値を３倍して出力しよう。</p>
+		<p class = "question">問題<br /><br>　int型の変数に値を入力し、<br>　入力された値を３倍して出力しよう。</p>
 		<input class = "resetbut" type="button" value="プログラムリセット" onclick="reset_matome2();"></br><br />
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -148,7 +148,8 @@ int main(void){
   			<tr>
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
-    			<td><input type="button" value="１" onClick="hintc2_matome()"></td>
+    			<td><input type="button" value="１" onClick="hintc2_matome1()"></td>
+    			<td><input type="button" value="２" onClick="hintc2_matome2()"></td>
     		</tr>
     	</table>
     	

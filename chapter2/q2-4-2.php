@@ -94,7 +94,7 @@ else{
     
 
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　double型で変数xを、char型で変数yを宣言して、<br />　xとyをprintfで出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br />　double型で変数xを、char型で変数yを宣言して、<br />　変数xとyをprintfで出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq2_4_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

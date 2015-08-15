@@ -5,7 +5,7 @@
 
 var frame0 = {
 	speaker : "健吾",
-	message : "よし、わかった！\n答えは「1092」だ！\nこの答えが示す場所は・・・どこ？",
+	message : "よし、わかった！\n出力された値は「０２」だ！\nこれが示す場所は・・・どこ？",
 	rightChara : "L_kengo_hatena",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo_smile",
@@ -17,7 +17,7 @@ var frame0 = {
 }
 var frame1 = {
 	speaker : "健吾",
-	message :"番地・・・じゃないだろうし、\n建物の名前かな？\nでも、こんな名前の建物知らないしなぁ・・・。",
+	message :"え？\nコンソールに表示されている値はそれだけじゃない？\n",
 	rightChara : "L_kengo_hatena",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo_hatena",
@@ -30,7 +30,7 @@ var frame1 = {
 
 var frame2 = {
 	speaker : "健吾",
-	message :"ん？「10・9・2」で読んでみろ？\nえ～と「じゅう・く・に」？\n読み方を変える？",
+	message :"・・・そうか！１を入力で、０が出力されて、\n９を入力で、２が出力されたから、\n合わせて「１０９２」だ！",
 	rightChara : "L_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo_hatena",
@@ -43,7 +43,7 @@ var frame2 = {
 
 var frame2_5 = {
     speaker : "健吾",
-    message : "「てん・ないん・つー」、\n「とお・く・に」、\n「とお・く・つ」・・・、",
+    message : "これで読み方を変えると・・・？\n「てん・ないん・つー」、「い・お・く・に」、\n「とお・く・つ」・・・、",
     rightChara : "L_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo_hatena",

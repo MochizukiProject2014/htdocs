@@ -42,7 +42,7 @@ var frame2 = {
 
 var frame3 = {
     speaker : "怪盗C",
-    message : "『配列から、入力した番地の要素を出力できる\nプログラムを作れ。\nそして、「0、5、8、6」を入力しろ。",
+    message : "『配列を宣言し、その配列から入力した値の要素を\n出力するプログラムを作れ。\nそして、「1、9」を入力しろ。",
     rightChara : "L_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",

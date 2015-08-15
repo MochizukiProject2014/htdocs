@@ -103,7 +103,7 @@ else{
 int main(void){
    int x = 32;
    
-   
+      printf("xは20より大きいです。");
    
    return 0;
 }</textarea>

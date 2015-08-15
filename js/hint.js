@@ -103,17 +103,17 @@ function hintq2_2_1b_1(){
 }
 
 function hintq2_2_2a_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは文字列を入力することのできるデータ型で変数xを宣言するにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは文字列を入力することのできるデータ型で変数xを宣言するにゃ。<b/></p>";
 }
 function hintq2_2_2a_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />キーボードから入力するために使うものは覚えてるかにゃ？忘れてしまったら辞書も参考にするにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />キーボードから入力するために使うものは覚えてるかにゃ？忘れてしまったら辞書も参考にするにゃ。<b/></p>";
 }
 
 function hintq2_2_2b_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「n」を代入できるデータ型、「3.6」を代入できるデータ型をそれぞれ考えて、適切な型で変数を宣言するにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「n」を代入できるデータ型、「3.6」を代入できるデータ型をそれぞれ考えて、適切な型で変数を宣言するにゃ。<b/></p>";
 }
 function hintq2_2_2b_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />一つのscanf文で2個の値を入力することもできるにゃ、辞書などを参考に考えてみるにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />一つのscanf文で2個の値を入力することもできるにゃ、辞書などを参考に考えてみるにゃ。<b/></p>";
 }
 
 function hintq2_3_1a_1(){
@@ -125,11 +125,11 @@ function hintq2_3_1b_1(){
 }
 
 function hintq2_3_2a_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br /><br />まずは必要になる変数を宣言するにゃ。<br />どんな型で、なんという名前の変数が必要か考えるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br /><br />まずは必要になる変数を宣言するにゃ。<br />どんな型で、なんという名前の変数が必要か考えるにゃ。</b></p>";
 }
 
 function hintq2_3_2a_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />C言語には割った余りを出すことのできる<font color = red>「%」</font>という演算子があるにゃ<br/>たとえば「5%3」と計算したら「2」が答えとして計算されるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />C言語には割った余りを出すことのできる<font color = red>「%」</font>という演算子があるにゃ<br/>たとえば「5%3」と計算したら「2」が答えとして計算されるにゃ。</b></p>";
 }
 
 function hintq2_3_2b(){
@@ -137,19 +137,19 @@ function hintq2_3_2b(){
 }
 
 function hintq2_4_1a(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />scanfとprintfではdouble型の変換指定文字列が異なるから注意にゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />scanfとprintfではdouble型の変換指定文字列が異なるから注意にゃ。</b></p>";
 }
 
 function hintq2_4_1b(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />char型でxを宣言し、scanfとprintfの変換指定文字列をchar型に合わせた書き方をするにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />char型でxを宣言し、scanfとprintfの変換指定文字列をchar型に合わせた書き方をするにゃ。</b></p>";
 }
 
 function hintq2_4_2a_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />一つのprintfで同時にいくつもの変数を出力をすることができるにゃ<br/>必要なだけ変換指定文字列を書いて、その後に出力したい順番に変数を書けばいいにゃ<br/>辞書も参考にするにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />一つのprintfで同時にいくつもの変数を出力をすることができるにゃ<br/>必要なだけ変換指定文字列を書いて、その後に出力したい順番に変数を書けばいいにゃ。<br/>辞書も参考にするにゃ。</b></p>";
 }
 
 function hintq2_4_2b_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />改行の仕方はprintfで<font color = red>「\\n」</font>を出力すればできるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />改行の仕方はprintfで<font color = red>「\\n」</font>を出力すればできるにゃ。</b></p>";
 }
 /*第３章*/
 
@@ -160,43 +160,46 @@ function hintq3_1_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />例えば、xが10より大きい条件式は、「<font color = red>x>10</font>」と表すにゃ。</b></p>";
 }
 
-function hintq3_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />xがyより小さいという式は、<font color = red>x < y</font>と表すにゃ。<br/>「<font color = red>もし〜なら</font>」という文を作るには、<font color = red>if文</font>を使うにゃ。</b></p>";
+function hintq3_1_2_1(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />xがyより小さいという式は、<font color = red>x < y</font>と表すにゃ。<br/>「<font color = red>もし〜なら</font>」という文を作るには、<font color = red>if文</font>を使うにゃ。</b></p>";
+}
+function hintq3_1_2_2(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />出力する文章が問題文とぴったり同じかちゃんと確認するにゃ。<br/>一字一句一致していないとだめにゃ！</b></p>";
 }
 
 function hintq3_1_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />if文を使って「<font color = red>xが0以外なら</font>」という式を書くにゃ。</br>「<font color = red>以外</font>」は、「<font color = red>!=</font>」を使うにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />if文を使って「<font color = red>xが0以外なら</font>」という式を書くにゃ。</br>「<font color = red>以外</font>」は、「<font color = red>!=</font>」を使うにゃ。</b></p>";
 }
 
 function hintq3_1_4_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />bmiの計算の仕方は<font color = red>体重/（身長×身長）</font>だにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />bmiとは「肥満度を表す指数」のことだにゃ。<br/>bmiの計算の仕方は<font color = red>体重/（身長×身長）</font>だにゃ。</b></p>";
 }
 function hintq3_1_4_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiの適正な値は<font color = red>18.5以上25.0未満</font>だにゃ</b><br><b>以上と未満の不等号に注意にゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiの適正な値は<font color = red>18.5以上25.0未満</font>だにゃ</b><br><b>以上と未満の不等号に注意にゃ。</b></p>";
 }
 function hintq3_1_4_3(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />もし10以上20未満だったら、</br>10は<font color = red>含まれる</font>けど20は<font color = red>含まれない</font>にゃ。<br>不等号の違いをよく考えてみるのにゃ！</b></p>";
 }
 
 function hintq3_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br /><font color = red>20歳以上なら成人</font>だにゃ、<font color = red>それ以外は未成年</font>だにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />elseを使った条件の書き方を思い出すにゃ！<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 function hintq3_3_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />else ifは<font color = red>何回でも使うことができる</font>にゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />else ifは<font color = red>何回でも使うことができる</font>にゃ。</b></p>";
 }
 function hintq3_3_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br />「<font color = red>もし90点以上なら</font>」良で、<br />「<font color = red>それ以外で60点以上90点未満なら</font>」可、<br />「<font color = red>それ以外で40点以上60点未満なら</font>」再試験で、<br />「<font color = red>それ以外なら</font>」不可だにゃ！<br />ifやelse if、elseを使ってうまく表現するにゃ〜</b></p>";
 }
 
 function hintc3_matome1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />必要となる変数を宣言するにゃ！<br />身長・体重・bmiは<font color = red>小数点以下も入出力できるようにする</font>にゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは必要となる変数を宣言するにゃ！<br />身長・体重・bmiは<font color = red>小数点以下も</font>入出力できるようにするにゃ。</b></p>";
 }
 function hintc3_matome2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiが<font color = red>18.5以上25.0以下は適正、適正より上は太り気味、適正未満はやせ気味</font>だにゃ。</b></p>";
 }
 function hintc3_matome3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「<font color = red>適正体重なら</font>」適正で、「<font color = red>それ以外で25.0以上</font>」は太り気味で、「<font color = red>それ以外は</font>」やせ気味だにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「<font color = red>適正体重なら</font>」適正で、「<font color = red>適正体重以外で25.0より大きいなら</font>」太り気味で、「<font color = red>それ以外なら</font>」やせ気味だにゃ。<br/>「if」と、「else if」と、「else」を使うにゃ！</b></p>";
 }
 
 /*第３章追加問題*/

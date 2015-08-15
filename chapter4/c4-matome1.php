@@ -30,7 +30,6 @@ else{
 <script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/samplecode.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <script type="text/javascript" src="../js/parser.js"></script>
 <script type="text/javascript" src="../js/answer.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
@@ -39,7 +38,6 @@ else{
 <script type="text/javascript" src="../js/anime.js"></script>
 <script type="text/javascript" src="../js/hint.js"></script>
 <script type="text/javascript" src="../js/reset.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <script type="text/javascript" src="../js/movenext.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>

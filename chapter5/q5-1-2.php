@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br />　for文を使ってある配列の要素を逆順にした<br>　配列を作り、新たに作った配列を一つずつ<br>　出力するプログラムを作ろう</font></p>
+		<p class = "question"><font size = "4">問題<br />　for文を使って配列aの要素を逆順に代入した配列bを作り、<br>配列bの要素を順番に一つずつ出力しよう。　</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_1_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -100,7 +100,7 @@ int main(void){
    int b[5];
    int i;
    for(i=0; i<5; i++){
-
+      
    }
    for(i=0; i<5; i++){
       printf("b[%d] = %d\n",i,b[i]);
@@ -164,8 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　第一節　配列　>　問題２">
   		<p><br />
-    	<b>for文を使ってある配列の要素を逆順にした配列を作り、<br>新たに作った配列を一つずつ出力するプログラムを作ろう
-		</b><br />
+    	<b>for文を使って配列aの要素を逆順に代入した配列bを作り、<br>配列bの要素を順番に一つずつ出力しよう。</b><br />
  		</p>
 	</div>
 	<!---  ダイヤログここまで   -->

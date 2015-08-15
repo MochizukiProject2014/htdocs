@@ -414,10 +414,10 @@ function hintq4_3_1b_2(){
 /*第５章*/
 
 function hintq5_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />配列の中身を1つずつ順番に足していくにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「sum += a[i]」が配列の中身を1つずつ順番に足していくコードにゃ。</b></p>";
 }
 function hintq5_1_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />配列の要素は5個あるにゃ！！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />配列の要素は5個あるからfor文を5回繰り返せばいいにゃ！</b></p>";
 }
 
 
@@ -425,31 +425,33 @@ function hintq5121(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />bの配列にaの配列を後ろから代入していくにゃ。</b></p>";
 }
 function hintq5122(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、aの配列を後ろから順番に呼び出せるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、aの配列を後ろから順番に呼び出せるにゃ。</b></p>";
 }
 
 
 function hintq5211(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が3つの二次元配列を宣言すればいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が2つの二次元配列を宣言すればいいにゃ。名前は自由につけていいにゃ。</b></p>";
 }
 function hintq5212(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、data[配列の数][要素数]でつくることができるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、「配列名[配列の数][要素数]」で宣言することができるにゃ。<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 
-function hintq5_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br>二次元配列を呼び出すときは、配列の番地も要素の番地も最初は0番目にゃ</b></p>";
+function hintq5_2_2_1(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br>二次元配列の大きさを示す[3][3]は左が「要素数1」、右が「要素数2」だにゃ。<br/>辞書にも書いてあるから参考にするにゃ。</b></p>";
 }
-
+function hintq5_2_2_2(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br>二次元配列を扱うときは「配列名[数字][数字]」で呼び出せるにゃ。<br/>例えば今回「2」を呼び出したかったらdata[1][2]のように書けばいいにゃ。</b></p>";
+}
 
 function hintqc5_matome_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは配列を宣言するにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは大きさが10の配列aをあらかじめ書いてある配列を使って初期化するにゃ。</b></p>";
 }
 function hintqc5_matome_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bに呼び出したい要素の番地を代入させるにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />2回繰り返すからfor文を活用するにゃ。</b></p>";
 }
 function hintqc5_matome_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />a[b]でaの配列からbに入力した番地の要素を呼び出せるにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「変数bを使って配列aの要素を指定して出力」しなきゃいけないから変数bに値を入力するにゃ。<br/>そしてprintf文で、「変数bを使って配列aの要素を指定して出力」するにゃ。</b></p>";
 }
 
 /*第5章追加問題*/

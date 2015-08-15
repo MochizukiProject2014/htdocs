@@ -67,7 +67,7 @@ var frame4 = {
 
 var frame5 = {
 	speaker : "健吾",
-	message :"むむむ・・・。\n今までで一番の問題だ・・・。\nだけど僕らなら、きっと解けるはずさ！",
+	message :"むむむ・・・。\n今までで一番難しい問題だ・・・。\nだけど僕らなら、きっと解けるはずさ！",
 	rightChara : "F_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",
@@ -116,7 +116,7 @@ var frame8 = {
 
 var frame9 = {
 	speaker : "きなこ",
-	message :"・・・さて、ボクのお仕事にゃ。",
+	message :"・・・さて、ボクの最後のお仕事にゃ。",
 	rightChara : "L_kengo_smile",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",

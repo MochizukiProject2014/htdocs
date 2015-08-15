@@ -91,23 +91,23 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　偶数を入力するまで<br />　終わらないプログラムを作ろう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　while文を使って変数aに値を入力し続け、<br />その値が偶数ならwhile文を抜け「終了」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int a;
-   while(  ){
-      printf("数字を入力：");
-      scanf("%d",&a);
-      if(  ){
-         printf("終了");
-         
-      }
-      printf("もう1回");
-   }
-   return 0;
+	int a;
+	
+		printf("数字を入力：");
+		scanf("%d",&a);
+      
+      			printf("終了");
+      
+      
+      		printf("もう1回");
+      	
+      return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>
@@ -166,7 +166,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第二節　while　>　問題１">
   		<p><br />
-    	<b>偶数を入力するまで終わらないプログラムを作ろう。
+    	<b>while文を使って変数aに値を入力し続け、<br />その値が偶数ならwhile文を抜け「終了」と出力しよう。
 		</b><br />
  		</p>
 	</div>

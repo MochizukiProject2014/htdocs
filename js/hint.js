@@ -295,61 +295,56 @@ function hintq3_3_1b_2(){
 
 /*第４章*/
 function hintq4_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />繰り返し同じことをしたいなら<font color = red>for</font>を使うにゃ。</b></p>";
-}
-function hintq4_1_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />aが1〜３の間だけ繰り返すには<br />aに１ずつ足していけばいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />繰り返し同じことをしたいなら<font color = red>for</font>を使うにゃ。<br />書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 
 function hintq4_1_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />繰り返し同じことをしたいなら<font color = red>for</font>を使うにゃ。</b></p>";
-}
-function hintq4_1_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />bが1〜３の間だけ繰り返すには<br />bに１ずつ足していけばいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />aに入力した値の回数だけ出力するから、継続条件式にはaを使うにゃ。</b></p>";
 }
 
+
 function hintq4_2_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />偶数は2で割って余りが0になる数字にすればいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />偶数は2で割って余りが0になる数字にゃ。<br />余りを出すには「<font color = red>%</font>」を使うにゃ。</b></p>";
 }
 function hintq4_2_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />余りを出すには<font color = red>%</font>を使うにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />ループを抜け出すにはbreakを使うにゃ。</b></p>";
 }
 
 function hintq4_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />whileの()内に「ansが100になるまで」ループを続けるという条件式を書くにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />whileの継続条件式に「ansが100以下の間」ループを続けるという条件式を書くにゃ。</b></p>";
 }
 
-function hintq4_3_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />1の段の計算が終わったら改行して2の段を計算する、という構造にするにゃ</b></p>";
+function hintq4_3_1_1(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />1の段の計算が終わったら改行して2の段を計算する、という構造にするにゃ。<br />どういう出力になるか想像できない場合はサンプル実行を活用するにゃ。</b></p>";
+}
+function hintq4_3_1_2(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />宣言してある変数はそれぞれxは「出力する値を記録する変数」iが「外側のループを制御する変数」kが「内側のループを制御する変数」として使うにゃ。</b></p>";
+}
+function hintq4_3_1_3(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />九九の計算はi*kで行い、xにその計算結果を代入するにゃ。</b></p>";
 }
 
 
 function hintc4_matome_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />入力する変数と、合計を記録する変数と、<br />何回足したかを記録する変数の3つを宣言するにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />値を入力する変数と、合計を記録する変数を宣言するにゃ。</b></p>";
 }
 function hintc4_matome_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />0以外の場合、その値を合計を記録する変数に足し、<br />何回足したかを記録する変数に1を足すにゃ。<br />0が入力されたらbreakを実行させるにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />0以外を入力した場合、その値を、合計を記録する変数に足し、<br />0を入力した場合、breakを実行しwhile文を抜けるにゃ。</b></p>";
+}
+function hintc4_matome_3(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br /><br />最後に「合計は～です。」を出力するのを忘れないようにするにゃ！</b></p>";
 }
 
 
 function hintc4_matome2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/6<br><br />行数を指定するループの中に、*を出力するループを作るにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br /><font size = '2'>まずはint型で4つの変数を宣言するにゃ。<br />それぞれ、「＊を出力する数を指定する変数」「行数を指定する変数」「二重ループの外側のループを制御する変数」「二重ループの内側を制御する変数」だにゃ。<br />「＊を出力する数を指定する変数」は初期値1を代入するにゃ。</font></b></p>";
 }
 function hintc4_matome2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/6<br /><br />まずはint型で4つの変数を宣言するにゃ。<br />うち一つには初期値1を代入するにゃ。<br />初期値を代入した変数で＊の数を制御するにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />次はscanfで、「行数を指定する変数」に値を入力するにゃ。</b></p>";
 }
 function hintc4_matome2_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/6<br><br />次はscanfで何かに代入するにゃ。<br />これが行数になるにゃ！！</b></p>";
-}
-function hintc4_matome2_4(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  4/6<br /><br />二重ループを作るにゃ！<br />外側のループには何行目かを制御するループを作り、<br />その中に＊を出力するループを作るにゃ。</b></p>";
-}
-function hintc4_matome2_5(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  5/6<br><br />外側のループの条件にscanfで使った変数を<br />うまく組み合わせるにゃ。</b></p>";
-}
-function hintc4_matome2_6(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  6/6<br /><br />内側のループの条件に、最初に初期値1を代入した変数をうまく組み合わせるにゃ！<br />このループを抜けたら＊を１個増やせるように変数に代入して改行するにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />次は二重ループを作るにゃ！<br />外側のループには何行目かを制御するループを作り、その中に＊を出力するループを作るにゃ。</b></p>";
 }
 
 /*第４章追加問題*/

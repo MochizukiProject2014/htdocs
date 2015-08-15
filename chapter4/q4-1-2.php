@@ -91,17 +91,18 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　「にゃんにゃん」を<br />　3回出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　for文を使って、変数aに入力した値の回数だけ「にゃんにゃん」を出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_1_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int b;
-   for(  ){
-      printf("にゃんにゃん");
-   }
-   return 0;
+	int a,i;
+	scanf("%d",&a)
+	
+		printf("にゃんにゃん\n");
+	
+	return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>
@@ -142,7 +143,6 @@ int main(void){
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintq4_1_2_1()"></td>
-    			<td><input type="button" value="２" onClick="hintq4_1_2_2()"></td>
     		</tr>
     	</table>
 	</div>
@@ -160,7 +160,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第一節　for　>　問題２">
   		<p><br />
-    	<b>「にゃんにゃん」を３回出力しよう。
+    	<b>for文を使って、変数aに入力した値の回数だけ「にゃんにゃん」を出力しよう。
 		</b><br />
  		</p>
 	</div>

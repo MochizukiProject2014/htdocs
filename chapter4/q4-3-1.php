@@ -90,21 +90,21 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　九九の表を作ろう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　二重ループを使って九九の表を作ろう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_3_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int x,i,k;
-   for(  ){
-      for(  ){
-         x = i * k;
-         printf("%d",x);
-      }
-      printf("\n");
-   }   
-   return 0;
+	int x,i,k;
+	
+		
+			
+			printf("%d ",x);
+		
+		printf("\n");
+	
+	return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>
@@ -139,12 +139,14 @@ int main(void){
 	
 	<div class = "hint-box">
 		<img class = "chara" src = "../img/character/littlecat.png"/>
-		<div class = "com" id = "com"><p><b>問題に挑戦にゃ！足りないプログラムを書き足して、</br>問題に沿ったプログラムを完成させるにゃ。<br />わからなかったらヒントボタンを押すにゃ！辞書も活用するにゃ。<br />「サンプル実行」をクリックすると、サンプルアニメーション</br>を見ることができるにゃ。それを手掛かりにクリアを目指すにゃ。</b></p></div>
+		<div class = "com" id = "com"><p><b>この問題はすごく難しいと思うにゃ。<br />よく考えて頑張って解いてほしいにゃ。</b></p></div>
 		<table class = "hinttable">
   			<tr>
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
-    			<td><input type="button" value="１" onClick="hintq4_3_1()"></td>
+    			<td><input type="button" value="１" onClick="hintq4_3_1_1()"></td>
+    			<td><input type="button" value="２" onClick="hintq4_3_1_2()"></td>
+    			<td><input type="button" value="３" onClick="hintq4_3_1_3()"></td>
     		</tr>
     	</table>
 	</div>
@@ -162,7 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第三節　while　>　問題１">
   		<p><br />
-    	<b>九九の表を作ろう。
+    	<b>二重ループを使って九九の表を作ろう。
 		</b><br />
  		</p>
 	</div>

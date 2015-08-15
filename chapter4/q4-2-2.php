@@ -93,20 +93,20 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br>　入力した数字を足していって<br />　１００を超えたら終了する<br>　プログラムを作ろう。</font></p>
+		<p class = "question"><font size = "4">問題<br>　while文を使って値を入力し続け、<br />入力していった値の合計が１００を超えたらwhile文を抜け、「100を超えました。」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_2_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int a, ans = 0;
-   while(  ){
-      printf("数字を入力：");
-      scanf("%d",&a);
-      ans += a;
-   }
-   printf("100を超えました。%dです。", ans);
-   return 0;
+	int a, ans = 0;
+	
+		printf("数字を入力：");
+		scanf("%d",&a);
+		ans += a;
+	
+	printf("100を超えました。%dです。", ans);
+	return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>
@@ -164,7 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第二節　while　>　問題２">
   		<p><br />
-    	<b>入力した数字を足していって１００を超えたら終了するプログラムを作ろう。
+    	<b>while文を使って値を入力し続け、<br />入力していった値の合計が１００を超えたらwhile文を抜け、「100を超えました。」と出力しよう。
 		</b><br />
  		</p>
 	</div>

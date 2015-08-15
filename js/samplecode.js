@@ -1,80 +1,68 @@
-var sample211 = 'ANIME_sengen("int","x");ANIME_sengen("double","y")'
-var sample2111 = 'ANIME_sengen("char","z");'
-var sample2112 = 'ANIME_sengen("int","x");ANIME_sengen("int","y")'
-var sample212 = 'ANIME_sengen("int","x");ANIME_dainyu("x","10")'
-var sample2121 = 'ANIME_sengen("double","y");ANIME_dainyu("y","3.200000")'
-var sample2122 = 'ANIME_sengen("char","a");ANIME_dainyu("a","s")'
-var sample213 = 'ANIME_sengen_dainyu("double","a","5.500000");'
-var sample2131 = 'ANIME_sengen_dainyu("char","x","y")'
-var sample2132 = 'ANIME_sengen_dainyu("int","x","3");ANIME_sengen_dainyu("int","y","7")'
-var sample221 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5")'
-var sample2211 = 'ANIME_sengen("double","x");ANIME_scanf();setPrintf("2.3");ANIME_dainyu("x","2.300000")'
-var sample2212 = 'ANIME_sengen("char","x");ANIME_scanf();setPrintf("k");ANIME_dainyu("x","k")'
-var sample222 = 'ANIME_sengen("int","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("15 5.5");ANIME_dainyu("x","15");ANIME_dainyu("y","5.500000")'
-var sample2221 = 'ANIME_sengen("char","x");ANIME_scanf();setPrintf("k");ANIME_dainyu("x","k")'
-var sample2222 = 'ANIME_sengen("char","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("n 3.6");ANIME_dainyu("x","n");ANIME_dainyu("y","3.600000")'
-var sample231 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","+","3"],"8")';
-var sample2311 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("3");ANIME_dainyu("x","3");ANIME_enzan_dainyu("x",["x","*","x"],"9")'
-var sample2312 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("4");ANIME_dainyu("x","4");ANIME_enzan_dainyu("x","x*3/2","6")'
-var sample232 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_scanf();setPrintf("5 3");ANIME_dainyu("x","5");ANIME_dainyu("y","3");ANIME_sengen("int","z");ANIME_enzan_dainyu("z",["x","+","y"],"8")'
-var sample2321 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_scanf();setPrintf("10");ANIME_dainyu("x","10");ANIME_enzan_dainyu("y","x%3","1")'
-var sample2322 = 'ANIME_sengen("int","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("10");ANIME_dainyu("x","10");ANIME_enzan_dainyu("y","x-3.5","6.500000")'
-var sample241 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_printf(["%d"],["x"]);setPrintf("5");'
-var sample2411 = 'ANIME_sengen("double","x");ANIME_scanf();setPrintf("2.1");ANIME_dainyu("x","2.100000");ANIME_printf(["%f"],["x"]);setPrintf("2.100000")'
-var sample2412 = 'ANIME_sengen("char","x");ANIME_scanf();setPrintf("a");ANIME_dainyu("x","a");ANIME_printf(["%c"],["x"]);setPrintf("a")'
-var sample242 = 'ANIME_sengen("double","x");ANIME_sengen("char","y");ANIME_dainyu("x","3.500000");ANIME_dainyu("y","a");ANIME_printf(["%f"," ","%c"],["x","y"]);setPrintf("3.500000 a")';
-var sample2421 = 'ANIME_sengen("char","x");ANIME_sengen("char","y");ANIME_sengen("char","z");ANIME_dainyu("x","k");ANIME_dainyu("y","n");ANIME_dainyu("z","g");ANIME_printf(["%c","","%c","","%c"],["x","y","z"]);setPrintf("kng")'
-var sample2422 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_dainyu("x","1");ANIME_dainyu("y","3");ANIME_printf(["%d","/n","%d"],["x","y"]);setPrintf("1/n3")'
-var sampleMatome2 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","*","3"],"15");ANIME_printf(["%d"],["x"]);setPrintf("15")';
-var sample311 = 'ANIME_sengen_dainyu("int","x","32");ANIME_printf("xは20より大きいです");setPrintf("xは20より大きいです")';
-var sample3111 = 'ANIME_sengen_dainyu("int","x","3");ANIME_printf("xは15より小さいです。");setPrintf("xは15より小さいです。")'
-var sample3112 = 'ANIME_sengen_dainyu("int","x","30");ANIME_printf("xは30以上です。");;setPrintf("xは30以上です。")'
-var sample312 = 'ANIME_sengen_dainyu("int","x","12");ANIME_sengen_dainyu("int","y","20");ANIME_printf("xはyより小さいです");setPrintf("xはyより小さいです")'
-var sample3121 = 'ANIME_sengen_dainyu("int","x","93");ANIME_sengen_dainyu("int","y","56");ANIME_printf("xはyより大きいです。");setPrintf("xはyより大きいです。")'
-var sample313 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_printf("xは0ではないです");setPrintf("xは0ではないです")';
-var sample3131 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("0");ANIME_dainyu("x","0");ANIME_printf("xは0と等しいです。");setPrintf("xは0と等しいです。")'
-var sample3132 = 'ANIME_sengen_dainyu("int","x","3");ANIME_sengen_dainyu("int","y","9");ANIME_printf("xとyは異なります");setPrintf("xとyは異なります")'
-var sample314 = 'ANIME_sengen("double","height");ANIME_sengen("double","weight");ANIME_sengen("double","bmi");ANIME_printf("あなたの身長(m)を入力してください。");setPrintf("あなたの身長(m)を入力してください。");ANIME_scanf();setPrintf("1.7");ANIME_dainyu("height","1.700000");ANIME_printf("あなたの体重(kg)を入力してください。");setPrintf("あなたの体重(kg)を入力してください。");ANIME_scanf();setPrintf("65");ANIME_dainyu("weight","65.000000");ANIME_enzan_dainyu("bmi",["weight","/","(","height","*","height",")"],"22.491349");ANIME_printf("あなたは適正です。");setPrintf("あなたは適正です。")';
-var sample3141 ='ANIME_sengen_dainyu("int","x","150");ANIME_sengen_dainyu("int","y","165");ANIME_printf(["xは","%d","cm・yは","%d","cmです。"],["x","y"]);setPrintf("xは150cm・yは165cmです。")'
-var sample3142 ='ANIME_sengen_dainyu("int","x","100");ANIME_sengen_dainyu("int","y","100");ANIME_printf("xかyに100点はいます。");setPrintf("xかyに100点はいます。")'
-var sample321 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_printf("未成年");setPrintf("未成年")'
-var sample3211 ='ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_printf("xの年齢を入力してください。");setPrintf("xの年齢を入力してください。");ANIME_scanf();setPrintf("20");ANIME_dainyu("x","20");ANIME_printf("yの年齢を入力してください。");setPrintf("yの年齢を入力してください。");ANIME_scanf();setPrintf("18");ANIME_dainyu("y","18");ANIME_printf("少なくとも片方は未成年です。");setPrintf("少なくとも片方は未成年です。")'
-var sample3212 ='ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_printf("xの年齢を入力してください。");setPrintf("xの年齢を入力してください。");ANIME_scanf();setPrintf("12");ANIME_dainyu("x","12");ANIME_printf("yの年齢を入力してください。");setPrintf("yの年齢を入力してください。");ANIME_scanf();setPrintf("17");ANIME_dainyu("y","17");ANIME_printf("xもyも未成年です。");setPrintf("xもyも未成年です。")'
-var sample331 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_printf("不可");setPrintf("不可")';
-var sample3311 = 'ANIME_sengen("int","score");ANIME_scanf();setPrintf("75");ANIME_dainyu("score","75");ANIME_printf("合格");setPrintf("合格")'
-var sample3312 = 'ANIME_sengen("double","size");ANIME_scanf();setPrintf("25");ANIME_dainyu("size","25.000000");ANIME_printf("Mサイズです。");setPrintf("Mサイズです。")'
-var sampleMatome3 = 'ANIME_sengen("double","height");ANIME_sengen("double","weight");ANIME_sengen("double","bmi");ANIME_printf("あなたの身長(m)を入力してください。");setPrintf("あなたの身長(m)を入力してください。");ANIME_scanf();setPrintf("1.7");ANIME_dainyu("height","1.700000");ANIME_printf("あなたの体重(kg)を入力してください。");setPrintf("あなたの体重(kg)を入力してください。");ANIME_scanf();setPrintf("65");ANIME_dainyu("weight","65.000000");ANIME_enzan_dainyu("bmi",["weight","/","(","height","*","height",")"],"22.491349");ANIME_printf("あなたは適正です。");setPrintf("適正")'
-var sample411 = 'ANIME_sengen("int","a");ANIME_dainyu("a","1");ANIME_printf("わんわん\n");setPrintf("わんわん/n");ANIME_enzan_dainyu("a","a+1","2");ANIME_compare(["a <= 3"],["true"],true);ANIME_printf("わんわん\n");setPrintf("わんわん/n");ANIME_enzan_dainyu("a","a+1","3");ANIME_compare(["a <= 3"],["true"],true);ANIME_printf("わんわん\n");setPrintf("わんわん/n");ANIME_enzan_dainyu("a","a+1","4");ANIME_compare(["a <= 3"],["false"],false)'
-var sample4111 = 'ANIME_sengen_dainyu("int","x","3");ANIME_printf("xは15より小さいです。");setPrintf("xは15より小さいです。")'
-var sample4112 = 'ANIME_sengen_dainyu("int","x","30");ANIME_printf("xは30以上です。");;setPrintf("xは30以上です。")'
+//２章---------------------------------------------------
 
-var Exsample111 ='line(1);line(2);line(3);ANIME_printf("Hello World!");setPrintf("Hello World!");line(4);line(5)';
-var Exsample211 ='line(1);line(2);line(3);ANIME_sengen("int","x");line(4);ANIME_sengen("double","y");line(5);ANIME_sengen("char","z");line(6);ANIME_sengen("int","kengo");line(7);line(8)'
-var Exsample221 ='line(1);line(2);line(3);ANIME_sengen("int","x");line(4);ANIME_scanf_ex();setPrintf(100);ANIME_dainyu("x","100");line(5);line(6)';
-var Exsample231 ='line(1);line(2);line(3);ANIME_sengen_dainyu("int","x","5");line(4);ANIME_enzan_dainyu("x",["x","*","3"],"15");line(5);line(6)';
-var Exsample241 ='line(1);line(2);line(3);ANIME_sengen("int","x");line(4);ANIME_dainyu("x","3");line(5);ANIME_printf(["xは","%d","です"],["x"]);setPrintf("xは3です");line(6);line(7)';
-var Exsample311 ='line(1);line(2);line(3);ANIME_sengen_dainyu("int","x","3");line(4);line(5);ANIME_printf("xは5より小さいです");setPrintf("xは5より小さいです");line(6);line(7);line(8)';
-var Exsample312 ='line(1);line(2);line(3);ANIME_sengen("int","x");line(4);ANIME_scanf_ex();setPrintf(5);ANIME_dainyu("x","5");line(5);line(6);ANIME_printf("xは０か５です");setPrintf("xは０か５です");line(7);line(8);line(9);line(10);line(11);line(12)';
+var sample211 = 'ANIME_sengen("int","x");ANIME_sengen("double","y")'
+var sample212 = 'ANIME_sengen("int","x");ANIME_dainyu("x","10")'
+var sample213 = 'ANIME_sengen_dainyu("double","a","5.500000");'
+var sample221 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5")'
+var sample222 = 'ANIME_sengen("int","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("15 5.5");ANIME_dainyu("x","15");ANIME_dainyu("y","5.500000")'
+var sample231 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","+","3"],"8")';
+var sample232 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_scanf();setPrintf("5 3");ANIME_dainyu("x","5");ANIME_dainyu("y","3");ANIME_sengen("int","z");ANIME_enzan_dainyu("z",["x","+","y"],"8")'
+var sample241 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_printf(["%d"],["x"]);setPrintf("5");'
+var sample242 = 'ANIME_sengen("double","x");ANIME_sengen("char","y");ANIME_dainyu("x","3.500000");ANIME_dainyu("y","a");ANIME_printf(["%f"," ","%c"],["x","y"]);setPrintf("3.500000 a")';
+var sampleMatome2 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","*","3"],"15");ANIME_printf(["%d"],["x"]);setPrintf("15")';
+
+//３章---------------------------------------------------
+
+var sample311 = 'ANIME_sengen_dainyu("int","x","32");ANIME_compare(["x > 20"],["true"],true);ANIME_printf("xは20より大きいです");setPrintf("xは20より大きいです")';
+var sample312 = 'ANIME_sengen_dainyu("int","x","12");ANIME_sengen_dainyu("int","y","20");ANIME_compare(["x < y"],["true"],true);ANIME_printf("xはyより小さいです");setPrintf("xはyより小さいです")'
+var sample313 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_compare(["x != 0"],["true"],true);ANIME_printf("xは0ではないです");setPrintf("xは0ではないです")';
+var sample314 = 'ANIME_sengen("double","height");ANIME_sengen("double","weight");ANIME_sengen("double","bmi");ANIME_printf("あなたの身長(m)を入力してください。");setPrintf("あなたの身長(m)を入力してください。");ANIME_scanf();setPrintf("1.7");ANIME_dainyu("height","1.700000");ANIME_printf("あなたの体重(kg)を入力してください。");setPrintf("あなたの体重(kg)を入力してください。");ANIME_scanf();setPrintf("65");ANIME_dainyu("weight","65.000000");ANIME_enzan_dainyu("bmi",["weight","/","(","height","*","height",")"],"22.491349");ANIME_compare(["bmi >= 18.5 ","&&","bmi <= 25"],["true","true"],true);ANIME_printf("あなたは適正です。");setPrintf("あなたは適正です。")';
+var sample321 ='ANIME_sengen("int","x");ANIME_printf("あなたの年齢を入力してください。");setPrintf("あなたの年齢を入力してください。");ANIME_scanf();setPrintf("15");ANIME_dainyu("x","15");ANIME_compare(["x >= 20"],["false"],false)ANIME_printf("あなたは未成年です。");setPrintf("あなたは未成年です。")'
+var sample331 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_compare(["score >= 90"],["false"],false);ANIME_compare(["score < 90 ","&&","score >= 60"],["true","false"],false);ANIME_compare(["score < 60 ","&&","score >= 40"],["true","false"],false);ANIME_printf("不可");setPrintf("不可")';
+var sampleMatome3 = 'ANIME_sengen("double","height");ANIME_sengen("double","weight");ANIME_sengen("double","bmi");ANIME_printf("あなたの身長(m)を入力してください。");setPrintf("あなたの身長(m)を入力してください。");ANIME_scanf();setPrintf("1.7");ANIME_dainyu("height","1.700000");ANIME_printf("あなたの体重(kg)を入力してください。");setPrintf("あなたの体重(kg)を入力してください。");ANIME_scanf();setPrintf("65");ANIME_dainyu("weight","65.000000");ANIME_enzan_dainyu("bmi",["weight","/","(","height","*","height",")"],"22.491349");ANIME_compare(["bmi >= 18.5 ","&&","bmi <= 25"],["true","true"],true);ANIME_printf("あなたは適正です。");setPrintf("適正")'
+
+//４章---------------------------------------------------
+
+var sample411 = 'ANIME_sengen("int","a");ANIME_dainyu("a","1");ANIME_printf("わんわん\n");setPrintf("わんわん/n");ANIME_enzan_dainyu("a","a+1","2");ANIME_compare(["a <= 3"],["true"],true);ANIME_printf("わんわん\n");setPrintf("わんわん/n");ANIME_enzan_dainyu("a","a+1","3");ANIME_compare(["a <= 3"],["true"],true);ANIME_printf("わんわん\n");setPrintf("わんわん/n");ANIME_enzan_dainyu("a","a+1","4");ANIME_compare(["a <= 3"],["false"],false)'
+
+
 
 //４章５章サンプル実行　中谷がやる
 
-//ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー実はこれより上は使ってませんーーーーーーーーーーーーーーーーーーーーーーーーーーー
+/*追加問題
+var sample2111 = 'ANIME_sengen("char","z");'
+var sample2112 = 'ANIME_sengen("int","x");ANIME_sengen("int","y")'
+var sample2121 = 'ANIME_sengen("double","y");ANIME_dainyu("y","3.200000")'
+var sample2122 = 'ANIME_sengen("char","a");ANIME_dainyu("a","s")'
+var sample2131 = 'ANIME_sengen_dainyu("char","x","y")'
+var sample2132 = 'ANIME_sengen_dainyu("int","x","3");ANIME_sengen_dainyu("int","y","7")'
+var sample2211 = 'ANIME_sengen("double","x");ANIME_scanf();setPrintf("2.3");ANIME_dainyu("x","2.300000")'
+var sample2212 = 'ANIME_sengen("char","x");ANIME_scanf();setPrintf("k");ANIME_dainyu("x","k")'
+var sample2221 = 'ANIME_sengen("char","x");ANIME_scanf();setPrintf("k");ANIME_dainyu("x","k")'
+var sample2222 = 'ANIME_sengen("char","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("n 3.6");ANIME_dainyu("x","n");ANIME_dainyu("y","3.600000")'
+var sample2311 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("3");ANIME_dainyu("x","3");ANIME_enzan_dainyu("x",["x","*","x"],"9")'
+var sample2312 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("4");ANIME_dainyu("x","4");ANIME_enzan_dainyu("x","x*3/2","6")'
+var sample2321 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_scanf();setPrintf("10");ANIME_dainyu("x","10");ANIME_enzan_dainyu("y","x%3","1")'
+var sample2322 = 'ANIME_sengen("int","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("10");ANIME_dainyu("x","10");ANIME_enzan_dainyu("y","x-3.5","6.500000")'
+var sample2411 = 'ANIME_sengen("double","x");ANIME_scanf();setPrintf("2.1");ANIME_dainyu("x","2.100000");ANIME_printf(["%f"],["x"]);setPrintf("2.100000")'
+var sample2412 = 'ANIME_sengen("char","x");ANIME_scanf();setPrintf("a");ANIME_dainyu("x","a");ANIME_printf(["%c"],["x"]);setPrintf("a")'
+var sample2421 = 'ANIME_sengen("char","x");ANIME_sengen("char","y");ANIME_sengen("char","z");ANIME_dainyu("x","k");ANIME_dainyu("y","n");ANIME_dainyu("z","g");ANIME_printf(["%c","","%c","","%c"],["x","y","z"]);setPrintf("kng")'
+var sample2422 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_dainyu("x","1");ANIME_dainyu("y","3");ANIME_printf(["%d","/n","%d"],["x","y"]);setPrintf("1/n3")'
+var sample3111 = 'ANIME_sengen_dainyu("int","x","3");ANIME_printf("xは15より小さいです。");setPrintf("xは15より小さいです。")'
+var sample3112 = 'ANIME_sengen_dainyu("int","x","30");ANIME_printf("xは30以上です。");;setPrintf("xは30以上です。")'
+var sample3121 = 'ANIME_sengen_dainyu("int","x","93");ANIME_sengen_dainyu("int","y","56");ANIME_printf("xはyより大きいです。");setPrintf("xはyより大きいです。")'
+var sample3131 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("0");ANIME_dainyu("x","0");ANIME_printf("xは0と等しいです。");setPrintf("xは0と等しいです。")'
+var sample3132 = 'ANIME_sengen_dainyu("int","x","3");ANIME_sengen_dainyu("int","y","9");ANIME_printf("xとyは異なります");setPrintf("xとyは異なります")'
+var sample3141 ='ANIME_sengen_dainyu("int","x","150");ANIME_sengen_dainyu("int","y","165");ANIME_printf(["xは","%d","cm・yは","%d","cmです。"],["x","y"]);setPrintf("xは150cm・yは165cmです。")'
+var sample3142 ='ANIME_sengen_dainyu("int","x","100");ANIME_sengen_dainyu("int","y","100");ANIME_printf("xかyに100点はいます。");setPrintf("xかyに100点はいます。")'
+var sample3211 ='ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_printf("xの年齢を入力してください。");setPrintf("xの年齢を入力してください。");ANIME_scanf();setPrintf("20");ANIME_dainyu("x","20");ANIME_printf("yの年齢を入力してください。");setPrintf("yの年齢を入力してください。");ANIME_scanf();setPrintf("18");ANIME_dainyu("y","18");ANIME_printf("少なくとも片方は未成年です。");setPrintf("少なくとも片方は未成年です。")'
+var sample3212 ='ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_printf("xの年齢を入力してください。");setPrintf("xの年齢を入力してください。");ANIME_scanf();setPrintf("12");ANIME_dainyu("x","12");ANIME_printf("yの年齢を入力してください。");setPrintf("yの年齢を入力してください。");ANIME_scanf();setPrintf("17");ANIME_dainyu("y","17");ANIME_printf("xもyも未成年です。");setPrintf("xもyも未成年です。")'
+var sample3311 = 'ANIME_sengen("int","score");ANIME_scanf();setPrintf("75");ANIME_dainyu("score","75");ANIME_printf("合格");setPrintf("合格")'
+var sample3312 = 'ANIME_sengen("double","size");ANIME_scanf();setPrintf("25");ANIME_dainyu("size","25.000000");ANIME_printf("Mサイズです。");setPrintf("Mサイズです。")'
+var sample4111 = 'ANIME_sengen_dainyu("int","x","3");ANIME_printf("xは15より小さいです。");setPrintf("xは15より小さいです。")'
+var sample4112 = 'ANIME_sengen_dainyu("int","x","30");ANIME_printf("xは30以上です。");;setPrintf("xは30以上です。")'
+*/
 
-/*
-var ex_111 = new Array();
-ex_111.push("setIntr(\"<b>これがプログラムじゃ。じゃあさっそく、動かしてみるぞい</b>\");;baON()");
-
-ex_111.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"r\");;line(4);;ANIME_sengen(\"double\",\"S\");;line(5);;ANIME_scanf_ex();;setPrintf(\"31\\n\");;ANIME_dainyu(\"r\",31);;line(6);;ANIME_enzan_dainyu(\"S\", [\"r\" , \"*\", \"r\", \"*\", \"3.14\"],\"3017.540000\");;line(7);;ANIME_printf([\"面積は\", \"%d\", \"平方cmです\"] , [\"S\"]);;setPrintf(\"面積は3017.540000平方cmです\\n\");;biON();;setIntr(\"<b>どうじゃ？ちゃんと面積が求まったじゃろう。</b>\")");
-
-ex_111.push("setIntr(\"<b>他の数字を入れてもちゃんと求められるぞい。<br />もし自分で好きな数字を入れてみたかったら、もういちど実行してみるんじゃ</b>\");;bRestart();;return_js()");
-//ここで「もう一度説明を聞く」「プログラムを実行してみる」の２つのボタンを出現させる？←ただのメモ書き・提案なので無視して下さい
-var　ex_111 = new Array();
-ex_111.push("setIntr(\"これがプログラムじゃ。じゃあさっそく、動かしてみるぞい\")");
-ex_111.push("line(3);ANIME_sengen(\"int\",\"r\");line(4);ANIME_sengen(\"int\",\"S\");ANIME_sengen(\"int\",\"L\")");
-ex_111.push("line(5);ANIME_scanf_ex();setIntr(\"ここでわしが、右の白い四角に、キーボードから半角で31と入れてみるぞい。\");setPrintf(\"31\\n\")");
-ex_111.push("ANIME_dainyu(\"r\",31);;line(6);;ANIME_enzan_dainyu(\"S\", [\"r\" , \"*\", \"r\", \"*\", \"3.14\"],3017.540000);line(7);ANIME_printf([\"面積は\", \"%d\", \"平方cmです\"] , [\"S\"]);setPrintf(\"面積は3017.540000平方cmです\\n\");line(8);ANIME_enzan_dainyu(\"L\",[\"r\" , \"*\", \"2\", \"*\", \"3.14\"],194.680000);line(9);ANIME_printf([\"円周は\", \"%d\", \"cmです\"] , [\"S\"]);setPrintf(\"円周は194.680000です\\n\")");
-ex_111.push("setIntr(\"どうじゃ？ちゃんと面積と周の長さが求まったじゃろう。\")");
-ex_111.push("setIntr(\"他の数字を入れてもちゃんと求められるぞい。もし自分で好きな数字を入れてみたかったら、もういちど実行してみるんじゃ\");return_js()");*/
 
 
 //---------------------------------------------

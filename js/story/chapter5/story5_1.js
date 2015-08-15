@@ -36,7 +36,7 @@ var frame2 = {
 	animation : function(){
 		console.log("frame2実行");
 		frontChara.hide();
-		takeCardOut("配列から、\n入力した番地の要素を出力できる\nプログラムを作れ。\nそして「0、5、8、6」を\n入力しろ。");
+		takeCardOut("配列を宣言し、\nその配列から入力した値の要素\nを出力するプログラムを作れ。\nそして「1、9」を入力しろ。");
 	}
 }
 

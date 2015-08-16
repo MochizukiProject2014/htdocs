@@ -345,7 +345,10 @@ function resetq3_1_1(){
 	myRet = confirm("はじめからやり直しますか？");
     if ( myRet == true ){
 		cEditor.value = 
-			"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + "   int x = 32;" + "\n" + "\n" + "\n" + 
+			"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + 
+			"   int x = 32;" + "\n" + 
+			"\n" + 
+			"      printf(\"xは20より大きいです。\");" + "\n" + 
 		 "\n" + "   return 0;" + "\n" + "}";
 		cEditor.setValue(cEditor.value)
 		cEditor.save();
@@ -461,9 +464,13 @@ function resetq3_1_4(){
 	myRet = confirm("はじめからやり直しますか？");
     	if ( myRet == true ){
 		cEditor.value = 
-		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + "   double height,weight,bmi;" + "\n" +
-			"   printf(\"あなたの身長(m)を入力してください。\");" + "\n" + "   scanf(\"%lf\",&height);" + "\n" +
-			"   printf(\"あなたの体重(kg)を入力してください。\");" + "\n" +  "   scanf(\"%lf\",&weight);" + "\n" + "\n" +
+		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + 
+		"   double height,weight,bmi;" + "\n" +
+		"   printf(\"あなたの身長(m)を入力してください。\");" + "\n" + 
+		"   scanf(\"%lf\",&height);" + "\n" +
+		"   printf(\"あなたの体重(kg)を入力してください。\");" + "\n" +  
+		"   scanf(\"%lf\",&weight);" + "\n" + 
+		"\n" +
 			"\n" + "\n" + "\n" + "   return 0;" + "\n" + "}";
 		cEditor.setValue(cEditor.value)
 		cEditor.save();
@@ -499,8 +506,10 @@ function resetq3_2_1(){
 	myRet = confirm("はじめからやり直しますか？");
     if ( myRet == true ){
 		cEditor.value = 
-			"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + 
-			"   int x;" + "\n" + "   printf(\"あなたの年齢を入力してください。\");" + "\n" +
+			"#include <stdio.h>" + "\n" + 
+			"int main(void){" + "\n" + 
+			"   int x;" + "\n" + 
+			"   printf(\"あなたの年齢を入力してください。\");" + "\n" +
 			"   scanf(\"%d\",&x);" + "\n" +
 		 	"\n" + "\n" + "\n" + "\n" + "\n" 
 		 	+ "   return 0;" + "\n" + "}";
@@ -555,8 +564,15 @@ function resetq3_3_1(){
 			"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + 
 			"   int score;" + "\n" +
 			"   scanf(\"%d\",&score);" + "\n" +
-		 	"\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" 
-			+ "   return 0;" + "\n" + "}";
+		 	"\n" + 
+		 	"      printf(\"良\");" + "\n" + 
+		 	"\n" + 
+		 	"      printf(\"可\");" + "\n" + 
+		 	"\n" + 
+		 	"      printf(\"再試験\");" + "\n" + 
+		 	"\n" + 
+		 	"      printf(\"不可\");" + "\n" + 
+		 	"\n" + "   return 0;" + "\n" + "}";
 		cEditor.setValue(cEditor.value)
 		cEditor.save();
 	}else{
@@ -609,10 +625,10 @@ function resetq4_1_1(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int a;" + "\n" + 
-		"   for(  ){" + "\n" + 
+		"   int i;" + "\n" + 
+		"\n" + 
 		"      printf(\"わんわん\");" + "\n" + 
-		"   }" + "\n" + 
+		"\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -653,10 +669,11 @@ function resetq4_1_2(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int b;" + "\n" + 
-		"   for(  ){" + "\n" + 
+		"   int a,i;" + "\n" + 
+		"scanf(\"%d\",&a);" + "\n" + 
+		"\n" +
 		"      printf(\"にゃんにゃん\");" + "\n" + 
-		"   }" + "\n" + 
+		"\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -697,14 +714,15 @@ function resetq4_2_1(){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int a;" + "\n" + 
-		"   while(  ){" + "\n" + 
+		"\n" + 
 		"      printf(\"数字を入力：\");" + "\n" + 
         "      scanf(\"%d\",&a);" + "\n" + 
-        "      if(  ){" + "\n" + 
-        "         printf(\"終了\");" + "\n" +  "\n" + 
-		"      }" + "\n" +
+        "\n" + 
+        "         printf(\"終了\");" + "\n" + 
+        "\n" + 
+		"\n" +
 		"      printf(\"もう1回\");" + "\n" + 
-		"   }" + "\n" + 
+		"\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -748,11 +766,11 @@ function resetq4_2_2(){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int a, ans = 0;" + "\n" + 
-		"   while(  ){" + "\n" + 
+		"\n" + 
 		"      printf(\"数字を入力：\");" + "\n" + 
         "      scanf(\"%d\",&a);" + "\n" + 
         "      ans += a;" + "\n" + 
-		"   }" + "\n" + 
+		"\n" + 
 		"   printf(\"100を超えました。%dです。\", ans);" + "\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
@@ -793,13 +811,13 @@ function resetq4_3_1(){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int x,i,k;" + "\n" + 
-		"   for(  ){" + "\n" + 
-		"      for(  ){" + "\n" + 
-		"         x = i * k;" + "\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
 		"         printf(\"%d\",x);" + "\n" +
-		"      }" + "\n" + 
+		"\n" + 
 		"      printf(\"\\n\");" + "\n" + 
-		"   }" + "\n" + 
+		"\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -838,7 +856,19 @@ function reset_matome4_1(){
 	myRet = confirm("はじめからやり直しますか？");
     if ( myRet == true ){
 	cEditor.value = 
-		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + "\n"  + "\n" + "\n" + "\n"  + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n"+ "\n" + "\n" + "\n" + "\n" + "\n"+ "   return 0;" + "\n" + "}";
+		"#include <stdio.h>" + "\n" + "int main(void){" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + 
+		"\n" + "   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
 	}else{
@@ -863,9 +893,10 @@ function resetq5_1_1(){
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int a[5] = {1,2,3,4,5};" + "\n" + 
 		"   int i,sum=0;" + "\n" + 
-		"   for(  ){" + "\n" + 
+		"\n" + 
 		"      sum += a[i];" + "\n" + 
-		"   }" + "\n" + 
+		"\n" + 
+		"   printf(\"%d\",sum);" + "\n" +
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -953,10 +984,7 @@ function resetq5_2_1(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int x,y;" + "\n" + 
-		"      = {{1,2,3},{4,5,6},{7,8,9}};" + "\n" + 
-		"   scanf(\"%d %d\",&x,&y);" + "\n" + 
-		"   printf(\"%d\",data[x][y]);" + "\n" + 
+		"\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -995,8 +1023,9 @@ function resetq5_2_2(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int data[4][3] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};" + "\n" +  
-		"   " + "\n" + 
+		"   int x,y;"
+		"   int data[3][3] = {{1,2,3},{4,5,6},{7,8,9}};" + "\n" +  
+		"\n" + "\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
@@ -1037,9 +1066,9 @@ function reset_matome5(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" +"int main(void){" + "\n" +
-    	"       = {1,4,7,8,3,0,2,5,9,6};" + "\n" +
+    	"       = {1,0,7,8,3,4,6,5,9,2};" + "\n" +
     	"   int i,b;" + "\n" +
-    	"   for(i = 0; i < 4; i ++){" + "\n" +
+    	"   for(i = 0; i < 2; i ++){" + "\n" +
      	"      printf(\"数字を入力してください：\");" + "\n" + "\n" + "\n" + 
      	"   }" + "\n" + "   return 0;"+ "\n" + "}" ;
 	cEditor.setValue(cEditor.value)

@@ -103,17 +103,17 @@ function hintq2_2_1b_1(){
 }
 
 function hintq2_2_2a_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは文字列を入力することのできるデータ型で変数xを宣言するにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは文字列を入力することのできるデータ型で変数xを宣言するにゃ。<b/></p>";
 }
 function hintq2_2_2a_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />キーボードから入力するために使うものは覚えてるかにゃ？忘れてしまったら辞書も参考にするにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />キーボードから入力するために使うものは覚えてるかにゃ？忘れてしまったら辞書も参考にするにゃ。<b/></p>";
 }
 
 function hintq2_2_2b_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「n」を代入できるデータ型、「3.6」を代入できるデータ型をそれぞれ考えて、適切な型で変数を宣言するにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「n」を代入できるデータ型、「3.6」を代入できるデータ型をそれぞれ考えて、適切な型で変数を宣言するにゃ。<b/></p>";
 }
 function hintq2_2_2b_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />一つのscanf文で2個の値を入力することもできるにゃ、辞書などを参考に考えてみるにゃ<b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />一つのscanf文で2個の値を入力することもできるにゃ、辞書などを参考に考えてみるにゃ。<b/></p>";
 }
 
 function hintq2_3_1a_1(){
@@ -125,11 +125,11 @@ function hintq2_3_1b_1(){
 }
 
 function hintq2_3_2a_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br /><br />まずは必要になる変数を宣言するにゃ。<br />どんな型で、なんという名前の変数が必要か考えるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br /><br />まずは必要になる変数を宣言するにゃ。<br />どんな型で、なんという名前の変数が必要か考えるにゃ。</b></p>";
 }
 
 function hintq2_3_2a_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />C言語には割った余りを出すことのできる<font color = red>「%」</font>という演算子があるにゃ<br/>たとえば「5%3」と計算したら「2」が答えとして計算されるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />C言語には割った余りを出すことのできる<font color = red>「%」</font>という演算子があるにゃ<br/>たとえば「5%3」と計算したら「2」が答えとして計算されるにゃ。</b></p>";
 }
 
 function hintq2_3_2b(){
@@ -137,19 +137,19 @@ function hintq2_3_2b(){
 }
 
 function hintq2_4_1a(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />scanfとprintfではdouble型の変換指定文字列が異なるから注意にゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />scanfとprintfではdouble型の変換指定文字列が異なるから注意にゃ。</b></p>";
 }
 
 function hintq2_4_1b(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />char型でxを宣言し、scanfとprintfの変換指定文字列をchar型に合わせた書き方をするにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />char型でxを宣言し、scanfとprintfの変換指定文字列をchar型に合わせた書き方をするにゃ。</b></p>";
 }
 
 function hintq2_4_2a_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />一つのprintfで同時にいくつもの変数を出力をすることができるにゃ<br/>必要なだけ変換指定文字列を書いて、その後に出力したい順番に変数を書けばいいにゃ<br/>辞書も参考にするにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />一つのprintfで同時にいくつもの変数を出力をすることができるにゃ<br/>必要なだけ変換指定文字列を書いて、その後に出力したい順番に変数を書けばいいにゃ。<br/>辞書も参考にするにゃ。</b></p>";
 }
 
 function hintq2_4_2b_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />改行の仕方はprintfで<font color = red>「\\n」</font>を出力すればできるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />改行の仕方はprintfで<font color = red>「\\n」</font>を出力すればできるにゃ。</b></p>";
 }
 /*第３章*/
 
@@ -160,43 +160,46 @@ function hintq3_1_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />例えば、xが10より大きい条件式は、「<font color = red>x>10</font>」と表すにゃ。</b></p>";
 }
 
-function hintq3_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />xがyより小さいという式は、<font color = red>x < y</font>と表すにゃ。<br/>「<font color = red>もし〜なら</font>」という文を作るには、<font color = red>if文</font>を使うにゃ。</b></p>";
+function hintq3_1_2_1(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />xがyより小さいという式は、<font color = red>x < y</font>と表すにゃ。<br/>「<font color = red>もし〜なら</font>」という文を作るには、<font color = red>if文</font>を使うにゃ。</b></p>";
+}
+function hintq3_1_2_2(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />出力する文章が問題文とぴったり同じかちゃんと確認するにゃ。<br/>一字一句一致していないとだめにゃ！</b></p>";
 }
 
 function hintq3_1_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />if文を使って「<font color = red>xが0以外なら</font>」という式を書くにゃ。</br>「<font color = red>以外</font>」は、「<font color = red>!=</font>」を使うにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />if文を使って「<font color = red>xが0以外なら</font>」という式を書くにゃ。</br>「<font color = red>以外</font>」は、「<font color = red>!=</font>」を使うにゃ。</b></p>";
 }
 
 function hintq3_1_4_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />bmiの計算の仕方は<font color = red>体重/（身長×身長）</font>だにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />bmiとは「肥満度を表す指数」のことだにゃ。<br/>bmiの計算の仕方は<font color = red>体重/（身長×身長）</font>だにゃ。</b></p>";
 }
 function hintq3_1_4_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiの適正な値は<font color = red>18.5以上25.0未満</font>だにゃ</b><br><b>以上と未満の不等号に注意にゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiの適正な値は<font color = red>18.5以上25.0未満</font>だにゃ</b><br><b>以上と未満の不等号に注意にゃ。</b></p>";
 }
 function hintq3_1_4_3(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />もし10以上20未満だったら、</br>10は<font color = red>含まれる</font>けど20は<font color = red>含まれない</font>にゃ。<br>不等号の違いをよく考えてみるのにゃ！</b></p>";
 }
 
 function hintq3_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br /><font color = red>20歳以上なら成人</font>だにゃ、<font color = red>それ以外は未成年</font>だにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />elseを使った条件の書き方を思い出すにゃ！<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 function hintq3_3_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />else ifは<font color = red>何回でも使うことができる</font>にゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />else ifは<font color = red>何回でも使うことができる</font>にゃ。</b></p>";
 }
 function hintq3_3_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br />「<font color = red>もし90点以上なら</font>」良で、<br />「<font color = red>それ以外で60点以上90点未満なら</font>」可、<br />「<font color = red>それ以外で40点以上60点未満なら</font>」再試験で、<br />「<font color = red>それ以外なら</font>」不可だにゃ！<br />ifやelse if、elseを使ってうまく表現するにゃ〜</b></p>";
 }
 
 function hintc3_matome1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />必要となる変数を宣言するにゃ！<br />身長・体重・bmiは<font color = red>小数点以下も入出力できるようにする</font>にゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは必要となる変数を宣言するにゃ！<br />身長・体重・bmiは<font color = red>小数点以下も</font>入出力できるようにするにゃ。</b></p>";
 }
 function hintc3_matome2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiが<font color = red>18.5以上25.0以下は適正、適正より上は太り気味、適正未満はやせ気味</font>だにゃ。</b></p>";
 }
 function hintc3_matome3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「<font color = red>適正体重なら</font>」適正で、「<font color = red>それ以外で25.0以上</font>」は太り気味で、「<font color = red>それ以外は</font>」やせ気味だにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「<font color = red>適正体重なら</font>」適正で、「<font color = red>適正体重以外で25.0より大きいなら</font>」太り気味で、「<font color = red>それ以外なら</font>」やせ気味だにゃ。<br/>「if」と、「else if」と、「else」を使うにゃ！</b></p>";
 }
 
 /*第３章追加問題*/
@@ -292,61 +295,56 @@ function hintq3_3_1b_2(){
 
 /*第４章*/
 function hintq4_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />繰り返し同じことをしたいなら<font color = red>for</font>を使うにゃ。</b></p>";
-}
-function hintq4_1_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />aが1〜３の間だけ繰り返すには<br />aに１ずつ足していけばいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />繰り返し同じことをしたいなら<font color = red>for</font>を使うにゃ。<br />書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 
 function hintq4_1_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />繰り返し同じことをしたいなら<font color = red>for</font>を使うにゃ。</b></p>";
-}
-function hintq4_1_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />bが1〜３の間だけ繰り返すには<br />bに１ずつ足していけばいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />aに入力した値の回数だけ出力するから、継続条件式にはaを使うにゃ。</b></p>";
 }
 
+
 function hintq4_2_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />偶数は2で割って余りが0になる数字にすればいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />偶数は2で割って余りが0になる数字にゃ。<br />余りを出すには「<font color = red>%</font>」を使うにゃ。</b></p>";
 }
 function hintq4_2_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />余りを出すには<font color = red>%</font>を使うにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />ループを抜け出すにはbreakを使うにゃ。</b></p>";
 }
 
 function hintq4_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />whileの()内に「ansが100になるまで」ループを続けるという条件式を書くにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />whileの継続条件式に「ansが100以下の間」ループを続けるという条件式を書くにゃ。</b></p>";
 }
 
-function hintq4_3_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />1の段の計算が終わったら改行して2の段を計算する、という構造にするにゃ</b></p>";
+function hintq4_3_1_1(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />1の段の計算が終わったら改行して2の段を計算する、という構造にするにゃ。<br />どういう出力になるか想像できない場合はサンプル実行を活用するにゃ。</b></p>";
+}
+function hintq4_3_1_2(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />宣言してある変数はそれぞれxは「出力する値を記録する変数」iが「外側のループを制御する変数」kが「内側のループを制御する変数」として使うにゃ。</b></p>";
+}
+function hintq4_3_1_3(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />九九の計算はi*kで行い、xにその計算結果を代入するにゃ。</b></p>";
 }
 
 
 function hintc4_matome_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />入力する変数と、合計を記録する変数と、<br />何回足したかを記録する変数の3つを宣言するにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />値を入力する変数と、合計を記録する変数を宣言するにゃ。</b></p>";
 }
 function hintc4_matome_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />0以外の場合、その値を合計を記録する変数に足し、<br />何回足したかを記録する変数に1を足すにゃ。<br />0が入力されたらbreakを実行させるにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />0以外を入力した場合、その値を、合計を記録する変数に足し、<br />0を入力した場合、breakを実行しwhile文を抜けるにゃ。</b></p>";
+}
+function hintc4_matome_3(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br /><br />最後に「合計は～です。」を出力するのを忘れないようにするにゃ！</b></p>";
 }
 
 
 function hintc4_matome2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/6<br><br />行数を指定するループの中に、*を出力するループを作るにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br /><font size = '2'>まずはint型で4つの変数を宣言するにゃ。<br />それぞれ、「＊を出力する数を指定する変数」「行数を指定する変数」「二重ループの外側のループを制御する変数」「二重ループの内側を制御する変数」だにゃ。<br />「＊を出力する数を指定する変数」は初期値1を代入するにゃ。</font></b></p>";
 }
 function hintc4_matome2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/6<br /><br />まずはint型で4つの変数を宣言するにゃ。<br />うち一つには初期値1を代入するにゃ。<br />初期値を代入した変数で＊の数を制御するにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />次はscanfで、「行数を指定する変数」に値を入力するにゃ。</b></p>";
 }
 function hintc4_matome2_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/6<br><br />次はscanfで何かに代入するにゃ。<br />これが行数になるにゃ！！</b></p>";
-}
-function hintc4_matome2_4(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  4/6<br /><br />二重ループを作るにゃ！<br />外側のループには何行目かを制御するループを作り、<br />その中に＊を出力するループを作るにゃ。</b></p>";
-}
-function hintc4_matome2_5(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  5/6<br><br />外側のループの条件にscanfで使った変数を<br />うまく組み合わせるにゃ。</b></p>";
-}
-function hintc4_matome2_6(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  6/6<br /><br />内側のループの条件に、最初に初期値1を代入した変数をうまく組み合わせるにゃ！<br />このループを抜けたら＊を１個増やせるように変数に代入して改行するにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />次は二重ループを作るにゃ！<br />外側のループには何行目かを制御するループを作り、その中に＊を出力するループを作るにゃ。</b></p>";
 }
 
 /*第４章追加問題*/
@@ -411,10 +409,10 @@ function hintq4_3_1b_2(){
 /*第５章*/
 
 function hintq5_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />配列の中身を1つずつ順番に足していくにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「sum += a[i]」が配列の中身を1つずつ順番に足していくコードにゃ。</b></p>";
 }
 function hintq5_1_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />配列の要素は5個あるにゃ！！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />配列の要素は5個あるからfor文を5回繰り返せばいいにゃ！</b></p>";
 }
 
 
@@ -422,31 +420,33 @@ function hintq5121(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />bの配列にaの配列を後ろから代入していくにゃ。</b></p>";
 }
 function hintq5122(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、aの配列を後ろから順番に呼び出せるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、aの配列を後ろから順番に呼び出せるにゃ。</b></p>";
 }
 
 
 function hintq5211(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が3つの二次元配列を宣言すればいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が2つの二次元配列を宣言すればいいにゃ。名前は自由につけていいにゃ。</b></p>";
 }
 function hintq5212(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、data[配列の数][要素数]でつくることができるにゃ</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、「配列名[配列の数][要素数]」で宣言することができるにゃ。<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 
-function hintq5_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br>二次元配列を呼び出すときは、配列の番地も要素の番地も最初は0番目にゃ</b></p>";
+function hintq5_2_2_1(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br>二次元配列の大きさを示す[3][3]は左が「要素数1」、右が「要素数2」だにゃ。<br/>辞書にも書いてあるから参考にするにゃ。</b></p>";
 }
-
+function hintq5_2_2_2(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br>二次元配列を扱うときは「配列名[数字][数字]」で呼び出せるにゃ。<br/>例えば今回「2」を呼び出したかったらdata[1][2]のように書けばいいにゃ。</b></p>";
+}
 
 function hintqc5_matome_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは配列を宣言するにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは大きさが10の配列aをあらかじめ書いてある配列を使って初期化するにゃ。</b></p>";
 }
 function hintqc5_matome_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bに呼び出したい要素の番地を代入させるにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />2回繰り返すからfor文を活用するにゃ。</b></p>";
 }
 function hintqc5_matome_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />a[b]でaの配列からbに入力した番地の要素を呼び出せるにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「変数bを使って配列aの要素を指定して出力」しなきゃいけないから変数bに値を入力するにゃ。<br/>そしてprintf文で、「変数bを使って配列aの要素を指定して出力」するにゃ。</b></p>";
 }
 
 /*第5章追加問題*/

@@ -38,7 +38,6 @@ else{
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
  <!--CodeMirror-->
@@ -91,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br>for文を二つ使って＊が一行毎に1つずつ<br />増えていくプログラムを作ろう。<br />
+		<p class = "question"><font size = "3">問題<br />二重ループを使って＊を１行毎に１つずつ増やして出力しよう。<br />また、行数をscanfで指定できるようにしよう。<br />
 また行数をscanfで指定できるようにしよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome4_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
@@ -151,9 +150,6 @@ int main(void){
     			<td><input type="button" value="１" onClick="hintc4_matome2_1()"></td>
     			<td><input type="button" value="２" onClick="hintc4_matome2_2()"></td>
     			<td><input type="button" value="３" onClick="hintc4_matome2_3()"></td>
-    			<td><input type="button" value="４" onClick="hintc4_matome2_4()"></td>
-    			<td><input type="button" value="５" onClick="hintc4_matome2_5()"></td>
-    			<td><input type="button" value="６" onClick="hintc4_matome2_6()"></td>
     		</tr>
     	</table>
 	</div>
@@ -171,7 +167,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　まとめ問題２">
   		<p><br />
-    	<b>for文を二つ使って＊が一行毎に1つずつ増えていくプログラムを作ろう。<br>また、行数をscanfで指定できるようにしよう。
+    	<b>二重ループを使って＊を１行毎に１つずつ増やして出力しよう。<br />また、行数をscanfで指定できるようにしよう。
 		</b><br />
  		</p>
 	</div>

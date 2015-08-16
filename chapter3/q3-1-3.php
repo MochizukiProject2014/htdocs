@@ -39,7 +39,6 @@ else{
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
  <!--CodeMirror-->
@@ -93,7 +92,7 @@ else{
 	</div>
     
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　scanfで入力した数字が0以外なら<br />　「xは0ではないです」と出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br />　int型の変数xに入力した値が0以外なら<br />「xは0ではないです。」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_1_3();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

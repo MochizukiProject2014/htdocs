@@ -30,7 +30,6 @@ else{
 <script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/samplecode.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <script type="text/javascript" src="../js/parser.js"></script>
 <script type="text/javascript" src="../js/answer.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
@@ -39,7 +38,6 @@ else{
 <script type="text/javascript" src="../js/anime.js"></script>
 <script type="text/javascript" src="../js/hint.js"></script>
 <script type="text/javascript" src="../js/reset.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <script type="text/javascript" src="../js/movenext.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
@@ -93,8 +91,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "2">問題<br />while文を使って、入力した整数が合計されていき、<br />入力するたび現在の合計と何回足したかを表示し、<br />
-0が入力されたら現在の合計を出力し、<br />終了するプログラムを作ろう。</font></p>
+		<p class = "question"><font size = "2">問題<br />while文を使って整数の値を入力し続け、<br />０が入力されたら現在の合計を「合計は～です。」と出力し、<br />終了させよう。（「合計は～です。」の「～」は現在の合計の値が出力されるようにしよう）</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome4_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -111,15 +108,7 @@ int main(void){
 
 
 
-
-
-
-
-
-
-
-
-   return 0;
+	return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>
@@ -161,6 +150,7 @@ int main(void){
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintc4_matome_1()"></td>
     			<td><input type="button" value="２" onClick="hintc4_matome_2()"></td>
+    			<td><input type="button" value="３" onClick="hintc4_matome_3()"></td>
     		</tr>
     	</table>
 	</div>
@@ -178,7 +168,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　まとめ問題１">
   		<p><br />
-    	<b>while文を使って、入力した整数が合計されていき、入力するたび現在の合計と何回足したかを表示し、0が入力されたら現在の合計を出力し、終了するプログラムを作ろう。
+    	<b>while文を使って整数の値を入力し続け、<br />０が入力されたら現在の合計を「合計は～です。」と出力し、<br />終了させよう。（「合計は～です。」の「～」は現在の合計の値が出力されるようにしよう）
 		</b><br />
  		</p>
 	</div>

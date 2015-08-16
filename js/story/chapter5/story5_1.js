@@ -36,13 +36,13 @@ var frame2 = {
 	animation : function(){
 		console.log("frame2実行");
 		frontChara.hide();
-		takeCardOut("配列から、\n入力した番地の要素を出力できる\nプログラムを作れ。\nそして「0、5、8、6」を\n入力しろ。");
+		takeCardOut("配列を宣言し、\nその配列から入力した\n値の要素を出力する\nプログラムを作れ。\nそして「1、9」を入力しろ。");
 	}
 }
 
 var frame3 = {
     speaker : "怪盗C",
-    message : "『配列から、入力した番地の要素を出力できる\nプログラムを作れ。\nそして、「0、5、8、6」を入力しろ。",
+    message : "『配列を宣言し、その配列から入力した値の要素を\n出力するプログラムを作れ。\nそして、「1、9」を入力しろ。",
     rightChara : "L_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",
@@ -67,7 +67,7 @@ var frame4 = {
 
 var frame5 = {
 	speaker : "健吾",
-	message :"むむむ・・・。\n今までで一番の問題だ・・・。\nだけど僕らなら、きっと解けるはずさ！",
+	message :"むむむ・・・。\n今までで一番難しい問題だ・・・。\nだけど僕らなら、きっと解けるはずさ！",
 	rightChara : "F_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",
@@ -116,7 +116,7 @@ var frame8 = {
 
 var frame9 = {
 	speaker : "きなこ",
-	message :"・・・さて、ボクのお仕事にゃ。",
+	message :"・・・さて、ボクの最後のお仕事にゃ。",
 	rightChara : "L_kengo_smile",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",

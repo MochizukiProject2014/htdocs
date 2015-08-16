@@ -39,7 +39,6 @@ else{
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
  <!--CodeMirror-->
 <script src="../js/codemirror/lib/codemirror.js"></script>
@@ -91,16 +90,16 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　「わんわん」を<br />　3回出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　for文を使って「わんわん」を３回出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_1_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
    int a;
-   for(  ){
+  
    	printf("わんわん");
-   }
+   
    return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
@@ -143,7 +142,6 @@ int main(void){
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintq4_1_1_1();"></td>
-    			<td><input type="button" value="２" onClick="hintq4_1_1_2();"></td>
     		</tr>
     	</table>
 	</div>
@@ -161,7 +159,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第一節　for　>　問題１">
   		<p><br />
-    	<b>「わんわん」を3回出力しよう。
+    	<b>for文を使って「わんわん」を３回出力しよう。
 		</b><br />
  		</p>
 	</div>

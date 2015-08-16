@@ -38,7 +38,6 @@ else{
 <script type="text/javascript" src="../js/reset.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <script type="text/javascript" src="../js/movenext.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
@@ -96,7 +95,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br>　もしxが20より大きいなら「xは20より<br>　大きいです」と出力するプログラムにしよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br>　もしxが20より大きいなら「xは20より<br>　大きいです」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_1_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -104,7 +103,7 @@ else{
 int main(void){
    int x = 32;
    
-   
+      printf("xは20より大きいです。");
    
    return 0;
 }</textarea>
@@ -167,7 +166,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　問題１">
   		<p><br />
-    	<b>もしxが20より大きいなら「xは20より大きいです」と出力するプログラムにしよう。<br />
+    	<b>もしxが20より大きいなら「xは20より大きいです」と出力	しよう。<br />
 		</b><br />
  		</p>
 	</div>

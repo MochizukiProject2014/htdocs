@@ -38,7 +38,6 @@ else{
 <script type="text/javascript" src="../js/hint.js"></script>
 <script type="text/javascript" src="../js/reset.js"></script>
 <script type="text/javascript" src="../js/movenext.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
  <!--CodeMirror-->
@@ -93,16 +92,13 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　scanfを使って２次元配列の<br />　指定した要素を出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　大きさが[2][3]の二次元配列を初期化しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int x,y;
-      = {{1,2,3},{4,5,6},{7,8,9}};
-   scanf("%d %d",&x,&y);
-   printf("%d",data[x][y]);
+   
    return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
@@ -162,7 +158,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　第二節　二次元配列　>　問題２">
   		<p><br />
-    	<b>scanfを使って２次元配列の指定した要素を出力しよう。
+    	<b>大きさが[2][3]の二次元配列を初期化しよう。
 		</b><br />
  		</p>
 	</div>

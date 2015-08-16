@@ -39,7 +39,6 @@ else{
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
  <!--CodeMirror-->
@@ -145,7 +144,8 @@ int main(void){
   			<tr>
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
-    			<td><input type="button" value="１" onClick="hintq3_1_2()"></td>
+    			<td><input type="button" value="１" onClick="hintq3_1_2_1()"></td>
+    			<td><input type="button" value="２" onClick="hintq3_1_2_2()"></td>
     		</tr>
     	</table>
 	</div>

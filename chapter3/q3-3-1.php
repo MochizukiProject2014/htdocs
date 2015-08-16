@@ -39,7 +39,6 @@ else{
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
-<script type="text/javascript" src="../js/samplecode_ver_0.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
  <!--CodeMirror-->
@@ -95,7 +94,7 @@ else{
 	</div>	
     
    	<div class = "code-box">
-		<p class = "question"><font size = "2">問題<br />　成績をint型の変数scoreに入力し、90点以上なら「良」<br />　60点以上90点未満なら「可」<br />　40点以上60点未満なら「再試験」<br />　それ以外なら「不可」と出力するプログラムを作ろう。</font></p>
+		<p class = "question"><font size = "2">問題<br />　int型の変数scoreに成績を入力し、90点以上なら「良」<br />　60点以上90点未満なら「可」<br />　40点以上60点未満なら「再試験」<br />　それ以外なら「不可」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_3_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -104,13 +103,13 @@ int main(void){
    int score;
    scanf("%d",&score);
    
+      printf(“良”);
    
+      printf(“可”);
    
+      printf(“再試験”);
    
-   
-   
-   
-   
+      printf(“不可”);
    
    return 0;
 }</textarea>
@@ -173,7 +172,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第三節　else if　>　問題１">
   		<p><br />
-    	<b>成績をint型の変数scoreに入力し、90点以上なら「良」、60点以上90点未満なら「可」、40点以上60点未満なら「再試験」、それ以外なら「不可」と出力するプログラムを作ろう。<br />
+    	<b>int型の変数scoreに成績を入力し、90点以上なら「良」、60点以上90点未満なら「可」、40点以上60点未満なら「再試験」、それ以外なら「不可」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

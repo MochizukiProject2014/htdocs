@@ -117,8 +117,8 @@ int main(void){
 	 		<div id = "movenext"></div>
 	 		</div>
 	 		<canvas id = "world"></canvas></li>
-			<li class = "hide"><div class = "dic"><object data="../dic/dic7.html" type="text/html" width="730" height="460"></object></div></li>
-			<li class = "hide"><object data="../dic/keyboard.html" type="text/html" width="730" height="460"></object></div></li>
+			<li class = "hide"><div class = "dic"><object data="dic7.html" type="text/html" width="730" height="460"></object></div></li>
+			<li class = "hide"><object data="keyboard.html" type="text/html" width="730" height="460"></object></div></li>
 		</ul>
 	</div>
 	

@@ -124,6 +124,7 @@ int main(void){
 	 			<option selected value="1">1倍速</option>
 	 			<option value="2">2倍速</option>
 	 			<option value="4">4倍速</option>
+	 			<option value="10">10倍速</option>
 	 		</select>
 	 		
 	 		<div id = "movenext"></div>

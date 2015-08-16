@@ -928,7 +928,7 @@ function foreval(){
 		eval(for_alt_array[0]);
 		if(for_now_cnt==0&&for_index_array[0]>=len-1&&!evalue(for_conditions_array[0])){
 			forallfinish();//もし今のfor群の全てを実行し終えたら
-		}else if(for_now_cnt!=0&&!doflag){
+		}else if(for_now_cnt!=0&&evalue(for_conditions_array[0])){
 			//for_now_cnt-=1;
 			return 0;
 		}

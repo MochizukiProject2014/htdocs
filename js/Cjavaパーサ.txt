@@ -288,10 +288,10 @@ printf
   =  "printf" space "(" space ["] contents:letter_2 ["] space ")" space ";"  space {   
   return 'if(loop_frg == 1){re_eval = "無限ループです";}else { re_eval="' + contents + '";};' ; }
 
-  / "printf" space "(" space ["] contents:letter_2 ["] space "," space variable:(variable_array/variable) space ")" space ";"  space { 
+  / "printf" space "(" space ["] contents:letter_2 ["] space "," space variable:(additive/variable_array/variable) space ")" space ";"  space { 
   return 'if(loop_frg == 1){re_eval = "無限ループです";}else { re_eval="' + contents + '"; re_eval = re_eval.replace("%d",' + variable + '); re_eval = re_eval.replace("%f",' + variable + '); re_eval = re_eval.replace("%c",' + variable + '); };' ; }
   
-  / "printf" space "(" space ["] contents:letter_2 ["] space "," space variable1:(variable_array/variable) space "," space variable2:(variable_array/variable)  space ")" space ";"  space { 
+  / "printf" space "(" space ["] contents:letter_2 ["] space "," space variable1:(additive/variable_array/variable) space "," space variable2:(additive/variable_array/variable)  space ")" space ";"  space { 
   return 'if(loop_frg == 1){re_eval = "無限ループです";}else { re_eval="' + contents + '"; re_eval = re_eval.replace("%d",' + variable1 + '); re_eval = re_eval.replace("%f",' + variable1 + '); re_eval = re_eval.replace("%c",' + variable1 + '); re_eval = re_eval.replace("%d",' + variable2 + ');re_eval = re_eval.replace("%f",' + variable2 + ');re_eval = re_eval.replace("%c",' + variable2 + ');};' ; }
 
 print_val

@@ -3,13 +3,13 @@
 var sample211 = 'ANIME_sengen("int","x");ANIME_sengen("double","y")'
 var sample212 = 'ANIME_sengen("int","x");ANIME_dainyu("x","10")'
 var sample213 = 'ANIME_sengen_dainyu("double","a","5.500000");'
-var sample221 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5")'
-var sample222 = 'ANIME_sengen("int","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("15 5.5");ANIME_dainyu("x","15");ANIME_dainyu("y","5.500000")'
-var sample231 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","+","3"],"8")';
-var sample232 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_scanf();setPrintf("5 3");ANIME_dainyu("x","5");ANIME_dainyu("y","3");ANIME_sengen("int","z");ANIME_enzan_dainyu("z",["x","+","y"],"8")'
-var sample241 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_printf(["%d"],["x"]);setPrintf("5");'
+var sample221 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5\\n");ANIME_dainyu("x","5")'
+var sample222 = 'ANIME_sengen("int","x");ANIME_sengen("double","y");ANIME_scanf();setPrintf("15 5.5\\n");ANIME_dainyu("x","15");ANIME_dainyu("y","5.500000")'
+var sample231 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("\\n5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","+","3"],"8")';
+var sample232 = 'ANIME_sengen("int","x");ANIME_sengen("int","y");ANIME_scanf();setPrintf("5 3\\n");ANIME_dainyu("x","5");ANIME_dainyu("y","3");ANIME_sengen("int","z");ANIME_enzan_dainyu("z",["x","+","y"],"8")'
+var sample241 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5\\n");ANIME_dainyu("x","5");ANIME_printf(["%d"],["x"]);setPrintf("5");'
 var sample242 = 'ANIME_sengen("double","x");ANIME_sengen("char","y");ANIME_dainyu("x","3.500000");ANIME_dainyu("y","a");ANIME_printf(["%f"," ","%c"],["x","y"]);setPrintf("3.500000 a")';
-var sampleMatome2 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","*","3"],"15");ANIME_printf(["%d"],["x"]);setPrintf("15")';
+var sampleMatome2 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5\\n");ANIME_dainyu("x","5");ANIME_enzan_dainyu("x",["x","*","3"],"15");ANIME_printf(["%d"],["x"]);setPrintf("15")';
 
 //３章---------------------------------------------------
 

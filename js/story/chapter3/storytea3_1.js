@@ -109,7 +109,7 @@ var frame6 = {
 		button.show();
 		goNext.show();
 		button.addEventListener("pointingend", function(e) {
-			document.location.href = "../ex3-2-1.php";
+			document.location.href = "../ex3-1-2.php";
 		});
 	}
 }

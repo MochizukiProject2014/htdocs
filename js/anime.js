@@ -2006,6 +2006,9 @@ function ANIME_array_enzan_dainyu(name,expression,result){
 								Pspace.Label
 									.setFillStyle("rgba(0,0,0,1)")
 									.setFontSize(20);
+								if(toString(expression[i]).length>6){
+									Pspace.Label.setFontSize(15);
+								}
 								space.addChild(Pspace);
 								
 								if(promin_array[k].arrayFlag===true){
@@ -2584,6 +2587,10 @@ function ANIME_enzan_dainyu(name,expression,result){
 				Pspace.Label
 					.setFillStyle("rgba(0,0,0,1)")
 					.setFontSize(20);
+
+				if(toString(expression[i]).length>6){
+					Pspace.Label.setFontSize(15);
+				}
 				space.addChild(Pspace);
 				
 				if(promin_array[k].arrayFlag===true){

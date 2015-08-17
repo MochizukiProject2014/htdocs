@@ -197,8 +197,8 @@ function answer_check(num){
 			else { flagArr.push(true); } 
 		break;
 		case 311:
-			re = new RegExp(/if_js\("(x > 20)|(20 < x)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs\(".+xは20より大きいです.+"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/if_js\("(x > 20)||(20 < x)"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_djs\(.+xは20より大きいです.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
@@ -215,8 +215,8 @@ function answer_check(num){
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
 		case 312:
-			re = new RegExp(/if_js\("(x < y)|(y > x)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs\(".+xはyより小さいです.+"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/if_js\("(x < y)||(y > x)"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_djs\(.+xはyより小さいです.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
@@ -236,7 +236,7 @@ function answer_check(num){
 			re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/scanf_js\("x","%d"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/if_js\("(x.*!=.*0)|(0.*!=.*x)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs\(".+xは0ではないです.+"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_djs\(.+xは0ではないです.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
@@ -314,11 +314,11 @@ function answer_check(num){
 		case 331:
 			re = new RegExp(/duplication_judge\("int","score",.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/newscanfnext\(score,\d\)/);answer_pattern_array.push(re);
-			re = new RegExp(/if_js\("(score >= 20)|(20 <= score)"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/if_js\("(score >= 20)||(20 <= score)"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_djs("良")/);answer_pattern_array.push(re);
-			re = new RegExp(/else_if_js\("(score < 90 && score >= 60)|(score < 90 && 60 <= score)|(90 > score && score >= 60)|(90 > score && 60 <= score)|(score >= 60 && score < 90)|(score >= 60 && 90 > score)|(60 <= score && 90 > score)|(60 <= score && score < 90)"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/else_if_js\("(score < 90 && score >= 60)||(score < 90 && 60 <= score)||(90 > score && score >= 60)||(90 > score && 60 <= score)||(score >= 60 && score < 90)||(score >= 60 && 90 > score)||(60 <= score && 90 > score)||(60 <= score && score < 90)"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_djs("可")/);answer_pattern_array.push(re);
-			re = new RegExp(/else_if_js\("(score < 60 && score >= 60)|(score < 60 && 40 <= score)|(60 > score && score >= 40)|(60 > score && 40 <= score)|(score >= 40 && score < 60)|(score >= 40 && 60 > score)|(40 <= score && 60 > score)|(40 <= score && score < 60)"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/else_if_js\("(score < 60 && score >= 60)||(score < 60 && 40 <= score)||(60 > score && score >= 40)||(60 > score && 40 <= score)||(score >= 40 && score < 60)||(score >= 40 && 60 > score)||(40 <= score && 60 > score)||(40 <= score && score < 60)"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_djs("再試験")/);answer_pattern_array.push(re);
 			re = new RegExp(/else_js\(\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_djs("不可")/);answer_pattern_array.push(re);

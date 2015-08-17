@@ -103,13 +103,13 @@ int main(void){
    int score;
    scanf("%d",&score);
    
-      printf(“良”);
+      printf("良");
    
-      printf(“可”);
+      printf("可");
    
-      printf(“再試験”);
+      printf("再試験");
    
-      printf(“不可”);
+      printf("不可");
    
    return 0;
 }</textarea>

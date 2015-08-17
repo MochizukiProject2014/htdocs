@@ -558,7 +558,7 @@ function answer_check(num){
 		break;
 		case 521:
 			re = new RegExp(/.+/);answer_pattern_array.push(re);//reオブジェクトが１つだけだとなぜかバグるので応急措置
-			re = new RegExp(/multiarray_declare\("int",".+",".+@.+@.+^.+@.+@.+","2","3"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/multiarray_declare\("int",".+",".+@.+@.+..+@.+@.+","2","3"\)/);answer_pattern_array.push(re);
 			var temp = context_check(result2,answer_pattern_array,true);flagArr.push(temp);
 		break;
 		case 5211:

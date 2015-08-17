@@ -98,7 +98,7 @@ else{
 int main(void){
        = {1,0,7,8,3,4,6,5,9,2};
    int i,b;
-   for(i=0;i<2;i ++){
+   for(i=0;i<2;i++){
       printf("数字を入力してください：");
       
       

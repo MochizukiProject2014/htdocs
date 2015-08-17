@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>大きさが10の配列aを宣言し、「変数bに値を入力し、<br>変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br />（挑戦状にあったように、変数bに入力する値は「1,9」の順に入力しよう。）</font></p>
+		<p class = "question">問題<font size = "2"><br />大きさが10の配列aを宣言し、「変数bに値を入力し、<br>変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br />（挑戦状にあったように、変数bに入力する値は「1,9」の順に入力しよう。）</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome5();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -98,7 +98,7 @@ else{
 int main(void){
        = {1,0,7,8,3,4,6,5,9,2};
    int i,b;
-   for(i = 0; i < 2; i ++){
+   for(i=0;i<2;i ++){
       printf("数字を入力してください：");
       
       

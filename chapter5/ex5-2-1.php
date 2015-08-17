@@ -80,7 +80,7 @@ else{
 
 	<div class = "code-box">
 		<p class = "question"><font size="3" color="ff0000"> 
-		<b>お手本</b></font><br />　二次元配列の内容を出力しよう。</p>
+		<b>お手本</b></font><br /><br />　二次元配列の内容を出力しよう。</p>
 		
 
 		</br><br /><br />

@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br> int型の変数sumに、for文を使って配列aの要素を<br/>ひとつずつ呼び出して足していき、最後に変数sumを出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br> int型の変数sumに、for文を使って配列aの要素をひとつずつ呼び出して足していき、<br />最後に変数sumを出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_1_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

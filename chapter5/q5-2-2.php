@@ -90,14 +90,14 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br />　変数xとyに、x・yの順に値を入力し、xは二次元配列dataの要素数1を指定、<br>yは要素数2を指定して二次元配列dataの要素を出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br />　変数xとyに、x・yの順に値を入力し、xは二次元配列dataの要素数1を指定、<br>yは要素数2を指定して二次元配列dataの要素を出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_2_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
    int x,y;
-   int data[3][3] = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+   int data[3][3] = {{1,2,3},{4,5,6},{7,8,9}};
    
    
    return 0;

@@ -792,35 +792,38 @@ function assess(condition){
 	var animeRes = [];
 	var count = 0;
 	var flag = false;
+	var animeStr = '';
 	for(var i = 0;i < tempStr.length;i++){//()付きで優先順位をつけているかチェック。つけているならtrue。つけてないならfalse
-		console.log(tempStr.charAt(i)+"："+count+"："+flag);
 		if(/\(/.test(tempStr.charAt(i))){count++;}
 		else if(/\)/.test(tempStr.charAt(i))){count++;}
 		else if(count!=0&&/\||&/.test(tempStr.charAt(i))){i++;flag = true;}
 	}
-	console.log(flag);
 	var from = 0;
-	if(flag){animeExp.push(condition)}
+	if(flag){animeExp.push(condition);animeStr=tempStr;}
 	else{
 		for(var i = 0;i < tempStr.length;i++){
-			if(/\(/.test(tempStr.charAt(i))){count++;}
-			else if(/\)/.test(tempStr.charAt(i))){count++;}
-			else if(count==0&&/\||&/.test(tempStr.charAt(i))){
-				var xxx = tempStr.slice(from,i)
-				console.log(tempStr.charAt(i)+"、、、"+xxx)
-				animeExp.push(xxx);
-				console.log((tempStr.charAt(i)+tempStr.charAt(i+1)))
-				animeExp.push((tempStr.charAt(i)+tempStr.charAt(i+1)));i++;from=i+2;
-			}
-			else if(i == tempStr.length-1){animeExp.push(tempStr.slice(from,i+1));}
+			if(/\||&/.test(tempStr.charAt(i))){
+				animeExp.push(tempStr.slice(from,i));
+				animeExp.push((tempStr.charAt(i)+tempStr.charAt(i+1)));i++;from=i+1;
+			}else if(i == tempStr.length-1){animeExp.push(tempStr.slice(from,i+1));}
 		}
+		var animelen = animeExp.length;
+		var animeExpStr = getArrStr(animeExp,true);
+		for(var j = 0;j < animeExpStr.length;j++){
+			if(/>|<|=/.test(animeExpStr.charAt(j))&&/>|<|=/.test(animeExpStr.charAt(j+1))){
+				animeStr+=(":"+animeExpStr.charAt(j) + animeExpStr.charAt(j+1) +":");
+				j++;
+			}else if(/>|</.test(animeExpStr.charAt(j))){
+				animeStr+=(":"+animeExpStr.charAt(j)+":");
+			}else{
+				animeStr += animeExpStr.charAt(j)
+			}
+		}
+		
 	}
-	for(var i = 0;i < animeExp.length;i+=2)animeRes.push(evalue(animeExp[i]));
-	arr_check("",animeExp);
+	for(var i = 0;i < animelen;i+=2)animeRes.push(evalue(animeExp[i]));
 	result = evalue(condition);
-	jsOfAnimes.push('ANIME_compare('+getArrStr(animeExp,true)+','+getArrStr(animeRes,false)+','+result+')');
-	console.log(result);
-	//eval(agaga);
+	jsOfAnimes.push('ANIME_compare('+animeStr+','+getArrStr(animeRes,false)+','+result+')');
 	return result;
 }
 
@@ -852,7 +855,6 @@ function evalue(condition){
 		}
 	}
 	result = (eval(tempStr));
-	console.log(tempStr+"結果："+result);
 	return result;
 }
 

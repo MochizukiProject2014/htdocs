@@ -163,7 +163,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　問題３">
   		<p><br />
-    	<b>scanfで入力した数字が0以上なら「xは0ではないです」と出力しよう。<br />
+    	<b>scanfで入力した数字が0以上なら「xは0ではないです。」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

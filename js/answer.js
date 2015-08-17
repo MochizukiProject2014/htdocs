@@ -197,7 +197,7 @@ function answer_check(num){
 			else { flagArr.push(true); } 
 		break;
 		case 311:
-			re = new RegExp(/if_js\("(x > 20)|(x < 20)"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/if_js\("(x > 20)|(20 < x)"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_djs\(".+xは20より大きいです.+"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));

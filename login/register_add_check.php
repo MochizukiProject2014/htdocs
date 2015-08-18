@@ -50,7 +50,7 @@ $rec=$stmt->fetch(PDO::FETCH_ASSOC);
 
 if($register_name=='')
 {
-	print 'スタッフ名が入力されていません。<br />';
+	print '名前が入力されていません。<br />';
 }
 else if($rec==true)
 {
@@ -58,7 +58,7 @@ else if($rec==true)
 }
 else
 {
-	print 'スタッフ名：';
+	print '名前：';
 	print $register_name;
 	print '<br />';
 }

@@ -79,7 +79,7 @@ else{
 	</div>
 	
 	<div class = "code-box">
-		<p class = "question"><font size="3" color="#ff0000"><b>お手本</b></font><br /><br>　xを3倍するプログラムを書こう。</p>
+		<p class = "question"><font size="3" color="#ff0000"><b>お手本</b></font><br /><br>　int型の変数xを5で初期化し、<br>　その後変数xにx*3を代入しよう。</p>
 
 		</br><br />
 		<p class = "code">▼プログラム</p>
@@ -132,7 +132,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第三節　数式　>　お手本１">
   		<p><br />
-    	<b>xを3倍するプログラムを書こう。<br />
+    	<b>int型の変数xを5で初期化し、その後変数xにx*3を代入しよう。<br />
 		</b><br />
  		</p>
 	</div>

@@ -80,7 +80,7 @@ else{
 	</div>
 
 	<div class = "code-box">
-		<p class = "question"><font size="3" color="#ff0000"><b>お手本</b></font><br/><br />　宣言と代入を同時にしよう。</p>
+		<p class = "question"><font size="3" color="#ff0000"><b>お手本</b></font><br/><br />　int型の変数aと、double型の変数bを<br>　3.5で初期化しよう。</p>
 
 		</br><br /><br />
 		<p class = "code">▼プログラム</p>
@@ -132,7 +132,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第一節　変数の宣言・代入　>　お手本３">
   		<p><br />
-    	<b>宣言と代入を同時にしよう。<br />
+    	<b>int型の変数aとdouble型の変数bを3.5で初期化しよう。<br />
 		</b><br />
  		</p>
 	</div>

@@ -20,6 +20,7 @@ $register_gender=$post['gender'];
 $register_secret=$post['secret'];
 $register_secret_answer=$post['secret_answer'];
 $register_programming=$post['programming'];
+$register_interested=$post['interested'];
 
 if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
 	$dsn='mysql:dbname=mochiken2015;host=db.ne.senshu-u.ac.jp;charset=utf8';
@@ -37,7 +38,7 @@ if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
 $dbh=new PDO($dsn,$user,$password);
 $dbh->query('SET NAMES utf8');
 
-$sql='INSERT INTO members (name,password,gender,secret,secret_answer,programming) VALUES (?,?,?,?,?,?)';
+$sql='INSERT INTO members (name,password,gender,secret,secret_answer,programming,interested) VALUES (?,?,?,?,?,?,?)';
 $stmt=$dbh->prepare($sql);
 $data[]=$register_name;
 $data[]=$register_pass;
@@ -45,6 +46,7 @@ $data[]=$register_gender;
 $data[]=$register_secret;
 $data[]=$register_secret_answer;
 $data[]=$register_programming;
+$data[]=$register_interested;
 $stmt->execute($data);
 
 $dbh=null;

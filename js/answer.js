@@ -388,9 +388,11 @@ function answer_check(num){
 			re = new RegExp(/end_of_for/);answer_pattern_array.push(re);
 			var temp = getPatternLine(user_pattern_array,answer_pattern_array,0);flagArr.push(temp);
 			*/
-			var user_code = parser_judge.parse(codeOfUser);
-			if(hantei_for_eval(user_code, 1) != 3){ miss_answer("条件式を見直してみよう！"); return 0;}
-			else if( hantei_1(user_code,1,"にゃんにゃん") != true){ miss_answer("出力される文字を確認してみよう！"); return 0;}
+			var user_code = for_cnt_parser.parse(codeOfUser);
+			var user_code2 = parser_judge.parse(codeOfUser);
+			if(hantei_for_eval_s(user_code, 3,1) != 3){ miss_answer("条件式を見直してみよう！"); return 0;}
+			else if(hantei_for_eval_s(user_code, 2,1) != 2){ miss_answer("条件式を見直してみよう！"); return 0;}
+			else if( hantei_1(user_code2,1,"にゃんにゃん\n") != true){ miss_answer("出力される文字を確認してみよう！"); return 0;}
 			else { flagArr.push(true); } 
 		break;
 		case 4121:

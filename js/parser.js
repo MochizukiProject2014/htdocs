@@ -168,8 +168,8 @@ parser = (function() {
                for(var k=1; k < block.length; k++){
                  a = a + block[k];
                }
-               if(comparison.match(":") != 0){
-        			comparison = comparison.replace(/:/g,"");
+               if(String(comparison).match(":") != 0){
+        			comparison = String(comparison).replace(/:/g,"");
         		}
             return 'for_js("while","' + comparison + '","","' + peg$computePosDetails(peg$reportedPos).line + '");' + a  + 'end_of_for();'; },
         peg$c89 = "break",

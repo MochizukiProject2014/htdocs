@@ -316,10 +316,10 @@ function hintq4_2_2(){
 }
 
 function hintq4_3_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />1の段の計算が終わったら改行して2の段を計算する、という構造にするにゃ。<br />どういう出力になるか想像できない場合はサンプル実行を活用するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />7の段の計算が終わったら改行して8の段を計算する、<br>という構造にするにゃ。<br />どういう出力になるか想像できない場合は<br>サンプル実行を活用するにゃ。</b></p>";
 }
 function hintq4_3_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />宣言してある変数はそれぞれxは「出力する値を記録する変数」iが「外側のループを制御する変数」kが「内側のループを制御する変数」として使うにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />宣言してある変数はそれぞれ、<br>xが「出力する値を記録する変数」<br>iが「外側のループを制御する変数」<br>kが「内側のループを制御する変数」として使うにゃ。</b></p>";
 }
 function hintq4_3_1_3(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />九九の計算はi*kで行い、xにその計算結果を代入するにゃ。</b></p>";

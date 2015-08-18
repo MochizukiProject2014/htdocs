@@ -12,7 +12,6 @@ var consoleStatus = "";			//コンソールの現在の状態を保持
 var htmlversion;				//どのhtmlを読み込んでいるかの情報を保持
 var syntaxErrorFlag = true,codeFinishFlag = false,scanf_flag=false;	
 var syntaxStr ="";				//エラー文の保存用配列
-var scopeLevel = 1;				//変数のスコープの管理用
 function disTexetarea(){
 	cEditor.markText({line: 0 , ch: 0}, {line: 100, ch: 100}, {className: "styled-background-null"});
 	cEditor.save();
@@ -201,7 +200,7 @@ function codeArrayInit(){
 		ANIME_reset();codeOfUser ="";
 		consoleStatus="";action_frag = true;
 		if_cnt = 0;syntaxErrorFlag = true;
-		animeStartIndex=0;scopeLevel = 1;
+		animeStartIndex=0;
 		for_flag = true;for_cnt = 0;rindex=0;
 		scanf_flag=false;for_rindex = 0
 		document.getElementById("console").value="";
@@ -279,7 +278,7 @@ function calcArrayIndex(name){
 	return result;
 }
 
-function getVariableValue(name){
+function getVariableValue(name){console.log(name);
 	var vlen = variables.length;
 	var existFlag = false;
 	var result;
@@ -289,12 +288,12 @@ function getVariableValue(name){
 		if(/^[a-z]\w*/.test(index1)||/:/.test(index1))index1 =calc(index1);
 		if(/^[a-z]\w*/.test(index2)||/:/.test(index2))index2 =calc(index2);
 		name = name.match(/^([a-z]\w*)\[.+\]\[.+\]/)[1];
-		console.log("取得する二重配列"+name+"["+index1+"]"+index2);
+		//console.log("取得する二重配列"+name+"["+index1+"]"+index2);
 	}else if(/\[.+\]/.test(name)){
 		var index = name.match(/[a-z]\w*\[(.+)\]/)[1];
 		if(/^[a-z]\w*/.test(index)||/:/.test(index))index =calc(index);
 		name = name.match(/^([a-z]\w*)\[.+\]/)[1];
-		console.log("マッチしてる？"+name+"["+index+"]");
+		//console.log("マッチしてる？"+name+"["+index+"]");
 	}
 	for(i = 0; i < vlen; i++){
 		if(variables[i].name == name){
@@ -569,6 +568,7 @@ if(action_frag == true&&for_flag){
 	var cvflag = false;//代入する値が計算式、または、一つの変数かか判別するフラグ
 	var str;
 	var len = variables.length;
+	console.log("だいにゅう"+name+"値" +value);
 	if(/\[.+\]\[.+\]/.test(name)){//二重配列ならnameとindex1と2(indexが変数なら数字に直す)を。なぜか条件に!(value.match(/:/)があったけどx[i][1] = 4+5;がバグるんで消す
 		var index1 = name.match(/[a-z]\w*\[(.+)\]\[.+\]/)[1];
 		var index2 = name.match(/[a-z]\w*\[.+\]\[(.+)\]/)[1];
@@ -576,7 +576,7 @@ if(action_frag == true&&for_flag){
 		if(/^[a-z]\w*/.test(index2)||/:/.test(index2))index2 =calc(index2);
 		name = name.match(/^([a-z]\w*)\[.+\]\[.+\]/)[1];
 		console.log("二重配列！"+name+"、"+index1+"、"+index2);
-	}else if(/\[.+\]/.test(name)&&!(value.match(/:/))){//もし配列なら、nameとindex(indexが変数の場合数字になおし)を宣言。
+	}else if(/\[.+\]/.test(name)){//もし配列なら、nameとindex(indexが変数の場合数字になおし)を宣言。
 		var index = name.match(/[a-z]\w*\[(.+)\]/)[1];
 		if(/^[a-z]\w*/.test(index)||/:/.test(index))index =calc(index);
 		name = name.match(/^([a-z]\w*)\[.+\]/)[1];
@@ -604,10 +604,15 @@ if(action_frag == true&&for_flag){
 			break;
 		}
 	}else{
-		if(/\[.+\]/.test(value)&&!(value.match(/:/))){
+		if(/\[.+\]/.test(value)&&value.match(/:/)){
+		var valueindex = value.match(/[a-z]\w*\[(.+)\]/)[1];
+		var valuename = value.match(/([a-z]\w*)\[.+\]/)[1];
+		valueindex = calc(valueindex);
+		value = getVariableValue(valuename+"["+valueindex+"]");
+		}else if(/\[.+\]/.test(value)&&!(value.match(/:/))){
 			var valueindex = value.match(/[a-z]\w*\[(.+)\]/)[1];
 			valueindex = calc(valueindex);
-			value = getVariableValue(value);
+			console.log("値3"+valueindex);
 		}else if(value.match(/:/)){//代入する値が計算式の場合
 			cvflag = true;
 			str = getArrStr(value.split(":"),true);//'"'+value.replace(/:/g,"")+'"';
@@ -714,7 +719,7 @@ var if_cnt = 0;
 var if_end_flag = new Array();if_end_flag.push(true);
 function if_js(condition){
 	if(for_flag){
-	if_cnt++;scopeLevel++;
+	if_cnt++;
 	if_conditions.push(assess(condition));
 	//console.log("第"+if_cnt+"階層のif条件結果："+if_conditions[if_cnt]+"第"+(if_cnt-1)+"階層のif条件結果："+if_conditions[if_cnt-1]);
 	if(if_conditions[if_cnt]&&if_conditions[if_cnt-1]){
@@ -733,7 +738,7 @@ function if_js(condition){
 
 function else_if_js(condition){
 	if(for_flag){
-	if_conditions[if_cnt]=assess(condition);
+	if(!(if_end_flag[if_cnt]))if_conditions[if_cnt]=assess(condition);
 		//console.log("第"+if_cnt+"階層のif条件結果："+if_conditions[if_cnt]+"、"+if_end_flag[if_cnt]+"第"+(if_cnt-1)+"階層のif条件結果："+if_conditions[if_cnt-1]+"、"+if_end_flag[if_cnt-1]);
 	if(!(if_end_flag[if_cnt])&&if_conditions[if_cnt]&&if_conditions[if_cnt-1]){
 		//console.log("else_if_js内の出力：実行しようぜ！");
@@ -771,7 +776,6 @@ function else_js(){
 function end_of_if(){
 	if(for_flag){
 	if_cnt=if_cnt-1;
-	scopeLevel=scopeLevel-1;
 	if_end_flag.splice((if_end_flag.length-1),1);
 	if_conditions.splice((if_conditions.length-1),1);
 	//console.log("第"+if_cnt+"階層のif条件結果："+if_conditions[if_cnt]+"第"+(if_cnt-1)+"階層のif条件結果："+if_conditions[if_cnt-1]);
@@ -789,7 +793,7 @@ function assess(condition){
 	/*if(/true/.test(condition)){return true;}
 	if(/false/.test(condition)){return false;}
 	if(/undefined/.test(condition)){return 0;}*/
-	console.log(condition+"のassessを開始するよ！");
+	//console.log(condition+"のassessを開始するよ！");
 	var tempStr = condition;
 	var animeExp = [];
 	var animeRes = [];
@@ -882,7 +886,6 @@ if(action_frag == true){
 	}
 	for_contexts_array.push("");
 	for_init_array.push(init);
-	scopeLevel++;
 	for_line_array.push('line('+line_num+')');
 	for_flag = false;
 	for_cnt++;
@@ -897,7 +900,6 @@ if(action_frag == true){
 function end_of_for(){
 if(action_frag == true){
 	for_cnt=for_cnt - 1;
-	scopeLevel-=1;
 	}
 }
 
@@ -918,6 +920,8 @@ function startContexts(cnt){
 
 var breakflag = false;
 function foreval(){
+	console.log(/.+/.test(for_contexts_array[0]))
+	var tempArr="";
 	if(/.+/.test(for_contexts_array[0]))tempArr=for_contexts_array[0].match(/(.*);$/)[1].split(";");//実行する階層のパーサ配列
 	var len = tempArr.length;
 	var limit = 0;

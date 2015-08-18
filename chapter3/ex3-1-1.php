@@ -83,7 +83,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question"><font size="4" color="#ff0000"><b>お手本</b></font><br /><br />　もしint型の変数xに代入された値が5以下なら<br>　「xは５より小さいです」と出力しよう。</p>
+		<p class = "question"><font size="4" color="#ff0000"><b>お手本</b></font><br /><br />　int型の変数xに代入された値が5以下なら<br>　「xは５より小さいです」と出力しよう。</p>
 
 		</br><br />
 		<p class = "code">▼プログラム</p>
@@ -139,7 +139,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　お手本１">
   		<p><br />
-    	<b>もしint型の変数xに代入された値が5以下なら「xは５より小さいです」と出力しよう。<br />
+    	<b>int型の変数xに代入された値が5以下なら「xは５より小さいです」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

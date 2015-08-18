@@ -312,6 +312,7 @@ function answer_check(num){
 			else { flagArr.push(true); } 
 		break;
 		case 331:
+			/*
 			re = new RegExp(/duplication_judge\("int","score",.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/newscanfnext\(score,\d\)/);answer_pattern_array.push(re);
 			re = new RegExp(/if_js\("(score >= 20)||(20 <= score)"\)/);answer_pattern_array.push(re);
@@ -324,6 +325,13 @@ function answer_check(num){
 			re = new RegExp(/printf_djs("不可")/);answer_pattern_array.push(re);
 			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
 			tempFlagArr.push(context_check(user_pattern_array,answer_pattern_array,false));
+			*/
+			var user_code = parser_judge.parse(codeOfUser);
+			if(hantei_1(user_code,90, "良") != true){ miss_answer("90点以上は90点も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_1(user_code,60,"可") != true){ miss_answer("60点以上は60点も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_1(user_code,40,"再試験") != true){ miss_answer("40点以上は40点も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_1(user_code, 39, "不可") != true){ miss_answer("39点以下は「不可」になぞ！@@条件式を確認してみよう！"); return 0;}
+			else { flagArr.push(true); } 
 		break;
 		case 3311:
 			var user_code = parser_judge.parse(codeOfUser);
@@ -521,7 +529,7 @@ function answer_check(num){
 		case 511:
 			re = new RegExp(/array_declare\("int","a","1@2@3@4@5",5\)/);answer_pattern_array.push(re);
 			re = new RegExp(/plural_declaration\("int","i,sum=0"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/for_js\(("false,i,0","i < 5")|("false,i,1","i <= 5"),"i:\+:1","."\)/);answer_pattern_array.push(re);
+			re = new RegExp(/for_js\(("false,i,0","i < 5")||("false,i,1","i <= 5"),"i:\+:1","."\)/);answer_pattern_array.push(re);
 			re = new RegExp(/substitute\("sum","sum:\+:a.i."\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_js\("sum","%d"\)/);answer_pattern_array.push(re);
 			var temp = context_check(result2,answer_pattern_array,true);flagArr.push(temp);

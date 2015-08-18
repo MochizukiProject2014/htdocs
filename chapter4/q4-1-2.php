@@ -39,6 +39,7 @@ else{
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
+<script type="text/javascript" src="../js/for_cnt_parser.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
 <script src="../js/js/jquery-1.10.2.min.js"></script>
  <!--CodeMirror-->

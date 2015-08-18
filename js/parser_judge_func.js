@@ -95,7 +95,7 @@ function hantei_for_eval(code,result_num){
 }
 
 //条件：scanfが一つ
-function hantei_for_eval(code,scan0,result_num){
+function hantei_for_eval_s(code,scan0,result_num){
 	var scan_data = new Array;
 	scan_data[0] = scan0;
 	var scan_i=0;

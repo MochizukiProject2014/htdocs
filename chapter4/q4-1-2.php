@@ -98,7 +98,7 @@ else{
 #include <stdio.h>
 int main(void){
 	int a,i;
-	scanf("%d",&a)
+	scanf("%d",&a);
 	
 		printf("にゃんにゃん\n");
 	

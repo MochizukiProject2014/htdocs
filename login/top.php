@@ -46,7 +46,7 @@ else{
     <input type="image" value="第三章　条件分岐" onclick="location.href='../chapter3/story/story3_1.html'" src = "../img/menubtn/c3btn_off.png" id = "c3" disabled><div id = "chapter3" style="display:inline;"></div><br><br>
     <input type="image" value="第四章　繰り返し" onclick="location.href='../chapter4/story/story4_1.html'" src = "../img/menubtn/c4btn_off.png" id = "c4" disabled><div id = "chapter4" style="display:inline;"></div><br><br>
     <input type="image" value="　第五章　配列　" onclick="location.href='../chapter5/story/story5_1.html'" src = "../img/menubtn/c5btn_off.png" id = "c5" disabled><div id = "chapter5" style="display:inline;"></div><br><br>
-    <input type="image" value="　フリーモード　" onclick="location.href='../free.html'" src = "../img/menubtn/freebtn_on.png" id = "freemode" >
+    <input type="image" value="　フリーモード　" onclick="location.href='../debug/free.html'" src = "../img/menubtn/freebtn_on.png" id = "freemode" >
 <!--     <input type="button" value="ギャラリー" onclick="location.href='./gallery.html'"><br><br> -->
 
 <div class = "guide-box">

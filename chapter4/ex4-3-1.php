@@ -82,7 +82,7 @@ else{
 
 	<div class = "code-box">
 		<p class = "question"><font size="3" color="ff0000"> 
-		<b>お手本</b></font><br />　*を2個ずつ3行書こう</p>
+		<b>お手本</b></font><br><br />　二重ループを使って、*を2個ずつ3行書こう</p>
 		
 
 		</br><br /><br />
@@ -143,7 +143,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章 繰り返し　>　第三節 二重ループ　>　お手本１">
   		<p><br />
-    	<b>*を2個ずつ3行書こう<br />
+    	<b>二重ループを使って、*を2個ずつ3行書こう<br />
 		</b><br />
  		</p>
 	</div>

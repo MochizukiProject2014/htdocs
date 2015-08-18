@@ -430,6 +430,7 @@ function answer_check(num){
 		break;
 		case 422:
 			var user_code = parser_judge.parse(codeOfUser);
+			if(hantei_6(user_code, 1,2,3,4,5,6, "無限ループです") != true){ miss_answer("条件式を見直してみよう！"); return 0;}
 			if(hantei_3(user_code, 1, 99, 1, "100を超えました。") != true){ miss_answer("条件式を見直してみよう！"); return 0;}
 			else if( hantei_3(user_code,10,20,77,"100を超えました。") != true){ miss_answer("条件式を見直してみよう！"); return 0;}
 			else if( hantei_2(user_code,99, 99, "100を超えました。") != true){ miss_answer("条件式を見直してみよう！"); return 0;}

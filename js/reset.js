@@ -771,7 +771,7 @@ function resetq4_2_2(){
         "      scanf(\"%d\",&a);" + "\n" + 
         "      ans += a;" + "\n" + 
 		"\n" + 
-		"   printf(\"100を超えました。%dです。\", ans);" + "\n" + 
+		"   printf(\"100を超えました。\", ans);" + "\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();

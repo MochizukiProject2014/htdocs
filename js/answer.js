@@ -312,20 +312,6 @@ function answer_check(num){
 			else { flagArr.push(true); } 
 		break;
 		case 331:
-			/*
-			re = new RegExp(/duplication_judge\("int","score",.+\)/);answer_pattern_array.push(re);
-			re = new RegExp(/newscanfnext\(score,\d\)/);answer_pattern_array.push(re);
-			re = new RegExp(/if_js\("(score >= 20)||(20 <= score)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs("良")/);answer_pattern_array.push(re);
-			re = new RegExp(/else_if_js\("(score < 90 && score >= 60)||(score < 90 && 60 <= score)||(90 > score && score >= 60)||(90 > score && 60 <= score)||(score >= 60 && score < 90)||(score >= 60 && 90 > score)||(60 <= score && 90 > score)||(60 <= score && score < 90)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs("可")/);answer_pattern_array.push(re);
-			re = new RegExp(/else_if_js\("(score < 60 && score >= 60)||(score < 60 && 40 <= score)||(60 > score && score >= 40)||(60 > score && 40 <= score)||(score >= 40 && score < 60)||(score >= 40 && 60 > score)||(40 <= score && 60 > score)||(40 <= score && score < 60)"\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs("再試験")/);answer_pattern_array.push(re);
-			re = new RegExp(/else_js\(\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_djs("不可")/);answer_pattern_array.push(re);
-			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
-			tempFlagArr.push(context_check(user_pattern_array,answer_pattern_array,false));
-			*/
 			var user_code = parser_judge.parse(codeOfUser);
 			if(hantei_1(user_code,90, "良") != true){ miss_answer("90点以上は90点も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
 			else if( hantei_1(user_code,60,"可") != true){ miss_answer("60点以上は60点も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
@@ -588,8 +574,8 @@ function answer_check(num){
 			re = new RegExp(/array_declare\("int","a","1@0@7@8@3@4@6@5@9@2",10\)/);answer_pattern_array.push(re);
 			re = new RegExp(/newscanfnext\(b,1\)/);answer_pattern_array.push(re);
 			re = new RegExp(/newscanfnext\(b,9\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_js\("a.b.","%."\)/);answer_pattern_array.push(re);
-			var temp = context_check(result2,answer_pattern_array,false);flagArr.push(temp);
+			re = new RegExp(/printf_js\("a.b.",".*%.*"\)/);answer_pattern_array.push(re);
+			flagArr.push(context_check(user_pattern_array,answer_pattern_array,false));
 			/*
 			var user_code = parser_judge.parse(codeOfUser);
 			if(hantei_4(user_code,0, 0, 0, 0,"1\n") == true ){

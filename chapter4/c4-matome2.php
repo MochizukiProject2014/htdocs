@@ -30,6 +30,7 @@ else{
 <script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/samplecode.js"></script>
+<script type="text/javascript" src="../js/answer.js"></script>
 <script type="text/javascript" src="../js/parser.js"></script>
 <script type="text/javascript"src="../tmlib.js-develop/build/tmlib.js"></script>
 <script type="text/javascript" src="../js/anime.js"></script>

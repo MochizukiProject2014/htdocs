@@ -100,7 +100,7 @@ int main(void){
 	int a,i;
 	scanf("%d",&a);
 	
-		printf("にゃんにゃん\n");
+		printf("にゃんにゃん");
 	
 	return 0;
 }</textarea>

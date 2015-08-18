@@ -80,7 +80,7 @@ else{
 
 	<div class = "code-box">
 		<p class = "question"><font size="3" color="ff0000"> 
-		<b>お手本</b></font><br />　「こん」と「たぬ」を<br />それぞれ２回ずつ出力しよう。</p>
+		<b>お手本</b></font><br><br />　for文を使って、「こん」と「たぬ」を<br />　それぞれ２回ずつ出力しよう。</p>
 		
 
 		</br><br /><br />
@@ -142,7 +142,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章 繰り返し　>　第一節 for　>　お手本１">
   		<p><br />
-    	<b>「こん」と「たぬ」をそれぞれ２回ずつ出力しよう。<br />
+    	<b>for文を使って、「こん」と「たぬ」をそれぞれ２回ずつ出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

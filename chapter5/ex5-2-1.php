@@ -80,7 +80,7 @@ else{
 
 	<div class = "code-box">
 		<p class = "question"><font size="3" color="ff0000"> 
-		<b>お手本</b></font><br /><br />　二次元配列の内容を出力しよう。</p>
+		<b>お手本</b></font><br /><br />　二次元配列の要素をすべて順番に出力しよう。</p>
 		
 
 		</br><br /><br />
@@ -142,7 +142,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章 配列　>　第二節 二次元配列　>　お手本１">
   		<p><br />
-    	<b>二次元配列の内容を出力しよう。<br />
+    	<b>二次元配列の要素をすべて順番に出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

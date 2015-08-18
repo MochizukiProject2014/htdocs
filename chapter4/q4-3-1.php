@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　二重ループを使って九九の表を作ろう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　二重ループを使って九九の<br>　７の段と８の段の表を作ろう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_3_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -165,7 +165,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第三節　while　>　問題１">
   		<p><br />
-    	<b>二重ループを使って九九の表を作ろう。
+    	<b>二重ループを使って九九の７の段と８の段の表を作ろう。
 		</b><br />
  		</p>
 	</div>

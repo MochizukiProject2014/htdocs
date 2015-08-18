@@ -97,17 +97,17 @@ else{
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-	int a;
-	
-		printf("数字を入力：");
-		scanf("%d",&a);
+   int a;
+   
+      printf("数字を入力：");
+      scanf("%d",&a);
       
-      			printf("終了");
+         printf("終了");
+         
       
-      
-      		printf("もう1回");
-      	
-      return 0;
+      printf("もう1回");
+
+   return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>

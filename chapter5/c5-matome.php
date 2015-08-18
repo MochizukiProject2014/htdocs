@@ -56,7 +56,7 @@ else{
  
 	<div class = "menu-box">
 		<div class = "menu"><a href="../index.html">TOP</a> <span id="divider">></span> 
-    	<a href="../menu.html">MENU</a> <span id="divider">></span>
+    	<a href="../login/top.php">MENU</a> <span id="divider">></span>
    	    <a href="../chapter5/chapter5.php">第五章 配列</a> <span id="divider">></span> 
     	 第一節 配列 問題１&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php

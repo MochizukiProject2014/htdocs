@@ -670,7 +670,7 @@ function resetq4_1_2(){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int a,i;" + "\n" + 
-		"scanf(\"%d\",&a);" + "\n" + 
+		"   scanf(\"%d\",&a);" + "\n" + 
 		"\n" +
 		"      printf(\"にゃんにゃん\");" + "\n" + 
 		"\n" + 

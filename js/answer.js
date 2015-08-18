@@ -260,8 +260,8 @@ function answer_check(num){
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		*/
 			var user_code = parser_judge.parse(codeOfUser);
-			if( hantei_2(user_code,1, 18.5,"あなたは適正です") != true){ miss_answer("「18.5以上」は18.5も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
-			else if( hantei_2(user_code, 1, 25,"あなたは適正です") != true){ miss_answer("「25.0以下」は25.0も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			if( hantei_2(user_code,1.75, 56.65625,"あなたは適正です") != true){ miss_answer("「18.5以上」は18.5も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_2(user_code, 1.75, 76.5625,"あなたは適正です") != true){ miss_answer("「25.0以下」は25.0も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
 			else if( codeOfUser.indexOf("&&") == -1 ){ miss_answer("条件式に && を使ってみよう！"); return 0;}
 			else { flagArr.push(true); } 
 		break;
@@ -347,8 +347,8 @@ function answer_check(num){
 			var user_code = parser_judge.parse(codeOfUser);
 			if(hantei_2(user_code,1,18.49, "やせ気味") != true){ miss_answer("計算と条件式を確認してみよう！"); return 0;}
 			else if( hantei_2(user_code,1,25.01,"太り気味") != true){ miss_answer("計算と条件式を確認してみよう！"); return 0;}
-			else if( hantei_2(user_code,1, 18.5,"適正") != true){ miss_answer("「18.5以上」は18.5も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
-			else if( hantei_2(user_code, 1, 25,"適正") != true){ miss_answer("「25.0以下」は25.0も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_2(user_code,1.75, 56.65625,"適正") != true){ miss_answer("「18.5以上」は18.5も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_2(user_code, 1.75, 76.5625,"太り気味") != true){ miss_answer("「25.0未満」は25.0も含まれないぞ！@@条件式を確認してみよう！"); return 0;}
 			else { flagArr.push(true); } 
 		break;
 		case 411:
@@ -558,7 +558,7 @@ function answer_check(num){
 		break;
 		case 521:
 			re = new RegExp(/.+/);answer_pattern_array.push(re);//reオブジェクトが１つだけだとなぜかバグるので応急措置
-			re = new RegExp(/multiarray_declare\("int",".+",".+@.+@.+^.+@.+@.+","2","3"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/multiarray_declare\("int",".+",".+@.+@.+..+@.+@.+","2","3"\)/);answer_pattern_array.push(re);
 			var temp = context_check(result2,answer_pattern_array,true);flagArr.push(temp);
 		break;
 		case 5211:

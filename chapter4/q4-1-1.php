@@ -96,7 +96,7 @@ else{
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int a;
+   int i;
   
    	printf("わんわん");
    

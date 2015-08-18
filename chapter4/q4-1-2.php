@@ -92,7 +92,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　for文を使って、変数aに入力した値の回数だけ「にゃんにゃん」を出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　for文を使って、変数aに入力した値の回数<br>　だけ「にゃんにゃん」を出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_1_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

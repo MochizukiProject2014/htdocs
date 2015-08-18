@@ -30,6 +30,7 @@ else{
 <script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
 <script type="text/javascript" src="../js/samplecode.js"></script>
+<script type="text/javascript" src="../js/answer.js"></script>
 <script type="text/javascript" src="../js/parser.js"></script>
 <script type="text/javascript"src="../tmlib.js-develop/build/tmlib.js"></script>
 <script type="text/javascript" src="../js/anime.js"></script>
@@ -90,8 +91,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br />二重ループを使って＊を１行毎に１つずつ増やして出力しよう。<br />また、行数をscanfで指定できるようにしよう。<br />
-また行数をscanfで指定できるようにしよう。</font></p>
+		<p class = "question"><font size = "3">問題<br />　二重ループを使って＊を１行毎に<br />　１つずつ増やして出力しよう。<br />　また、行数をscanfで指定できるようにしよう。<br /></font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome4_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

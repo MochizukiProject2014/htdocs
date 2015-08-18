@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　for文を使って「わんわん」を３回出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　for文を使って「わんわん」を<br>　３回出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_1_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

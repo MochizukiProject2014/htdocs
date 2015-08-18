@@ -307,6 +307,7 @@ function return_js3(value){
 		document.getElementById('button').value="最初から見る";
 		example_end2();
 		movenextex();
+		ajaxPostFunc(document.getElementById("state").innerHTML,"1","ex");
 		BUTTON_ON();
 		sign=1;
 }

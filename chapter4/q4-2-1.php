@@ -91,7 +91,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　while文を使って変数aに値を入力し続け、<br />その値が偶数ならwhile文を抜け「終了」と出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br>　while文を使って変数aに値を入力し続け、<br />　その値が偶数ならwhile文を抜け<br>　「終了」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

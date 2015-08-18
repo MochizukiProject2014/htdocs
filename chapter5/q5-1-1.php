@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br> int型の変数sumに、for文を使って配列aの要素をひとつずつ呼び出して足していき、<br />最後に変数sumを出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br>　int型の変数sumに、for文を使って配列aの<br>　要素をひとつずつ呼び出して足していき、<br />　最後に変数sumを出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_1_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -162,7 +162,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　第一節　配列　>　問題１">
   		<p><br />
-    	<b>int型の変数sumに、for文を使って配列aの要素をひとつずつ呼び出して足していき、最後に変数sumを出力しよう。</b><br />
+    	<b>int型の変数sumに、for文を使って配列aの要素をひとつずつ呼び出して足していき、<br>最後に変数sumを出力しよう。</b><br />
  		</p>
 	</div>
 	<!---  ダイヤログここまで   -->

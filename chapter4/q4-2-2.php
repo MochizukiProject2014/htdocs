@@ -93,7 +93,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br>　while文を使って値を入力し続け、<br />入力していった値の合計が１００を超えたらwhile文を抜け、「100を超えました。」と出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br>　while文を使って値を入力し続け、<br>　入力していった値の合計が１００を超えたら<br>　while文を抜け、「100を超えました。」<br>　と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_2_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

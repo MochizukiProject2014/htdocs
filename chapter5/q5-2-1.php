@@ -92,7 +92,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br>　大きさが[2][3]の二次元配列を初期化しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br /><br>　大きさが[2][3]の二次元配列を<br>　好きな値で初期化しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -159,7 +159,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　第二節　二次元配列　>　問題２">
   		<p><br />
-    	<b>大きさが[2][3]の二次元配列を初期化しよう。
+    	<b>大きさが[2][3]の二次元配列を好きな値で初期化しよう。
 		</b><br />
  		</p>
 	</div>

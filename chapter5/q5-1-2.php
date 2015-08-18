@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br /><br />　for文を使って配列aの要素を逆順に代入した配列bを作り、<br>配列bの要素を順番に一つずつ出力しよう。　</font></p>
+		<p class = "question"><font size = "4">問題<br />　for文を使って配列aの要素を逆順に代入した<br>　配列bを作り、配列bの要素を順番に<br>　一つずつ出力しよう。　</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_1_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">

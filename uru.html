@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>閏年判定のプログラム</title>
+	</head>
+	<body>
+		<h1>閏年判定のプログラム</h1>
+		判定する年を入力してください。(半角数字)
+		</br><input id="year"></input><input type="button" id="b" value="判定" onclick="uruu()"></input>
+		<p><div id="result">結果：</div>
+	</body>
+
+	<script>
+		var year = document.getElementById("year").value;
+		function uruu(){
+			var year = document.getElementById("year").value; 
+			if(year%400===0) {
+				document.getElementById("result").innerHTML="結果：閏年です";
+			}else if(year%100===0){
+				document.getElementById("result").innerHTML="結果：閏年ではありません";
+			}else if(year%4===0){
+				document.getElementById("result").innerHTML="結果：閏年です";
+			}else{
+				document.getElementById("result").innerHTML="結果：閏年ではありません";
+			}
+		}
+
+	</script>
+
+</html>

@@ -98,7 +98,7 @@ else{
 int main(void){
    int i;
   
-   	printf("わんわん");
+      printf("わんわん");
    
    return 0;
 }</textarea>

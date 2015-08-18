@@ -92,7 +92,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br>　もしxがyより小さいなら<br />　「xはyより小さいです。」と出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br>　もし変数xが変数yより小さいなら<br />　「xはyより小さいです。」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_1_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">#include <stdio.h>
@@ -163,7 +163,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　問題２">
   		<p><br />
-    	<b>もしxがyより小さいなら「xはyより小さいです。」と出力しよう。<br />
+    	<b>もし変数xが変数yより小さいなら「xはyより小さいです。」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

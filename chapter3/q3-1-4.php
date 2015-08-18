@@ -93,7 +93,7 @@ else{
 
 
 		<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　bmi数値を計算して、bmiが18.5以上25.0未満<br />　なら「あなたは適正です。」と出力しよう。<br/>
+		<p class = "question"><font size = "3">問題<br />　bmi数値を計算して、bmiが18.5以上25.0未満<br />　なら「あなたは適正です。」と出力しよう。<br/>
 		（条件式に && を使ってみよう。）</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_1_4();"></br>
 		<p class = "code">▼プログラムを入力</p>

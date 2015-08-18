@@ -95,7 +95,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br>　もしxが20より大きいなら「xは20より<br>　大きいです。」と出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br>　もし変数xが20より大きいなら<br>　「xは20より大きいです。」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_1_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -166,7 +166,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　問題１">
   		<p><br />
-    	<b>もしxが20より大きいなら「xは20より大きいです。」と出力	しよう。<br />
+    	<b>もし変数xが20より大きいなら「xは20より大きいです。」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

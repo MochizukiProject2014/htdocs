@@ -162,7 +162,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第三節　数式　>　問題２">
   		<p><br />
-    	<b>int型のxとyそれぞれに値を入力し、xとyを足してint型のzに代入してみよう。<br />
+    	<b>int型の変数xとyそれぞれに値を入力し、int型の変数zにx+yを代入しよう。<br />
 		</b><br />
  		</p>
 	</div>

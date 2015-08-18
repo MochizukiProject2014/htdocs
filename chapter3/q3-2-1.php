@@ -93,7 +93,7 @@ else{
     
 
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　int型の変数xに年齢を入力し、もし20以上なら「成人」、<br />それ以外なら「未成年」と出力しよう。<br/>（「それ以外」の分岐にはelseを使おう。）</font></p>
+		<p class = "question"><font size = "3">問題<br />　int型の変数xに年齢を入力し、<br />　もし20以上なら「成人」、<br />　それ以外なら「未成年」と出力しよう。<br />　（「それ以外」の分岐にはelseを使おう。）</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -167,7 +167,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第二節　else　>　問題１">
   		<p><br />
-    	<b>int型の変数xに年齢を入力し、もし20以上なら「成人」、それ以外なら「未成年」と出力しよう。<br/>（「それ以外」の分岐にはelseを使おう）<br />
+    	<b>int型の変数xに年齢を入力し、もし20以上なら「成人」、<br>それ以外なら「未成年」と出力しよう。<br/>（「それ以外」の分岐にはelseを使おう）<br />
 		</b><br />
  		</p>
 	</div>

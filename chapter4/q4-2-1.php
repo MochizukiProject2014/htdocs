@@ -106,7 +106,7 @@ int main(void){
          
       
       printf("もう1回");
-
+   
    return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">

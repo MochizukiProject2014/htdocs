@@ -501,10 +501,10 @@ function answer_check(num){
 		break;
 		case 41:
 			var user_code = parser_judge.parse(codeOfUser);
-			if(hantei_3(user_code,1, 99, 0,"合計は100です") != true){ miss_answer("コードを見直してみよう！"); return 0;}
-			else if( hantei_4(user_code,10,20,77,0,"合計は107です") != true){ miss_answer("コードを見直してみよう！"); return 0;}
-			else if( hantei_3(user_code,99, 99,0, "合計は198です") != true){ miss_answer("コードを見直してみよう！"); return 0;}
-			else if( hantei_4(user_code, 12, 34, 56, 0, "合計は102です") != true){ miss_answer("コードを見直してみよう！"); return 0;}
+			if(hantei_3(user_code,1, 99, 0,"合計は100です。") != true){ miss_answer("コードを見直してみよう！"); return 0;}
+			else if( hantei_4(user_code,10,20,77,0,"合計は107です。") != true){ miss_answer("コードを見直してみよう！"); return 0;}
+			else if( hantei_3(user_code,99, 99,0, "合計は198です。") != true){ miss_answer("コードを見直してみよう！"); return 0;}
+			else if( hantei_4(user_code, 12, 34, 56, 0, "合計は102です。") != true){ miss_answer("コードを見直してみよう！"); return 0;}
 			else { flagArr.push(true); } 
 		break;
 		case 42:

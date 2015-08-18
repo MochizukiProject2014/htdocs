@@ -163,7 +163,7 @@ int main(void){
 	<div id="state">36</div>
 	
 	<!--　ダイアログ　-->
-	<div id="dialog-message" title="第四章　繰り返し　>　第三節　while　>　問題１">
+	<div id="dialog-message" title="第四章　繰り返し　>　第三節　二重ループ　>　問題１">
   		<p><br />
     	<b>二重ループを使って九九の７の段と８の段の表を作ろう。
 		</b><br />

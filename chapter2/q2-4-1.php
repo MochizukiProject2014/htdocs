@@ -164,7 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第四節　printf　>　問題１">
   		<p><br />
-    	<b>int型の変数にキーボードから値を入力し、入力された変数をprintfで出力しよう。<br />
+    	<b>int型の変数に値を入力し、入力された変数をprintfで出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

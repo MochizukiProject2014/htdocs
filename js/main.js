@@ -19,7 +19,7 @@ function disTexetarea(){
 	encodeTime++;
 	codeOfUser = document.getElementById('text').value;
 	consoleStatus = document.getElementById("console").value;
-	if(!codeOfUser.match(/return\x20[0-9]/))createSyntaxError("シンタックスエラー！return0がないよ");
+	if(!codeOfUser.match(/return\x20[0-9]/))createSyntaxError("return0; がないよ！");
 	line_reset();
 	var result = parser.parse(codeOfUser);
 	var ucode = "";
@@ -301,12 +301,12 @@ function getVariableValue(name){console.log(name);
 			switch(variables[i].status){
 				case "v":	result = variables[i].value;	break;
 				case "a":
-					if(variables[i].length <= index)return createSyntaxError("本来の長さ以上の値を参照しようとしているよ！");
+					if(variables[i].length <= index)return createSyntaxError("指定した配列の大きさが大きすぎるよ！");
 					var temp = variables[i].value.split("@");
 					result = temp[index];
 				break;
 				case "ma":
-					if((variables[i].length1-1 < (index1))||(variables[i].length2 < (index2-1)))return createSyntaxError("本来の長さ以上の値を参照しようとしているよ！");
+					if((variables[i].length1-1 < (index1))||(variables[i].length2 < (index2-1)))return createSyntaxError("指定した配列の大きさが大きすぎるよ！");
 					var temp = variables[i].value.split("^");
 					var temp2 = temp[index1].split("@");
 					result = temp2[index2];
@@ -315,7 +315,7 @@ function getVariableValue(name){console.log(name);
 			break;
 		}
 	}
-	if(!existFlag)return createSyntaxError("存在しない変数を参照しているところがあるよ！");
+	if(!existFlag)return createSyntaxError("宣言していない変数を使おうとしているよ！");
 	return result;
 }
 
@@ -378,7 +378,7 @@ else if(!for_flag){add_forcontext('duplication_judge("'+data_type+'","'+name+'",
 
 function variable_declare(data_type,name,value){
 	var vlen = variables.length;
-	for(var i = 0;i < vlen ;i++)if(name==variables[i].name)return createSyntaxError("すでに同じ名前の変数があるよ！");
+	for(var i = 0;i < vlen ;i++)if(name==variables[i].name)return createSyntaxError("同じ名前の変数を２回以上宣言しているよ！");
 	if(/:/.test(value)||(/^[a-z]\w*/.test(value)&&!/null/.test(value)&&data_type!="char")){
 		var str = "[";
 		if(/:/.test(value)){
@@ -405,7 +405,7 @@ function variable_declare(data_type,name,value){
 			value = getVariableValue(value);
 			jsOfAnimes.push('ANIME_sengen_enzan("'+data_type+'","'+name+'",'+str+',"'+value+'");');
 		}else{
-			if(jstrlen(value)>1)return createSyntaxError("char型の変数には文字１つしかいれられないよ！");
+			if(jstrlen(value)>1)return createSyntaxError("char型の変数には文字を１つしか入れられないよ！");
 			jsOfAnimes.push('ANIME_sengen_dainyu("'+data_type+'","'+name+'","'+value+'")');
 		}
 	}else if(/[0-9]+/.test(value)&&data_type!="char"){
@@ -427,12 +427,12 @@ if(action_frag == true&&for_flag){
 	var valuelen = length;
 	if(data_type=="char")length--;
 	for(var i =0;i <alen;i++)if(variables[i].name == name)
-		return createSyntaxError("すでに同じ名前の変数か配列があるよ！");
-	if(value=="undefined"&&length=="undefined")return createSyntaxError("初期化しないときは長さを指定してね！");
+		return createSyntaxError("同じ名前の変数か配列を２回以上宣言しているよ！");
+	if(value=="undefined"&&length=="undefined")return createSyntaxError("配列を初期化しないときは、大きさを指定してね！");
 	if(value!="undefined"){
 		var valuearr = value.split("@");
 		valuelen = valuearr.length;
-		if(length < valuelen)return createSyntaxError("指定した長さ以上の要素が入っているよ！") ;
+		if(length < valuelen)return createSyntaxError("配列の大きさより多く要素が入っているよ！") ;
 		init_flag = true;
 		var str = "[";
 		for(var i = 0;i < valuelen ;i++)if(/:/.test(valuearr[i]))calc_flag = true;
@@ -491,8 +491,8 @@ if(action_frag){
 	var animeValue = "[";
 	var objValue = "";
 	var addStr = "?";
-	if(length2=="undefined"||length1=="undefined")return createSyntaxError("配列の長さは両方決めてね！") ;//配列の長さは絶対指定;
-	for(var i =0;i <alen;i++)if(variables[i].name == name)return createSyntaxError("すでに同じ名前の変数か配列があるよ！");
+	if(length2=="undefined"||length1=="undefined")return createSyntaxError("二次元配列の大きさは両方決めてね！") ;//配列の長さは絶対指定;
+	for(var i =0;i <alen;i++)if(variables[i].name == name)return createSyntaxError("同じ名前の変数か配列が２回以上宣言されているよ！");
 	if(value!="undefined"){//初期化されている時
 		addStr = "0";
 		var altvalue="";
@@ -520,13 +520,13 @@ if(action_frag){
 		value1arr = value.split("^");//配列(大)の方
 		len1 = value1arr.length;//要するに[][]の左の方の長さ
 		if(length1=="undefined")length1 = len1;
-		if(length1 < len1)return createSyntaxError("指定した長さ以上の要素が入っているよ！") ;//左の値が指定より多い対処
+		if(length1 < len1)return createSyntaxError("配列の大きさより多く要素が入っているよ！") ;//左の値が指定より多い対処
 		init_flag = true;
 		for(var i = 0;i < len1;i++){
 			value2arr = value1arr[i].split("@");//配列(小)の方
 			len2 = value2arr.length;//要するに[][]の左の方の長さ
 			if((length2 < len2&&data_type!="char")||(length2-1 < len2&&data_type=="char"))
-				return createSyntaxError("指定した長さ以上の要素が入っているよ！") ;//右の値が指定より多い対処
+				return createSyntaxError("配列の大きさより多く要素が入っているよ！") ;//右の値が指定より多い対処
 			for(var k = 0;k < len2;k++) {
 				if(/:/.test(value2arr[k]))calc_flag = true;
 				if(value2arr[k]!="?"&&data_type!="char"){
@@ -585,12 +585,12 @@ if(action_frag == true&&for_flag){
 	if(vtype=="char"){
 		var strlen  = jstrlen(value);
 		switch(getVariableStatus(name)){
-			case "v":if(strlen>1)return createSyntaxError("char型の変数には文字１つしかいれられないよ！");
+			case "v":if(strlen>1)return createSyntaxError("char型の変数には文字を１つしかいれられないよ！");
 			break;
 			case "a":
 				for(var i = 0;i < len;i++){
 					if(variables[i]==name){
-						if(variables.length>=strlen+1)return createSyntaxError("配列の長さを超えた文字列を代入してるよ！");
+						if(variables.length>=strlen+1)return createSyntaxError("配列の大きさより多く文字列が入っているよ！");
 					}
 				}
 				value +='\0';
@@ -598,7 +598,7 @@ if(action_frag == true&&for_flag){
 			case "ma":
 				for(var i = 0;i < len;i++){
 					if(variables[i]==name){
-						if(variables.length2>=strlen+1)return createSyntaxError("配列の長さを超えた文字列を代入してるよ！");
+						if(variables.length2>=strlen+1)return createSyntaxError("配列の大きさより多く文字列が入っているよ！");
 					}
 				}
 			break;
@@ -648,7 +648,7 @@ if(action_frag == true&&for_flag){
 			var tempArr = [];
 			for(var i=0;i<len;i++){
 				if(variables[i].name==name){
-					if(variables[i].length<index)return createSyntaxError("配列の長さ以上のインデックスに代入しようとしてるよ！");
+					if(variables[i].length<index)return createSyntaxError("配列の大きさより多く要素が入っているよ！");
 					tempArr=variables[i].value.split("@");
 				}
 			}
@@ -859,7 +859,7 @@ function evalue(condition){
 					errorFlag = true;
 				}
 			}
-		if(!errorFlag)return createSyntaxError("条件式に定義されてない変数が入っているよ！");
+		if(!errorFlag)return createSyntaxError("条件式に宣言されていない変数が使われているよ！");
 		}
 	}
 	result = (eval(tempStr));
@@ -891,7 +891,7 @@ if(action_frag == true){
 	for_flag = false;
 	for_cnt++;
 	for_index_array.push(0);
-	if(for_cnt>=3)createSyntaxError("ごめんね、このアプリでは三重ループ以降は対応してないよ。");
+	if(for_cnt>=3)createSyntaxError("ごめんね、このアプリでは三重ループ以降は対応していないよ。");
 	if(for_cnt>=1)for(var fi = 0;fi < for_cnt-1;fi++)for_contexts_array[0] += 'for_next;';
 	for_conditions_array.push(cond);
 	for_alt_array.push(alt);
@@ -985,7 +985,7 @@ function fordeval(){
 	for_context_finish =false;
 	while(assess(for_conditions_array[1])&&forlimit<15){
 		for(var i = for_index_array[1];i < len ;i++){
-			if(tempArr[i].match(/for_next/)){return createSyntaxError("二重以上のループがくまれてるよ！")}
+			if(tempArr[i].match(/for_next/)){return createSyntaxError("ごめんね、このアプリでは三重ループ以降は対応していないよ。")}
 			else{
 				console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+for_alt_array[1]+"、"+len+"中"+for_index_array[1]+"まで実行、終了条件："+for_conditions_array[1]+"："+evalue(for_conditions_array[1]));
 				if(syntaxErrorFlag){eval(tempArr[i]);}else{breakflag=true;ANIME_reset();ANIME_error(syntaxStr);}
@@ -1063,7 +1063,7 @@ console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+
 		}
 		forlimit++;
 		for_index_array[for_now_cnt]=0;
-		if(forlimit >=15)return createSyntaxError("for文の回数が多すぎるよ！");
+		if(forlimit >=15)return createSyntaxError("繰り返しの回数が多すぎるよ！");
 	}
 	if(firstdone){
 		for_context_finish =true;
@@ -1088,7 +1088,7 @@ function for_deval(){
 	while(evalue(for_conditions_array[for_now_cnt])&&forlimit<15){
 		for(var i = for_index_array[for_now_cnt];i < len ;i++){
 			if(tempArr[i].match(/for_next/)){
-				return createSyntaxError("二重以上のループがくまれてるよ！")
+				return createSyntaxError("ごめんね、このアプリでは三重ループ以降は対応していないよ。")
 			}else{
 console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+for_alt_array[for_now_cnt]+"、"+len+"中"+for_index_array[for_now_cnt]+"まで実行、終了条件："+for_conditions_array[for_now_cnt]+"："+evalue(for_conditions_array[for_now_cnt]));
 				eval(tempArr[i]);
@@ -1127,7 +1127,7 @@ console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+
 		}
 		forlimit++;
 		for_index_array[for_now_cnt]=0;
-		if(forlimit >=15)return createSyntaxError("for文の回数が多すぎるよ！");
+		if(forlimit >=15)return createSyntaxError("繰り返しの回数が多すぎるよ！");
 	}
 	//eval(tyottomate);
 }
@@ -1190,8 +1190,8 @@ if(action_frag == true){
 			if(variable_value){
 				fstr += variable_value;
 				if(variable_value=="?")return createSyntaxError("値の入っていない変数が演算式の中にあるよ！");
-				if(getVariableType(fArray[i])=="char")return createSyntaxError("char型は計算できないよ！");
-			}else{console.log(fArray[i]+"："+variable_value+"存在しないよ！！！");return createSyntaxError("存在しない変数を指定してる所があるよ！");}
+				if(getVariableType(fArray[i])=="char")return createSyntaxError("char型の変数で計算はできないよ！");
+			}else{console.log(fArray[i]+"："+variable_value+"存在しないよ！！！");return createSyntaxError("宣言していない変数を使おうとしている所があるよ！");}
 		}else{
 			fstr += fArray[i];
 		}
@@ -1514,13 +1514,13 @@ function valuein_check(data_type,name,value){
 		console.log(strlen);
 		switch(getVariableStatus(name)){
 			case "v":
-				if(strlen>1)return createSyntaxError("char型の変数には文字１つしかいれられないよ！");
+				if(strlen>1)return createSyntaxError("char型の変数には文字を１つしかいれられないよ！");
 			break;
 			case "a":
-				if(maxlen1>=strlen+1)return createSyntaxError("配列の長さを超えた文字列を代入してるよ！");
+				if(maxlen1>=strlen+1)return createSyntaxError("配列の大きさを超えた文字列を代入してるよ！");
 			break;
 			case "ma":
-				if(maxlen2>=strlen+1)return createSyntaxError("配列の長さを超えた文字列を代入してるよ！");
+				if(maxlen2>=strlen+1)return createSyntaxError("配列の大きさを超えた文字列を代入してるよ！");
 			break;
 		}
 	}else{

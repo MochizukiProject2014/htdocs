@@ -564,15 +564,15 @@ function resetq3_3_1(){
 			"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + 
 			"   int score;" + "\n" +
 			"   scanf(\"%d\",&score);" + "\n" +
-		 	"\n" + 
+		 	"	\n" + 
 		 	"      printf(\"良\");" + "\n" + 
-		 	"\n" + 
+		 	"	\n" + 
 		 	"      printf(\"可\");" + "\n" + 
-		 	"\n" + 
+		 	"	\n" + 
 		 	"      printf(\"再試験\");" + "\n" + 
-		 	"\n" + 
+		 	"	\n" + 
 		 	"      printf(\"不可\");" + "\n" + 
-		 	"\n" + "   return 0;" + "\n" + "}";
+		 	"	\n" + "   return 0;" + "\n" + "}";
 		cEditor.setValue(cEditor.value)
 		cEditor.save();
 	}else{

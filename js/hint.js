@@ -189,7 +189,9 @@ function hintq3_3_1_1(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />else ifは<font color = red>何回でも使うことができる</font>にゃ。</b></p>";
 }
 function hintq3_3_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br />「<font color = red>もし90点以上なら</font>」良で、<br />「<font color = red>それ以外で60点以上90点未満なら</font>」可、<br />「<font color = red>それ以外で40点以上60点未満なら</font>」再試験で、<br />「<font color = red>それ以外なら</font>」不可だにゃ！<br />ifやelse if、elseを使ってうまく表現するにゃ〜</b></p>";
+	//document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br />「<font color = red>もし90点以上なら</font>」良で、<br />「<font color = red>それ以外で60点以上90点未満なら</font>」可、<br />「<font color = red>それ以外で40点以上60点未満なら</font>」再試験で、<br />「<font color = red>それ以外なら</font>」不可だにゃ！<br />ifやelse if、elseを使ってうまく表現するにゃ〜</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br />「<font color = red>もし90点以上なら</font>」良で、<br />「<font color = red>それ以外で60点以上なら</font>」可、<br />「<font color = red>それ以外で40点以上なら</font>」再試験で、<br />「<font color = red>それ以外なら</font>」不可だにゃ！<br />ifやelse if、elseを使ってうまく表現するにゃ〜</b></p>";
+
 }
 
 function hintc3_matome1(){

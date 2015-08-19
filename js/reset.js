@@ -1066,8 +1066,8 @@ function reset_matome5(){
 		"#include <stdio.h>" + "\n" +"int main(void){" + "\n" +
     	"       = {1,0,7,8,3,4,6,5,9,2};" + "\n" +
     	"   int i,b;" + "\n" +
-    	"   for(i = 0; i < 2; i ++){" + "\n" +
-     	"      printf(\"数字を入力してください：\");" + "\n" + "\n" + "\n" + 
+    	"   for(i=0;i<2;i++){" + "\n" +
+     	"      printf(\"数字を入力してください：\");" +"		\n" + "		\n" + "		\n" + 
      	"   }" + "\n" + "   return 0;"+ "\n" + "}" ;
 	cEditor.setValue(cEditor.value)
 	cEditor.save();

@@ -58,7 +58,7 @@ else{
 		<div class = "menu"><a href="../index.html">TOP</a> <span id="divider">></span> 
     	<a href="../login/top.php">MENU</a> <span id="divider">></span>
    	    <a href="../chapter5/chapter5.php">第五章 配列</a> <span id="divider">></span> 
-    	 第一節 配列 問題１&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    	 第五章 まとめ問題&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php
 if(isset($_SESSION['login'])==false){
 	
@@ -164,8 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　まとめ問題">
   		<p><br />
-    	<b>大きさが10の配列aを宣言し、<br>「変数bに値を入力し、変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br/>（挑戦状にあったように、変数bに入力する値は「1,9」の順に入力しよう。）
-</b><br />
+    	<b>大きさが10の配列aを宣言し、<br>「変数bに値を入力し、変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br/>（挑戦状にあったように、変数bに入力する値は「1,9」の順に入力しよう。）</b><br />
  		</p>
 	</div>
 	<!---  ダイヤログここまで   -->

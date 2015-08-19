@@ -447,13 +447,15 @@ function hintq5_2_2_2(){
 }
 
 function hintqc5_matome_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは大きさが10の配列aをあらかじめ書いてある配列を使って初期化するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは大きさが10の配列aを、<br>あらかじめ書いてある式を使って初期化するにゃ。</b></p>";
 }
 function hintqc5_matome_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />2回繰り返すからfor文を活用するにゃ。</b></p>";
+	//document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />2回繰り返すからfor文を活用するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />入力と出力は2回ずつ繰り返すから<br>for文を活用するにゃ。</b></p>";
+
 }
 function hintqc5_matome_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「変数bを使って配列aの要素を指定して出力」しなきゃいけないから変数bに値を入力するにゃ。<br/>そしてprintf文で、「変数bを使って配列aの要素を指定して出力」するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「変数bを使って配列aの要素を指定して出力」するから<br>変数bに値を入力するにゃ。<br/>そしてprintf文で、<br>「変数bを使って配列aの要素を指定して出力」するにゃ。</b></p>";
 }
 
 /*第5章追加問題*/

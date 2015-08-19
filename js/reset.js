@@ -938,7 +938,7 @@ function resetq5_1_2(){
 		"   int b[5];" + "\n" + 
 		"   int i;" + "\n" + 
 		"   for(i=0; i<5; i++){" + "\n" + 
-				"\n" + 
+		"		\n" + 
 		"   }" + "\n" + 
 		"   for(i=0; i<5; i++){" + "\n" + 
 		"      printf(\"b[%d] = %d\\n\",i,b[i]);" + "\n" + 

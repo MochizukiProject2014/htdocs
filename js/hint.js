@@ -424,10 +424,10 @@ function hintq5_1_1_2(){
 
 
 function hintq5121(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />bの配列にaの配列を後ろから代入していくにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />配列aの要素を<br>配列bに後ろから代入していくにゃ。</b></p>";
 }
 function hintq5122(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、aの配列を後ろから順番に呼び出せるにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、<br>配列aの要素を後ろから順番に呼び出せるにゃ。</b></p>";
 }
 
 

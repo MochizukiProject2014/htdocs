@@ -339,11 +339,11 @@ function hintc4_matome_3(){
 
 function hintc4_matome2_1(){
 	//document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br /><font size = '2'>まずはint型で4つの変数を宣言するにゃ。<br />それぞれ、「＊を出力する数を指定する変数」「行数を指定する変数」「二重ループの外側のループを制御する変数」「二重ループの内側を制御する変数」だにゃ。<br />「＊を出力する数を指定する変数」は初期値1を代入するにゃ。</font></b></p>";
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br /><font size = '2'>n行目にはn個の「*」を出力するにゃ。1行目なら1個、2行目なら2個にゃ。</br>もし3が入力されたら、最終的に下のような出力になるようにするにゃ。</br>*<br>**<br>***</font></b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br /><font size = '2'>n行目にはn個の「*」を出力するにゃ。1行目なら1個、2行目なら2個にゃ。</br>もし3が入力されたら、下のような全３行の出力になるようにするにゃ。</br>*<br>**<br>***</font></b></p>";
 
 }
 function hintc4_matome2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />入力(scanf)で、</br>「行数を指定する変数」に値を入力するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />入力(scanf)で、</br>「行数を指定する変数」に値を指定するにゃ。</b></p>";
 	//document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />次はscanfで、「行数を指定する変数」に値を入力するにゃ。</b></p>";
 }
 function hintc4_matome2_3(){

@@ -14,7 +14,7 @@ var sampleMatome2 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5\\n");ANIM
 //３章---------------------------------------------------
 
 var sample311 = 'ANIME_sengen_dainyu("int","x","32");ANIME_compare(["x:>:20"],[true],true);ANIME_printf("xは20より大きいです");setPrintf("xは20より大きいです")';
-var sample312 = 'ANIME_sengen_dainyu("int","x","12");ANIME_sengen_dainyu("int","y","20");ANIME_compare(["x :< :y"],[true],true);ANIME_printf("xはyより小さいです");setPrintf("xはyより小さいです")'
+var sample312 = 'ANIME_sengen_dainyu("int","x","12");ANIME_sengen_dainyu("int","y","20");ANIME_compare(["x :< :y"],[true],true);ANIME_printf("xはyより小さいです");setPrintf("xはyより小さいです。")'
 var sample313 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_compare(["x:!=:0"],[true],true);ANIME_printf("xは0ではないです");setPrintf("xは0ではないです")';
 var sample314 = 'ANIME_sengen("double","height");ANIME_sengen("double","weight");ANIME_sengen("double","bmi");ANIME_printf("あなたの身長(m)を入力してください。");setPrintf("あなたの身長(m)を入力してください。");ANIME_scanf();setPrintf("1.7");ANIME_dainyu("height","1.700000");ANIME_printf("あなたの体重(kg)を入力してください。");setPrintf("あなたの体重(kg)を入力してください。");ANIME_scanf();setPrintf("65");ANIME_dainyu("weight","65.000000");ANIME_enzan_dainyu("bmi",["weight","/","(","height","*","height",")"],"22.491349");ANIME_compare(["bmi:>=:18.5 ","&&","bmi:<=:25"],[true,true],true);ANIME_printf("あなたは適正です。");setPrintf("あなたは適正です。")';
 var sample321 ='ANIME_sengen("int","x");ANIME_printf("あなたの年齢を入力してください。");setPrintf("あなたの年齢を入力してください。");ANIME_scanf();setPrintf("15");ANIME_dainyu("x","15");ANIME_compare(["x:>=:20"],[false],false)ANIME_printf("あなたは未成年です。");setPrintf("あなたは未成年です。")'

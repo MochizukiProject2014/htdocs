@@ -69,16 +69,16 @@ ex_431.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"i\");;ANIME_sengen(\"int\"
 //---------------------------------------------
 
 var ex_511 = new Array();
-ex_511.push("setIntr(\"<b>今回は「配列」というものを学んでいくにゃ</br>まずはコードの動きを見るにゃ</b>\");;baON()");
+ex_511.push("setIntr(\"<b>今回は「配列」というものを学んでいくにゃ</br>まずはプログラムの動きを見るにゃ</b>\");;baON()");
 
 ex_511.push("baOFF();;line(3);;ANIME_array_sengen_dainyu(\"int\",\"a\",3,[\"2\",\"6\",\"3\"],[\"2\",\"6\",\"3\"]);;line(4);;ANIME_sengen(\"int\",\"i\");;line(5);;ANIME_dainyu(\"i\",\"0\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[0]\"]);;setPrintf(\"a[0] = 2\\n\");;;setIntr(\"<b>ここからは早送りするにゃ</b>\");;ANIME_changeSPEED_Ex(2);;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"1\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[1]\"]);;setPrintf(\"a[1] = 6\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"2\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[2]\"]);;setPrintf(\"a[2] = 3\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"3\");;ANIME_compare([\"i:<:3\"],[false],false);;line(8);;ANIME_changeSPEED_Ex(1);;biON();;setIntr(\"<b>じゃあ説明していくにゃ</b>\")");
 
-ex_511.push("line_reset();;setIntr(\"<b>電車みたいなものが出てきたのは気づいたかにゃ？</br>この電車が「<font color=#ff0000>配列</font>」というもので、<br>車両一つ一つが変数のようなものにゃ</b>\")");
-ex_511.push("line(3);;setIntr(\"<b>コードの3行目を見るにゃ。<br>このコードで配列を宣言および初期化をしてるにゃ</br>配列というのは、変数の仲間の一つだにゃ</b>\")");
-ex_511.push("setIntr(\"<b>int aなので、とりあえず今まで見てきた部分はそのままで、</br>int型でaという名前の変数を宣言しているのはわかるかにゃ?</b>\")");
-ex_511.push("setIntr(\"<b>そして名前の後ろに[3]というのがついてるにゃ。</br>配列というのは、同じデータ型の変数を<br>いくつかつなげたようなもので、</br>この[3]というので<font color=#ff0000>つなげる数</font>を決めてるにゃ</b>\")");
-ex_511.push("setIntr(\"<b>今回は[3]なので3つつなげてるにゃ</br>つまり、int a[3]で、「aという名前の大きさが3の配列を宣言」しているということだにゃ</b>\")");
-ex_511.push("setIntr(\"<b>そして、その後ろのコードで配列を初期化してるにゃ</br>この、配列内の各数字のことを「<font color=#ff0000>配列の要素</font>」というにゃ</b>\")");
+ex_511.push("line_reset();;setIntr(\"<b>変数くんたちが電車みたいに繋がったようなものが<br>出てきたのは気づいたかにゃ？</br>この電車が「<font color=#ff0000>配列</font>」というもので、<br>車両一つ一つが変数のようなものにゃ</b>\")");
+ex_511.push("line(3);;setIntr(\"<b>プログラムの3行目を見るにゃ。<br>このプログラムで配列を宣言および初期化をしてるにゃ</br>配列というのは、変数の仲間の一つだにゃ</b>\")");
+ex_511.push("setIntr(\"<b>「int a」の部分までは、今までの変数の宣言と一緒だにゃ</br>int型でaという名前の変数を宣言しているのはわかるかにゃ?</b>\")");
+ex_511.push("setIntr(\"<b>でも今回は、変数名aの後ろに[3]というのがついてるにゃ。</br>配列というのは、同じデータ型の変数を<br>いくつか繋げたようなもので、</br>この[3]というのは<font color=#ff0000>つなげる数</font>を決めてるのにゃ</b>\")");
+ex_511.push("setIntr(\"<b>今回は[3]なので3つつなげてるにゃ</br>つまり、「int a[3]」は、<br>「aという名前の、大きさが3のint型の配列を宣言」<br>しているということだにゃ</b>\")");
+ex_511.push("setIntr(\"<b>そして、3行目の右辺で配列を初期化してるにゃ</br>この、配列内の各数字のことを「<font color=#ff0000>配列の要素</font>」というにゃ</b>\")");
 ex_511.push("setIntr(\"<b>配列を初期化するときは、こんなふうに<br><font color=#ff0000>｛｝</font>に入れたい数字を順番に書いていくにゃ</b>\")");
 ex_511.push("setIntr(\"<b>じゃあもう一度動きを見てみるにゃ</b>\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 

@@ -336,7 +336,7 @@ function hintc4_matome_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br /><br />0以外を入力した場合、その値を、合計を記録する変数に足し、<br />0を入力した場合、breakを実行しwhile文を抜けるにゃ。</b></p>";
 }
 function hintc4_matome_3(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br /><br />最後に「合計は～です。」を出力するのを忘れないようにするにゃ！</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br /><br />最後に「合計は～です。」を出力するのを<br>忘れないようにするにゃ！</b></p>";
 }
 
 

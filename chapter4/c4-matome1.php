@@ -91,7 +91,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "2">問題<br />　while文を使って整数の値を入力し続け、０が入力されたら<br />　現在の合計を「合計は～です。」と出力し、終了させよう。<br />（「合計は～です。」の「～」は現在の合計の値が<br>　出力されるようにしよう）</font></p>
+		<p class = "question"><font size = "2">問題<br />　while文での無限ループを使って整数の値を入力し続け、</br>　０が入力されたら現在の合計を「合計は～です。」と出力し、</br>　終了させよう。（「～」は現在の合計の値）</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome4_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -169,7 +169,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　まとめ問題１">
   		<p><br />
-    	<b>while文を使って整数の値を入力し続け、<br />０が入力されたら現在の合計を「合計は～です。」と出力し、<br />終了させよう。（「合計は～です。」の「～」は現在の合計の値が出力されるようにしよう）
+    	<b>while文での無限ループを使って整数の値を入力し続け、<br />０が入力されたら現在の合計を「合計は～です。」と出力し、<br />終了させよう。（「～」は現在の合計の値）
 		</b><br />
  		</p>
 	</div>

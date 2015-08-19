@@ -260,8 +260,8 @@ function answer_check(num){
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		*/
 			var user_code = parser_judge.parse(codeOfUser);
-			if( hantei_2(user_code,1.75, 56.65625,"あなたは適正です") != true){ miss_answer("「18.5以上」は18.5も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
-			else if( hantei_2(user_code, 1.75, 76.5625,"あなたは適正です") != true){ miss_answer("「25.0以下」は25.0も含まれるぞ！@@条件式を確認してみよう！"); return 0;}
+			if( hantei_2(user_code,1.75, 56.65625,"あなたは適正です。") != true){ miss_answer("「18.5以上」は18.5も含まれるよ！@@条件式を確認してみよう！"); return 0;}
+			else if( hantei_2(user_code, 1.75, 76.5625,"あなたは適正です。") == true){ miss_answer("「25.0未満」は25.0も含まれないよ！@@条件式を確認してみよう！"); return 0;}
 			else if( codeOfUser.indexOf("&&") == -1 ){ miss_answer("条件式に && を使ってみよう！"); return 0;}
 			else { flagArr.push(true); } 
 		break;

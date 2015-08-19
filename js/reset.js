@@ -814,7 +814,7 @@ function resetq4_3_1(){
 		"\n" + 
 		"\n" + 
 		"\n" + 
-		"         printf(\"%d\",x);" + "\n" +
+		"         printf(\"%d \",x);" + "\n" +
 		"\n" + 
 		"      printf(\"\\n\");" + "\n" + 
 		"\n" + 

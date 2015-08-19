@@ -511,7 +511,7 @@ function resetq3_2_1(){
 			"   int x;" + "\n" + 
 			"   printf(\"あなたの年齢を入力してください。\");" + "\n" +
 			"   scanf(\"%d\",&x);" + "\n" +
-		 	"\n" + "\n" + "\n" + "\n" + "\n" 
+		 	"	\n" + "	\n" + "	\n" + "	\n" + "	\n" 
 		 	+ "   return 0;" + "\n" + "}";
 		cEditor.setValue(cEditor.value)
 		cEditor.save();

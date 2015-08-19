@@ -347,9 +347,9 @@ function resetq3_1_1(){
 		cEditor.value = 
 			"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + 
 			"   int x = 32;" + "\n" + 
-			"\n" + 
+			"	\n" + 
 			"      printf(\"xは20より大きいです。\");" + "\n" + 
-		 "\n" + "   return 0;" + "\n" + "}";
+		"	\n" + "   return 0;" + "\n" + "}";
 		cEditor.setValue(cEditor.value)
 		cEditor.save();
 	}else{

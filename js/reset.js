@@ -714,15 +714,15 @@ function resetq4_2_1(){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int a;" + "\n" + 
-		"\n" + 
+		"	\n" + 
 		"      printf(\"数字を入力：\");" + "\n" + 
         "      scanf(\"%d\",&a);" + "\n" + 
-        "\n" + 
-        "         printf(\"終了\");" + "\n" + 
-        "\n" + 
+        "		\n" + 
+        "         printf(\"終了\");" + "			\n" + 
+        "		\n" + 
 		"\n" +
 		"      printf(\"もう1回\");" + "\n" + 
-		"\n" + 
+		"	\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();

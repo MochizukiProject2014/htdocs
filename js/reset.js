@@ -626,9 +626,9 @@ function resetq4_1_1(){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int i;" + "\n" + 
-		"\n" + 
+		"	\n" + 
 		"      printf(\"わんわん\");" + "\n" + 
-		"\n" + 
+		"	\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();

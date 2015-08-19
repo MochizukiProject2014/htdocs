@@ -440,10 +440,10 @@ function hintq5212(){
 
 
 function hintq5_2_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br>二次元配列の大きさを示す[3][3]は左が「要素数1」、右が「要素数2」だにゃ。<br/>辞書にも書いてあるから参考にするにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br>二次元配列の大きさを示す[3][3]は<br>左が「要素数1」、右が「要素数2」だにゃ。<br/>辞書にも書いてあるから参考にするにゃ。</b></p>";
 }
 function hintq5_2_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br>二次元配列を扱うときは「配列名[数字][数字]」で呼び出せるにゃ。<br/>例えば今回「2」を呼び出したかったらdata[1][2]のように書けばいいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br>二次元配列を扱うときは<br>「配列名[数字][数字]」で呼び出せるにゃ。<br/>例えば今回二次元配列dataの値「6」を呼び出したかったら<br>data[1][2]のように書けばいいにゃ。</b></p>";
 }
 
 function hintqc5_matome_1(){

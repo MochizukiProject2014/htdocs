@@ -1020,11 +1020,11 @@ function resetq5_2_2(){
 	myRet = confirm("はじめからやり直しますか？");
     if ( myRet == true ){
 	cEditor.value = 
-		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int x,y;"
-		"   int data[3][3] = {{1,2,3},{4,5,6},{7,8,9}};" + "\n" +  
-		"\n" + "\n" + 
-		"   return 0;" + "\n" + "}";
+		"#include <stdio.h>"+"\n" + "int main(void){" + "\n" +
+		"	int x,y;\n" +
+		"	int data[3][3] = {{1,2,3},{4,5,6},{7,8,9}};" + "\n" +  
+		"	\n" + "	\n" + 
+		"	return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
 	}else{

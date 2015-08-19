@@ -150,7 +150,7 @@ int main(void){
 	
 	<div class = "hint-box">
 		<img class = "chara" src = "../img/character/littlecat.png"/>
-		<div class = "com" id = "com"><p><b>問題の補足だにゃ。<br />bmiは18.5以上25.0以下は適正。<br />bmiは体重/（身長×身長)</b></p></div>
+		<div class = "com" id = "com"><p><b>問題の補足だにゃ。<br />bmiは18.5以上25.0未満は適正。<br />bmiは体重/（身長×身長)</b></p></div>
 		<table class = "hinttable">
   			<tr>
     			<td><font size = "5">ヒント</font></td>

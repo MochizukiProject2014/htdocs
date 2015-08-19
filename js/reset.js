@@ -857,18 +857,16 @@ function reset_matome4_1(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + 
-		"\n" + "   return 0;" + "\n" + "}";
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + 
+		"	\n" + "   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
 	}else{

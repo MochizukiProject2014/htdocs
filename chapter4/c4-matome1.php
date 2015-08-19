@@ -97,18 +97,16 @@ else{
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-
-
-
-
-
-
-
-
-
-
-
-	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+   return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">
 	</div>

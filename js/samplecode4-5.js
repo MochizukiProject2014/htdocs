@@ -1,14 +1,14 @@
 var ex_411 = new Array();
-ex_411.push("setIntr(\"<b>今回の挑戦状を解くには「繰り返し」が必要にゃ！<br>ということでこのコードを見るにゃ。<br>このコードは「こん」と「たぬ」をそれぞれ２回ずつ<br>出力するプログラムにゃ。</b>\");;baON()");
+ex_411.push("setIntr(\"<b>今回の挑戦状を解くには「繰り返し」が必要にゃ！<br>ということで、このプログラムを見るにゃ。<br>このプログラムは「こん」と「たぬ」をそれぞれ２回ずつ<br>出力するプログラムにゃ。</b>\");;baON()");
 
-ex_411.push("baOFF();;line(3);;ANIME_changeSPEED_Ex(1.5);;ANIME_sengen(\"int\",\"i\");;line(4);;ANIME_sengen(\"int\",\"j\");;line(5);;ANIME_dainyu(\"i\",\"1\");;ANIME_compare([\"i:<=:2\"],[true],true);;line(6);;ANIME_printf(\"こん\\n\");;setPrintf(\"こん\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"2\");;ANIME_compare([\"i:<=:2\"],[true],true);;line(6);;ANIME_printf(\"こん\\n\");;setPrintf(\"こん\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"3\");;ANIME_compare([\"i:<=:2\"],[false],false);;line(8);;ANIME_dainyu(\"j\",\"2\");;ANIME_compare([\"j:>=:1\"],[true],true);;line(9);;ANIME_printf(\"たぬ\\n\");;setPrintf(\"たぬ\\n\");;line(8);;ANIME_enzan_dainyu(\"j\",\"j-1\",\"1\");;ANIME_compare([\"j:>=:1\"],[true],true);;line(9);;ANIME_printf(\"たぬ\\n\");;setPrintf(\"たぬ\\n\");;line(8);;ANIME_enzan_dainyu(\"j\",\"j-1\",\"0\");;ANIME_compare([\"j:>=:1\"],[false],false);;line(11);;biON();;setIntr(\"<b>では、まずは4，5，6行目を見るにゃ</b>\")");
+ex_411.push("baOFF();;line(3);;ANIME_changeSPEED_Ex(1.5);;ANIME_sengen(\"int\",\"i\");;line(4);;ANIME_sengen(\"int\",\"j\");;line(5);;ANIME_dainyu(\"i\",\"1\");;ANIME_compare([\"i:<=:2\"],[true],true);;line(6);;ANIME_printf(\"こん\\n\");;setPrintf(\"こん\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"2\");;ANIME_compare([\"i:<=:2\"],[true],true);;line(6);;ANIME_printf(\"こん\\n\");;setPrintf(\"こん\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"3\");;ANIME_compare([\"i:<=:2\"],[false],false);;line(8);;ANIME_dainyu(\"j\",\"2\");;ANIME_compare([\"j:>=:1\"],[true],true);;line(9);;ANIME_printf(\"たぬ\\n\");;setPrintf(\"たぬ\\n\");;line(8);;ANIME_enzan_dainyu(\"j\",\"j-1\",\"1\");;ANIME_compare([\"j:>=:1\"],[true],true);;line(9);;ANIME_printf(\"たぬ\\n\");;setPrintf(\"たぬ\\n\");;line(8);;ANIME_enzan_dainyu(\"j\",\"j-1\",\"0\");;ANIME_compare([\"j:>=:1\"],[false],false);;line(11);;biON();;setIntr(\"<b>では、まずは5,6,7行目を見るにゃ</b>\")");
 
-ex_411.push("line_reset();;line(5);;setIntr(\"<b>これは<font color=#ff0000>for</font>文というもので、</br>あるコードを繰り返し実行したい時につかうにゃ<br>今回は「こん」や「たぬ」の出力を繰り返してるのがわかるかにゃ？</b>\")");
-ex_411.push("setIntr(\"<b>『()』で囲まれた『i=1』の部分を<font color=#ff0000>初期化式</font></br>『i<=2』の部分を<font color=#ff0000>継続条件式</font></br>『i++』の部分を<font color=#ff0000>再初期化式</font>というにゃ。</br>『{}』で囲まれた部分を<font color=#ff0000>文</font>というにゃ</br></b>\")");
-ex_411.push("setIntr(\"<b>初期化式はfor文の1行目についたときに実行されるにゃ</br>今回はiに1を代入してるにゃ</b>\")");
+ex_411.push("line_reset();;line(5);;setIntr(\"<b>これは<font color=#ff0000>for</font>文というもので、</br>あるプログラムを繰り返し実行したい時につかうにゃ<br>今回は「こん」や「たぬ」の出力を繰り返してるのがわかるかにゃ？</b>\")");
+ex_411.push("setIntr(\"<b>5行目の『()』で囲まれているうちの、<br>『i=1』の部分を<font color=#ff0000>初期化式</font></br>『i<=2』の部分を<font color=#ff0000>継続条件式</font></br>『i++』の部分を<font color=#ff0000>再初期化式</font>というにゃ。</br>6行目の、『{}』で囲まれた部分を<font color=#ff0000>文</font>というにゃ</br></b>\")");
+ex_411.push("setIntr(\"<b>初期化式は<br>実行している部分がfor文の1行目に<br>辿りついたときに実行されるにゃ</br>今回の初期化式は「i=1」、<br>iに1を代入してるにゃ</b>\")");
 ex_411.push("setIntr(\"<b>そして、継続条件式が満たされていたら文を実行するにゃ</br>ちなみに条件が満たされていることを「<font color=#ff0000>真</font>」というにゃ</b>\")");
-ex_411.push("setIntr(\"<b>今回は継続条件式がi<=2だから、iが2以下のあいだが真にゃ</br>今iには１が代入されているから真なので、</br>文が実行されて「こん」と出力してるにゃ</b>\")");
-ex_411.push("setIntr(\"<b>そして、文の実行が終わるとfor文の1行目に戻って</br>再初期化式を実行するにゃ</br>今回はi++を実行するにゃ</b>\")");
+ex_411.push("setIntr(\"<b>今回は継続条件式が「i<=2」だから、<br>iが2以下のあいだが真にゃ</br>最初、iには１が代入されているから i<=2を満たすので、</br>文が実行されて「こん」と出力してるにゃ</b>\")");
+ex_411.push("setIntr(\"<b>そして、文の実行が終わるとfor文の1行目に戻って</br>再初期化式を実行するにゃ</br>今回はの初期化式はi++だから<br>i++を実行するにゃ</b>\")");
 ex_411.push("setIntr(\"<b>そして、継続条件式が満たされていたら</br>もう一度文が実行されるにゃ</b>\")");
 ex_411.push("setIntr(\"<b>今回は、継続条件式がi<=2だから、iが2以下の間が真なので、<br>今iには2が代入されているからもう一度文が実行されるにゃ</b>\")");
 ex_411.push("setIntr(\"<b>文の実行が終わったらまた再初期化式を実行し～をくりかえし、<br>継続条件式に当てはまる間繰り返すにゃ。</b>\")");

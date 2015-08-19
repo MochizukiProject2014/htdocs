@@ -302,7 +302,7 @@ function hintq4_1_1_1(){
 
 
 function hintq4_1_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />aに入力した値の回数だけ出力するから、継続条件式にはaを使うにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />aに入力した値の回数だけ出力するから、<br>継続条件式にはaを使うにゃ。<br>継続条件式を満たせば、再度「文」を実行するにゃ。<br>覚えてるかにゃ〜〜？</b></p>";
 }
 
 

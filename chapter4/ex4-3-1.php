@@ -94,8 +94,8 @@ int main(void){
     for (i=0; i<3; i++) {
 		for (k=0; k<2; k++) {
 			printf("*");
-        }
-        printf("\n");
+		}
+		printf("\n");
     }
     return 0;
 }</textarea>

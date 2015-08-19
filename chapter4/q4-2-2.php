@@ -105,7 +105,7 @@ int main(void){
 		scanf("%d",&a);
 		ans += a;
 	
-	printf("100を超えました。", ans);
+	printf("100を超えました。");
 	return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">

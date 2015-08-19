@@ -765,13 +765,13 @@ function resetq4_2_2(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int a, ans = 0;" + "\n" + 
-		"\n" + 
+		"   int a=0, ans = 0;" + "\n" + 
+		"	\n" + 
 		"      printf(\"数字を入力：\");" + "\n" + 
         "      scanf(\"%d\",&a);" + "\n" + 
         "      ans += a;" + "\n" + 
-		"\n" + 
-		"   printf(\"100を超えました。\", ans);" + "\n" + 
+		"	\n" + 
+		"   printf(\"100を超えました。\");" + "\n" + 
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();

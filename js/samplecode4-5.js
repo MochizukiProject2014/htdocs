@@ -18,35 +18,35 @@ ex_411.push("setIntr(\"<b>まとめると<br>①初期化式を実行する</br>
 ex_411.push("setIntr(\"<b>④文が終わったらfor文の1行目に戻り、再初期化式を実行する</br>⑤②～④を繰り返す</br>という感じにゃ!\")");
 ex_411.push("setIntr(\"<b>再初期化式には<font color=#ff0000>++</font>がよく用いられるけど、<br><font color=#ff0000>--</font>でも、普通の数式でも可能にゃ！\")");
 ex_411.push("setIntr(\"<b>2個目の「繰り返し」ではfor文の中身が変わっているけど<br>さっきと同じような動きをするにゃ</br>コードをよく読んでどういう動きになっているか想像するにゃ</b>\")");
-ex_411.push("setIntr(\"<b>じゃあそれを踏まえてもう一度コードの動きを見るにゃ<br>コードの動きが複雑になってくるけど落ち着いて考えれば<br>大丈夫にゃ！\");;line_reset();;codeArrayInit();;sign=1;;baON()");
+ex_411.push("setIntr(\"<b>じゃあそれを踏まえてもう一度プログラムの動きを見るにゃ<br>プログラムの動きが複雑になってくるけど落ち着いて考えれば<br>大丈夫にゃ！\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 
 ex_411.push("baOFF();;line(3);;ANIME_changeSPEED_Ex(1.5);;ANIME_sengen(\"int\",\"a\");;line(4);;ANIME_sengen(\"int\",\"b\");;line(5);;ANIME_dainyu(\"a\",\"1\");;ANIME_compare([\"a:<=:2\"],[true],true);;line(6);;ANIME_printf(\"こん\\n\");;setPrintf(\"こん\\n\");;line(5);;ANIME_enzan_dainyu(\"a\",\"a+1\",\"2\");;ANIME_compare([\"a:<=:2\"],[true],true);;line(6);;ANIME_printf(\"こん\\n\");;setPrintf(\"こん\\n\");;line(5);;ANIME_enzan_dainyu(\"a\",\"a+1\",\"3\");;ANIME_compare([\"a:<=:2\"],[false],false);;line(8);;ANIME_dainyu(\"b\",\"2\");;ANIME_compare([\"b:>=:1\"],[true],true);;line(9);;ANIME_printf(\"たぬ\\n\");;setPrintf(\"たぬ\\n\");;line(8);;ANIME_enzan_dainyu(\"b\",\"b-1\",\"1\");;ANIME_compare([\"b:>=:1\"],[true],true);;line(9);;ANIME_printf(\"たぬ\\n\");;setPrintf(\"たぬ\\n\");;line(8);;ANIME_enzan_dainyu(\"b\",\"b-1\",\"0\");;ANIME_compare([\"b:>=:1\"],[false],false);;line(11);;setIntr(\"<b>なんとなくでもわかったら、次は自分で書いてみるにゃ！</b>\");;bRestart();;return_js()");
 
 //---------------------------------------------
 
 var ex_421 = new Array();
-ex_421.push("setIntr(\"<b>これから見せるコードは、０を入力するまで数字の入力を<br>何度でも受け付けるというプログラムにゃ</br>さっきまでと違って、何回繰り返すかはわからないコードだにゃ</br>じゃあコードを動かしてみるにゃ\");;baON()");
+ex_421.push("setIntr(\"<b>これから見せるプログラムは、０を入力するまで数字の入力を<br>何度でも受け付けるというプログラムにゃ</br>さっきまでと違って、<br>何回繰り返すかはわからないプログラムだにゃ</br>じゃあプログラムを動かしてみるにゃ\");;baON()");
 
 ex_421.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"a\");;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"3\\n\");;ANIME_dainyu(\"a\",\"3\");;line(7);;ANIME_compare([\"a:==:0\"],[false],false);;line(11);;ANIME_printf(\"もう一度\");;setPrintf(\"もう一度\");;line_reset();;setIntr(\"<b>ここからは早送りするにゃ</b>\");;ANIME_changeSPEED_Ex(2);;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"2\\n\");;ANIME_dainyu(\"a\",\"2\");;line(7);;ANIME_compare([\"a:==:0\"],[false],false);;line(11);;ANIME_printf(\"もう一度\");;setPrintf(\"もう一度\");;line_reset();;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"1\\n\");;ANIME_dainyu(\"a\",\"1\");;line(7);;ANIME_compare([\"a:==:0\"],[false],false);;line(11);;ANIME_printf(\"もう一度\");;setPrintf(\"もう一度\");;line_reset();;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"0\\n\");;ANIME_dainyu(\"a\",\"0\");;line(7);;ANIME_compare([\"a:==:0\"],[true],true);;line(8);;ANIME_printf(\"0が入力されたのでプログラムを終了します。\\n\");;setPrintf(\"0が入力されたのでプログラムを終了します。\\n\");;line(9);;line(13);;biON();;ANIME_changeSPEED_Ex(1);;setIntr(\"<b>じゃあ説明していくにゃ</b>\")");
 
 ex_421.push("line_reset();;line(4);;setIntr(\"<b>まずは4～12行を見るにゃ、これが「<font color=#ff0000>while文</font>」にゃ</b>\")");
-ex_421.push("setIntr(\"<b>while文はfor文と同じで<br>「繰り返し」のコードを書くことができるにゃ</b>\")");
-ex_421.push("setIntr(\"<b>「()」で囲まれた部分が<font color=#ff0000>継続条件式</font>で</br>「｛｝」で囲まれた部分が<font color=#ff0000>文</font>にゃ</b>\")");
-ex_421.push("setIntr(\"<b>forと同じで、継続条件式が満たされているあいだ<br>文を繰り返すことのできるコードにゃ</br>forと違うのは<font color=#ff0000>初期化式と再初期化式がない</font>所くらいにゃ</b>\")");
+ex_421.push("setIntr(\"<b>while文はfor文と同じで<br>「繰り返し」のプログラムを書くことができるにゃ</b>\")");
+ex_421.push("setIntr(\"<b>今回は4行目にある、「()」で囲まれた部分が<font color=#ff0000>継続条件式</font>で</br>5~11行目の「｛｝」で囲まれた部分が<font color=#ff0000>文</font>にゃ</b>\")");
+ex_421.push("setIntr(\"<b>forと同じで、継続条件式が満たされているあいだ<br>文を繰り返すことのできるプログラムにゃ</br>forと違うのは<font color=#ff0000>初期化式と再初期化式がない</font>所くらいにゃ</b>\")");
 ex_421.push("setIntr(\"<b>今回、継続条件式には1と書かれているにゃ</br>プログラミングにおいて<font color=#ff0000>1は「真」を表す</font>にゃ<br>つまり、継続条件式が満たされていることになるにゃ</br>ちなみにプログラミングにおいて<font color=#ff0000>「0」は偽</font>、<br>つまり条件が満たされないことになるから<br>覚えておくにゃ</b>\")");
 ex_421.push("setIntr(\"<b>こうすることで継続条件式が常に満たされていることになり、<br>永遠にwhile文の中を繰り返すことができるようになってるにゃ</br>\")");
 ex_421.push("setIntr(\"<b>あと、このように永遠に繰り返す構造のことを「<font color=#ff0000>無限ループ</font>」と言ったりするので一応覚えておくにゃ</b>\")");
-ex_421.push("setIntr(\"<b>え？永遠に続くなら終わらないんじゃにゃいかって？</br>その通りにゃ<br>「無限ループ」になってしまうとコードが終わらないので</br>「繰り返し」を使う際は気を付けなければならないにゃ</b>\")");
-ex_421.push("setIntr(\"<b>じゃあなんで、今回はちゃんと終わらせることができたかというと</br>9行目にある「<font color=#ff0000>break</font>」というコードのおかげにゃ</b>\")");
+ex_421.push("setIntr(\"<b>え？永遠に続くなら終わらないんじゃにゃいかって？</br>その通りにゃ！<br>「無限ループ」になってしまうとプログラムが終わらないので</br>「繰り返し」を使う際は気を付けなければならないにゃ</b>\")");
+ex_421.push("setIntr(\"<b>じゃあなんで、今回はちゃんと終わらせることができたかというと</br>9行目にある「<font color=#ff0000>break</font>」というプログラムのおかげにゃ</b>\")");
 ex_421.push("line(9);;setIntr(\"<b>このbreakが実行されると、<br>ループを一つ抜け出すことができるにゃ</br>今回はwhileの中にあるので、<br>このwhileを抜け出すことができるにゃ</b>\")");
-ex_421.push("setIntr(\"<b>breakはループの中にif文を書いて、その中に書くことが多いにゃ</br>今回は0が入力されるとif文が実行される構造になっているので、</br>0が入力されることでbreakが実行されて無限ループを抜け出して、コードを終わらせることができるにゃ\")");
-ex_421.push("setIntr(\"<b>じゃあもう一度コードの動きを見るにゃ<br>さっきと同じように入力は3，2，1，0にゃ\");;line_reset();;codeArrayInit();;sign=1;;baON()");
+ex_421.push("setIntr(\"<b>breakはループの中にif文を書いて、その中に書くことが多いにゃ</br>今回はif文の条件式が「a==0」になっているので、</br>aに0が入力されることでbreakが実行されて、<br>無限ループを抜け出し、<br>プログラムを終わらせることができるにゃ\")");
+ex_421.push("setIntr(\"<b>じゃあもう一度プログラムの動きを見るにゃ<br>さっきと同じように入力は3，2，1，0にゃ\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 
 ex_421.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"a\");;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"3\\n\");;ANIME_dainyu(\"a\",\"3\");;line(7);;ANIME_compare([\"a:==:0\"],[false],false);;line(11);;ANIME_printf(\"もう一度\");;setPrintf(\"もう一度\");;line_reset();;setIntr(\"<b>ここからは早送りするにゃ</b>\");;ANIME_changeSPEED_Ex(2);;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"2\\n\");;ANIME_dainyu(\"a\",\"2\");;line(7);;ANIME_compare([\"a:==:0\"],[false],false);;line(11);;ANIME_printf(\"もう一度\");;setPrintf(\"もう一度\");;line_reset();;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"1\\n\");;ANIME_dainyu(\"a\",\"1\");;line(7);;ANIME_compare([\"a:==:0\"],[false],false);;line(11);;ANIME_printf(\"もう一度\");;setPrintf(\"もう一度\");;line_reset();;line(4);;ANIME_compare([\"1\"],[true],true);;line(5);;ANIME_printf(\"数字を入力してください:\");;setPrintf(\"数字を入力してください:\");;line(6);;ANIME_scanf_ex();;setPrintf(\"0\\n\");;ANIME_dainyu(\"a\",\"0\");;line(7);;ANIME_compare([\"a:==:0\"],[true],true);;line(8);;ANIME_printf(\"0が入力されたのでプログラムを終了します。\\n\");;line(9);;line(13);;biON();;ANIME_changeSPEED_Ex(1);;setIntr(\"<b>わかったかにゃ？\")");
 
-ex_421.push("line_reset();;setIntr(\"<b>ちなみにfor文でもwhile文でも<br>同じ動きのコードを書くことができるにゃ</br>なんで二つの書き方があるかというと、<br>それぞれ得意分野があるにゃ</b>\")");
-ex_421.push("setIntr(\"<b>for文は今までやってきたような、<br>何回繰り返されるかわかっている場合が得意で、</br>while文は、何回繰り返されるかわからないときが得意にゃ</br>どっちで書いても問題ないけど、<br>こういった特性を覚えておくと便利にゃ</b>\")");
-ex_421.push("setIntr(\"<b>じゃあ、whileの使い方を問題を解いて練習していくにゃ！\");;bRestart();;return_js()");
+ex_421.push("line_reset();;setIntr(\"<b>ちなみにfor文でもwhile文でも<br>同じ動きのプログラムを書くことができるにゃ</br>なんで二つの書き方があるかというと、<br>それぞれ得意分野があるにゃ</b>\")");
+ex_421.push("setIntr(\"<b><font color=#ff0000>for文</font>は今までやってきたような、<br><font color=#ff0000>何回繰り返されるかわかっている場合</font>が得意で、</br><font color=#ff0000>while文</font>は、<font color=#ff0000>何回繰り返されるかわからない場合</font>が得意にゃ</br>どっちで書いても問題ないけど、<br>こういった特性を覚えておくと便利にゃ</b>\")");
+ex_421.push("setIntr(\"<b>じゃあ、whileの使い方を問題を、<br>解いて練習していくにゃ！\");;bRestart();;return_js()");
 
 //---------------------------------------------
 

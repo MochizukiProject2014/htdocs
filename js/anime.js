@@ -571,8 +571,8 @@ function HEREsetting(){
     HERE.canvas.fillRect(20,20,700,400);
     HERE.setPosition(app.canvas.centerX,app.canvas.centerY);
     HERE.canvas.setColorStyle("orange");
-    HERE.canvas.font = "80px left"; //フォント設定
-    HERE.canvas.fillText("ここだよ！",HERE.canvas.centerX-150,HERE.canvas.centerY+40);
+    HERE.canvas.font = "50px left"; //フォント設定
+    HERE.canvas.fillText("ここをよく見よう！！",HERE.canvas.centerX-250,HERE.canvas.centerY+40);
     HERE.hide();
     HERE.isHide = 1;
 }

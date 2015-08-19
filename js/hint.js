@@ -196,7 +196,7 @@ function hintc3_matome1(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br><br />まずは必要となる変数を宣言するにゃ！<br />身長・体重・bmiは<font color = red>小数点以下も</font>入出力できるようにするにゃ。</b></p>";
 }
 function hintc3_matome2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiが<font color = red>18.5以上25.0以下は適正、適正より上は太り気味、適正未満はやせ気味</font>だにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />bmiが<font color = red>18.5以上25.0未満は適正、適正より上は太り気味、適正未満はやせ気味</font>だにゃ。</b></p>";
 }
 function hintc3_matome3(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br><br />「<font color = red>適正体重なら</font>」適正で、「<font color = red>適正体重以外で25.0より大きいなら</font>」太り気味で、「<font color = red>それ以外なら</font>」やせ気味だにゃ。<br/>「if」と、「else if」と、「else」を使うにゃ！</b></p>";

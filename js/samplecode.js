@@ -13,9 +13,9 @@ var sampleMatome2 ='ANIME_sengen("int","x");ANIME_scanf();setPrintf("5\\n");ANIM
 
 //３章---------------------------------------------------
 
-var sample311 = 'ANIME_sengen_dainyu("int","x","32");ANIME_compare(["x:>:20"],[true],true);ANIME_printf("xは20より大きいです");setPrintf("xは20より大きいです")';
-var sample312 = 'ANIME_sengen_dainyu("int","x","12");ANIME_sengen_dainyu("int","y","20");ANIME_compare(["x :< :y"],[true],true);ANIME_printf("xはyより小さいです");setPrintf("xはyより小さいです。")'
-var sample313 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_compare(["x:!=:0"],[true],true);ANIME_printf("xは0ではないです");setPrintf("xは0ではないです")';
+var sample311 = 'ANIME_sengen_dainyu("int","x","32");ANIME_compare(["x:>:20"],[true],true);ANIME_printf("xは20より大きいです。");setPrintf("xは20より大きいです。")';
+var sample312 = 'ANIME_sengen_dainyu("int","x","12");ANIME_sengen_dainyu("int","y","20");ANIME_compare(["x:<:y"],[true],true);ANIME_printf("xはyより小さいです。");setPrintf("xはyより小さいです。")'
+var sample313 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_compare(["x:!=:0"],[true],true);ANIME_printf("xは0ではないです。");setPrintf("xは0ではないです。")';
 var sample314 = 'ANIME_sengen("double","height");ANIME_sengen("double","weight");ANIME_sengen("double","bmi");ANIME_printf("あなたの身長(m)を入力してください。");setPrintf("あなたの身長(m)を入力してください。");ANIME_scanf();setPrintf("1.7");ANIME_dainyu("height","1.700000");ANIME_printf("あなたの体重(kg)を入力してください。");setPrintf("あなたの体重(kg)を入力してください。");ANIME_scanf();setPrintf("65");ANIME_dainyu("weight","65.000000");ANIME_enzan_dainyu("bmi",["weight","/","(","height","*","height",")"],"22.491349");ANIME_compare(["bmi:>=:18.5 ","&&","bmi:<=:25"],[true,true],true);ANIME_printf("あなたは適正です。");setPrintf("あなたは適正です。")';
 var sample321 ='ANIME_sengen("int","x");ANIME_printf("あなたの年齢を入力してください。");setPrintf("あなたの年齢を入力してください。");ANIME_scanf();setPrintf("15");ANIME_dainyu("x","15");ANIME_compare(["x:>=:20"],[false],false)ANIME_printf("あなたは未成年です。");setPrintf("あなたは未成年です。")'
 var sample331 = 'ANIME_sengen("int","x");ANIME_scanf();setPrintf("5");ANIME_dainyu("x","5");ANIME_compare(["score:>=:90"],[false],false);ANIME_compare(["score:<:90 ","&&","score:>=:60"],[true,false],false);ANIME_compare(["score:<:60","&&","score:>=:40"],[true,false],false);ANIME_printf("不可");setPrintf("不可")';
@@ -224,9 +224,9 @@ ex_311.push("baOFF();;line(3);;ANIME_sengen_dainyu(\"int\",\"x\",3);;line(4);;AN
 
 //---------------------------------------------
 var ex_312 = new Array();
-ex_312.push("setIntr(\"<b>これ『入力された値が<font size=&quot;3&quot; color=#FF0000>-５以上５未満</font>のときは正解と表示する』</br>プログラムだにゃ。</br>まずは動かしてみるにゃ</b>\");;baON()");
+ex_312.push("setIntr(\"<b>これ『入力された値が<font size=&quot;3&quot; color=#FF0000>-５以上５以下</font>のときは正解と表示する』</br>プログラムだにゃ。</br>まずは動かしてみるにゃ</b>\");;baON()");
 
-ex_312.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"x\");;line(4);;ANIME_scanf_ex();;setPrintf(\"3\\n\");;ANIME_dainyu(\"x\",3);;line(5);;ANIME_compare([\"-5:<=:x:&&:x:<=:5\"],[true],true);;line(6);;ANIME_printf(\"正解\");;setPrintf(\"正解\\n\");;biON();;setIntr(\"<b>それじゃあボクの作ったプログラムを説明していくにゃ。</b>\")");
+ex_312.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"x\");;line(4);;ANIME_scanf_ex();;setPrintf(\"3\\n\");;ANIME_dainyu(\"x\",3);;line(5);;ANIME_compare([\"-5:<=:x:\",\"&&\",\":x:<=:5\"],[true,true,true],true);;line(6);;ANIME_printf(\"正解\");;setPrintf(\"正解\\n\");;biON();;setIntr(\"<b>それじゃあボクの作ったプログラムを説明していくにゃ。</b>\")");
 
 ex_312.push("line_reset();;setIntr(\"<b>最初に教えたif文と違う部分を説明するにゃ。</b>\")");
 ex_312.push("line(5);;setIntr(\"<b>まず、『<=』について。</br>これはさっき健吾が言ってた『≦』と同じだにゃ。</b>\")");
@@ -235,7 +235,7 @@ ex_312.push("setIntr(\"<b>次に『&&』について説明するにゃ。<br />�
 ex_312.push("setIntr(\"<b>でも、if(-5 <= x x <= 5)と書いても駄目にゃ。<br />そこで、<font size=&quot;3&quot; color=#FF0000>「&&」で条件式を繋ぐ</font>のにゃ！<br />これだと、『-5 <= x』『x <= 5』を繋いでいるから、<br />健吾の言ってた『-5 ≦ x ≦ 5』と同じ意味になるのにゃ！</b>\")");
 ex_312.push("setIntr(\"<b>x=3は『-5 <= x』にも『x <= 5』にも</br>当てはまるから”正解”にゃ！</br>じゃあもう一度動かしてみるにゃ！</b>\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 
-ex_312.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"x\");;line(4);;ANIME_scanf_ex();;setPrintf(\"3\\n\");;ANIME_dainyu(\"x\",3);;line(5);;ANIME_compare([\"-5:<=:x:&&:x:<=:5\"],[true],true);;line(6);;ANIME_printf(\"正解\");;setPrintf(\"正解\\n\");;setIntr(\"<b>それじゃあ問題を解いてみるにゃ！</b>\");;bRestart();;return_js()");
+ex_312.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"x\");;line(4);;ANIME_scanf_ex();;setPrintf(\"3\\n\");;ANIME_dainyu(\"x\",3);;line(5);;ANIME_compare([\"-5:<=:x:\",\"&&\",\":x:<=:5\"],[true,true,true],true);;line(6);;ANIME_printf(\"正解\");;setPrintf(\"正解\\n\");;setIntr(\"<b>それじゃあ問題を解いてみるにゃ！</b>\");;bRestart();;return_js()");
 
 //---------------------------------------------
 var ex_321 = new Array();

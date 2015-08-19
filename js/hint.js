@@ -305,14 +305,17 @@ function hintq4_1_2_1(){
 
 
 function hintq4_2_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />偶数は2で割って余りが0になる数字にゃ。<br />余りを出すには「<font color = red>%</font>」を使うにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/3<br /><br />無限ループを作るには、</br>while文の条件式を1にすればいいにゃ。</br>お手本で出てきたのを覚えているかにゃ？</b></p>";
 }
 function hintq4_2_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />ループを抜け出すにはbreakを使うにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/3<br><br />偶数は2で割って余りが0になる数字にゃ。<br />余りを出すには「<font color = red>%</font>」を使うにゃ。</br>たとえば、5÷3の余りは2だから、</br>5%3==2は真になるにゃ。</b></p>";
+}
+function hintq4_2_1_3(){
+	document.getElementById("com").innerHTML = "<p><b>ヒント  3/3<br /><br />ループを抜け出すにはbreakを使うにゃ。</b></p>";
 }
 
 function hintq4_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />whileの継続条件式に「ansが100以下の間」ループを続けるという条件式を書くにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />今回のwhile文は無限ループじゃないにゃ！</br>whileの継続条件式に「ansが100以下なら」ループを続ける</br>という条件式を書くにゃ。</b></p>";
 }
 
 function hintq4_3_1_1(){

@@ -877,7 +877,7 @@ function reset_matome4_2(){
 	myRet = confirm("はじめからやり直しますか？");
     if ( myRet == true ){
 	cEditor.value = 
-		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "\n" + "   return 0;" + "\n" + "}";
+		"#include <stdio.h>" + "\n" + "int main(void){" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "	\n" + "   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)
 	cEditor.save();
 	}else{

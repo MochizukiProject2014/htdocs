@@ -434,10 +434,10 @@ function hintq5122(){
 
 
 function hintq5211(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が2つの二次元配列を宣言すればいいにゃ。名前は自由につけていいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が2つの<br>二次元配列を宣言すればいいにゃ。<br>名前は自由につけていいにゃ。</b></p>";
 }
 function hintq5212(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、「配列名[配列の数][要素数]」で宣言することができるにゃ。<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、<br>「配列名[配列の数][要素数]」で宣言することができるにゃ。<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 

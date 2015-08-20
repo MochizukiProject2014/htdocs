@@ -165,7 +165,7 @@ int main(void){
 	
 	<div class = "console-box">
 		▼コンソール</br>
-		<textarea class = "console" style="resize: none; overflow:auto;"id="console" name="code" rows="6" cols="45" onkeydown="if(event.keyCode === 13){newscanfnext();}"/></textarea>
+		<textarea class = "console" style="resize: none; overflow:auto;"id="console" name="code" rows="5" cols="45" onkeydown="if(event.keyCode === 13){newscanfnext();}"/></textarea>
 	</div>
 	
 	

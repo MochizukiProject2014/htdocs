@@ -97,7 +97,7 @@ else{
 #include <stdio.h>
 int main(void){
    int i;
-  
+   
       printf("わんわん");
    
    return 0;

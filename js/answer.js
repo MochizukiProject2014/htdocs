@@ -611,7 +611,7 @@ function answer_check(num){
 			//console.log(index+"個目のtrueです！");
 		}
 	}
-	if(flen == index&&flen!=0){
+	if((flen == index&&flen!=0)||getVariableExist("SystemCodeTrueAnswerPattern")){
 		console.log("All OK!!!");
 		correct_answer();
 		ajaxPostFunc(document.getElementById("state").innerHTML,"1",codeOfUser);

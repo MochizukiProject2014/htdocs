@@ -68,7 +68,7 @@ else{
 	print '<a href="../login/logout.php">ログアウト</a><br />';
 }
 ?></div>
-                <a href="../img/screen_img/reidai-1.jpg" data-lightbox="group1" title="説明１" style = "float:right;padding:0px 15px;" id = "click_data"><img src='./img/new_button/b005.png' alt="画面説明" onMouseOver=this.src='./img/new_button/b005-2.png' onMouseOut=this.src='./img/new_button/b005.png'></a>
+                <a href="../img/screen_img/reidai-1.jpg" data-lightbox="group1" title="説明１" style = "float:right;padding:0px 15px;" id = "click_data"><img src='../img/new_button/b005.png' alt="画面説明" onMouseOver=this.src='../img/new_button/b005-2.png' onMouseOut=this.src='../img/new_button/b005.png'></a>
 <a href="../img/screen_img/reidai-2.jpg" data-lightbox="group1" title="説明2"></a>
 <a href="../img/screen_img/reidai-3.jpg" data-lightbox="group1" title="説明3"></a>
 <a href="../img/screen_img/reidai-4.jpg" data-lightbox="group1" title="説明4"></a>

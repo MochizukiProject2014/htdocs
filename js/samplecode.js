@@ -146,7 +146,7 @@ ex_213.push("line(3);;setIntr(\"<b>問題の通り、変数を3.5で初期化し
 ex_213.push("setIntr(\"<b>int a;と、</br>a=3.5;を同時にやっている感じにゃ。</b>\")");
 ex_213.push("OnCheckPromin(\"a\");;sign=1;;setIntr(\"<b>…あれ？さっき、3.5じゃなくて3が入ってしまったにゃ？</b>\")");
 ex_213.push("setIntr(\"<b>そうなのにゃ、int型には<font size=&quot;3&quot; color=#0000ff>整数</font>しか入らないから、</br>実数を代入すると小数点以下は切り捨てちゃうのにゃ！</b>\")");
-ex_213.push("OffCheckPromin(\"a\");;sign=1;;line(4);;OnCheckPromin(\"b\");;sign=1;;setIntr(\"<b>だからint型じゃなくて、double型の変数を初期化して代入</br>してみるにゃ！前にも言ったと思うけど、<br />double型は<font size=&quot;3&quot; color=#32cd32>少数のある数字</font>が書けるにゃ。</b>\")");
+ex_213.push("OffCheckPromin(\"a\");;sign=1;;line(4);;OnCheckPromin(\"b\");;sign=1;;setIntr(\"<b>だからint型じゃなくて、double型の変数を初期化して代入</br>してみるにゃ！前にも言ったと思うけど、<br />double型は<font size=&quot;3&quot; color=#32cd32>小数のある数字</font>が書けるにゃ。</b>\")");
 ex_213.push("setIntr(\"<b>それじゃあもう一度動かしてみるにゃ！</b>\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 
 ex_213.push("baOFF();;line(3);;ANIME_sengen_dainyu(\"int\",\"a\",3);;line(4);;ANIME_sengen_dainyu(\"double\",\"b\",\"3.500000\");;setIntr(\"<b>bくんには、3.500000って数字が入ったにゃ。<br />これで正解にゃあ〜！</b>\");;bRestart();;return_js()");

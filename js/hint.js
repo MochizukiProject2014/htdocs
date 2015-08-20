@@ -43,10 +43,10 @@ function hintq2_3_2(){
 }
 
 function hintq2_4_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />この問題では変数は好きな名前で宣言していいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />この問題では変数は好きな名前で宣言していいにゃ。</b></p>";
 }
 function hintq2_4_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br><br />変数の出力は「<font color = red>printf(\"  \",変数名);</font>」と書くにゃ。<br/>printfの\" \"の中身は、<br/>intなら％d、doubleなら%fだにゃ。<br/>scanfと違って<font color = red>変数名の前に&はいらない</font>から気をつけるにゃ〜。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />変数の出力は「<font color = red>printf(\"  \",変数名);</font>」と書くにゃ。<br/>printfの\" \"の中身は、<br/>intなら％d、doubleなら%fだにゃ。<br/>scanfと違って<font color = red>変数名の前に&はいらない</font>から気をつけるにゃ〜。</b></p>";
 }
 
 function hintq2_4_2_1(){

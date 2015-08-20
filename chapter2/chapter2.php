@@ -94,7 +94,7 @@ else{
  <div class = "guide-box">
   <img src="../img/guide.png">
   <img src="../img/character/littlecat_2.png">
-  <p id="guide_menu"><b><font size = 2><br />&emsp;&emsp;やりたい問題を選ぶにゃ！<br />初めてなら第一節のお手本１から始めるにゃ。<br />ピンク色の問題は余裕があったら解いてみるにゃ！</font></p>
+  <p id="guide_menu"><b><font size = 2><br />&emsp;&emsp;やりたい問題を選ぶにゃ！<br />初めてなら第一節のお手本１から始めるにゃ。</font></p>
 </div>
 
  </body>

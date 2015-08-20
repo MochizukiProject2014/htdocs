@@ -418,7 +418,7 @@ function hintq4_3_1b_2(){
 /*第５章*/
 
 function hintq5_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「sum += a[i]」が配列の中身を1つずつ順番に足していくコードにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「sum += a[i]」が、配列の中身を<br>1つずつ順番に足していくプログラムにゃ。<br>やっていることは「sum = sum+a[i]」と同じにゃ</b></p>";
 }
 function hintq5_1_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />配列の要素は5個あるからfor文を5回繰り返せばいいにゃ！</b></p>";

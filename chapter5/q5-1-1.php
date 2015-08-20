@@ -96,12 +96,12 @@ else{
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int a[5] = {1, 2, 3, 4, 5};
+   int a[5] = {1,2,3,4,5};
    int i,sum=0;
    
-       sum += a[i];
+		sum += a[i];
    
-   printf("%d", sum);
+   printf("%d",sum);
    return 0;
 }</textarea>
 		<input type="button" value="実行" id="button" onclick = "tabplay()">

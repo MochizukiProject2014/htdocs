@@ -891,9 +891,9 @@ function resetq5_1_1(){
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
 		"   int a[5] = {1,2,3,4,5};" + "\n" + 
 		"   int i,sum=0;" + "\n" + 
-		"\n" + 
+		"	\n" + 
 		"      sum += a[i];" + "\n" + 
-		"\n" + 
+		"	\n" + 
 		"   printf(\"%d\",sum);" + "\n" +
 		"   return 0;" + "\n" + "}";
 	cEditor.setValue(cEditor.value)

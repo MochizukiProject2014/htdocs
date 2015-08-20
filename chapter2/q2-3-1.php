@@ -161,7 +161,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第三節　数式　>　問題１">
   		<p><br />
-    	<b>int型のxにキーボードから値を入力し、その後xに3を足そう。<br />
+    	<b>int型の変数xに値を入力し、その後変数xにx+3を代入しよう。<br />
 		</b><br />
  		</p>
 	</div>

@@ -159,7 +159,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第二節　scanf　>　問題１">
   		<p><br />
-    	<b>int型の変数xに、キーボードから5を入力しよう。<br />
+    	<b>int型の変数xに、5を入力しよう。<br />
 		</b><br />
  		</p>
 	</div>

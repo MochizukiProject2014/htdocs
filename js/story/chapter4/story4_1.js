@@ -186,7 +186,7 @@ var frame12 = {
 }
 
 var frame13 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"for文を二つ使って、*を一段毎に一つずつ増やす\nプログラムを作れ。",
 	rightChara : "L_kengo_yaruki",
 	leftChara : "R_kinako",
@@ -200,7 +200,7 @@ var frame13 = {
 }
 
 var frame14 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"この問題の答えが示す場所に今日のおやつ『エクレア』\nはある。１５時までに解けなかった場合私がおいしく\nいただかせてもらう。怪盗Cより。",
 	rightChara : "L_kengo_yaruki",
 	leftChara : "R_kinako",
@@ -215,7 +215,7 @@ var frame14 = {
 }
 
 var frame15 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"ヒント：この公園内のどこかにある。",
 	rightChara : "L_kengo_yaruki",
 	leftChara : "R_kinako",

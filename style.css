@@ -302,6 +302,10 @@ p{
     background: #999;
 }
 
+table{
+	width:500px; 	
+}
+
 
 
 /*Codemirror*/

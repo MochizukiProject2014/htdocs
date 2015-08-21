@@ -41,7 +41,7 @@ var frame2 = {
 }
 
 var frame3 = {
-    speaker : "怪盗C",
+    speaker : "怪盗Cからの挑戦状",
     message : "『配列を宣言し、その配列から入力した値の要素を\n出力するプログラムを作れ。\nそして、「1、9」を入力しろ。",
     rightChara : "L_kengo",
 	leftChara : "R_kinako",
@@ -53,7 +53,7 @@ var frame3 = {
 }
 
 var frame4 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"私はこの街にある、\nこの問題の答えの場所にいる。』",
 	rightChara : "L_kengo",
 	leftChara : "R_kinako",

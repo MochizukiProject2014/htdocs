@@ -44,10 +44,13 @@ else{
 }
 ?>
     </div>
+ 
 <div class = "title-box">
         <h4>第五章　配列</h4>
-    </div>
+    </div><br />
+<br />
 
+ 現在、不具合のため、第一節配列　問題２がクリアすることができません。申し訳ございません。対応が終わるまでしばらくお待ちください。
 <div id=mondai>
     <h3>第一節　配列</h3><br>
     <input type="image" value="お手本１" onclick="location.href='./ex5-1-1.php'" src = "../img/exbtn/ex1btn_on.png" id = "ex15"><div id = "explan15" style="display:inline;"></div>&nbsp;&nbsp;

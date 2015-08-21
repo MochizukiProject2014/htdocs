@@ -28,7 +28,7 @@ function hintq2_2_2_1(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは<font color = red>int型でx</font>を、<font color = red>double型でyを宣言</font>するにゃ。<b/></p>";
 }
 function hintq2_2_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />scanfでdouble型の変数に値を代入する場合、<br/>\" \"の間に%lfと書くにゃ。<br />例：double型の変数yにscanfで値を入れる場合<br/><font color = red>　　scanf(\"%lf\",&y);</font><b/></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />scanfでdouble型の変数に値を代入する場合、<br/>\" \"の間に%lf（エルエフ）と書くにゃ。<br />例：double型の変数yにscanfで値を入れる場合<br/><font color = red>　　scanf(\"%lf\",&y);</font><b/></p>";
 }
 
 function hintq2_3_1_1(){

@@ -418,7 +418,7 @@ function hintq4_3_1b_2(){
 /*第５章*/
 
 function hintq5_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「sum += a[i]」が配列の中身を1つずつ順番に足していくコードにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />「sum += a[i]」が、配列の中身を<br>1つずつ順番に足していくプログラムにゃ。<br>やっていることは「sum = sum+a[i]」と同じにゃ</b></p>";
 }
 function hintq5_1_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />配列の要素は5個あるからfor文を5回繰り返せばいいにゃ！</b></p>";
@@ -426,7 +426,7 @@ function hintq5_1_1_2(){
 
 
 function hintq5121(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />配列aの要素を<br>配列bに後ろから代入していくにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />配列aの要素を後ろから<br>配列bに代入していくにゃ。</b></p>";
 }
 function hintq5122(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />for文の中にa[4-i]と書くことで、<br>配列aの要素を後ろから順番に呼び出せるにゃ。</b></p>";
@@ -434,10 +434,10 @@ function hintq5122(){
 
 
 function hintq5211(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が2つの二次元配列を宣言すればいいにゃ。名前は自由につけていいにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />要素数が3つ、配列の数が2つの<br>二次元配列を宣言すればいいにゃ。<br>名前は自由につけていいにゃ。</b></p>";
 }
 function hintq5212(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、「配列名[配列の数][要素数]」で宣言することができるにゃ。<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br /><br />二次元配列は、<br>「配列名[配列の数][要素数]」で宣言することができるにゃ。<br/>書き方がわからなかったら辞書を参考にするにゃ。</b></p>";
 }
 
 

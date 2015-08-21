@@ -278,7 +278,7 @@ function calcArrayIndex(name){
 	return result;
 }
 
-function getVariableValue(name){console.log(name);
+function getVariableValue(name){
 	var vlen = variables.length;
 	var existFlag = false;
 	var result;
@@ -568,7 +568,7 @@ if(action_frag == true&&for_flag){
 	var cvflag = false;//代入する値が計算式、または、一つの変数かか判別するフラグ
 	var str;
 	var len = variables.length;
-	console.log("だいにゅう"+name+"値" +value);
+	if(!getVariableExist(name))return createSyntaxError("代入先の変数が存在してないよ！");
 	if(/\[.+\]\[.+\]/.test(name)){//二重配列ならnameとindex1と2(indexが変数なら数字に直す)を。なぜか条件に!(value.match(/:/)があったけどx[i][1] = 4+5;がバグるんで消す
 		var index1 = name.match(/[a-z]\w*\[(.+)\]\[.+\]/)[1];
 		var index2 = name.match(/[a-z]\w*\[.+\]\[(.+)\]/)[1];
@@ -614,13 +614,13 @@ if(action_frag == true&&for_flag){
 			valueindex = calc(valueindex);
 			console.log("値3"+valueindex);
 		}else if(value.match(/:/)){//代入する値が計算式の場合
+			console.log(value);
 			cvflag = true;
 			str = getArrStr(value.split(":"),true);//'"'+value.replace(/:/g,"")+'"';
 			var fArray = value.split(":");
 			value = calc(value);//計算結果
 			if(!syntaxErrorFlag){line_reset();return 0;}
 			if(type_judge(vtype,value))value = regulate_js(vtype,value);
-			console.log("代入する値が計算式ですた。"+value);
 		}else if(value.match(/^[a-z]\w*/)){//代入する値が一つの変数の場合
 			var vvalue = getVariableValue(value);
 			cvflag = true;
@@ -709,7 +709,7 @@ function return_js(value){
 }
 function ANIME_finish(){
 	line_reset();
-	if(htmlversion=="debug"||htmlversion=="free"){}
+	if(htmlversion=="debug"||htmlversion=="free"){answer_check("431");}
 	else{answer_check(htmlversion);}
 }
 
@@ -793,7 +793,7 @@ function assess(condition){
 	/*if(/true/.test(condition)){return true;}
 	if(/false/.test(condition)){return false;}
 	if(/undefined/.test(condition)){return 0;}*/
-	console.log(condition+"のassessを開始するよ！");
+	//console.log(condition+"のassessを開始するよ！");
 	var tempStr = condition;
 	var animeExp = [];
 	var animeRes = [];
@@ -835,7 +835,7 @@ function assess(condition){
 }
 
 function evalue(condition){
-	console.log(condition+"のevalueを開始するよ！");
+	//console.log(condition+"のevalueを開始するよ！");
 	if(/true/.test(condition)){return true;}
 	if(/false/.test(condition)){return false;}
 	if(/undefined/.test(condition)){return 0;}
@@ -906,7 +906,7 @@ if(action_frag == true){
 
 function startContexts(cnt){
 	var fcalength = for_contexts_array.length;
-	for(var fi = 0;fi < fcalength;fi++)console.log(fi+"階層の文群："+for_contexts_array[fi]+"の"+cnt+"を実行します。");
+	/*for(var fi = 0;fi < fcalength;fi++)console.log(fi+"階層の文群："+for_contexts_array[fi]+"の"+cnt+"を実行します。");*/
 	for_flag=true;
 	jsOfAnimes.push(for_line_array[for_now_cnt]);
 	if(for_init_array[cnt]!="while"){
@@ -934,16 +934,15 @@ function foreval(){
 		scanfroopflag = false;
 		for(var i = for_index_array[0];i < len ;i++){
 			if(tempArr[i].match(/for_next/)){
-					console.log("二重ループです。");
 					for_now_cnt++;
 					doubleroop = true;
-					console.log("ダブルループ群："+for_contexts_array[1]+"を実行します。");
+					//console.log("ダブルループ群："+for_contexts_array[1]+"を実行します。");
 					jsOfAnimes.push(for_line_array[0]);
-					fordeval();console.log("戻ってきた"+breakflag+"0階層："+for_index_array[0]+"、1階層"+for_index_array[1]);
+					fordeval();//console.log("戻ってきた"+breakflag+"0階層："+for_index_array[0]+"、1階層"+for_index_array[1]);
 					if(breakflag||for_context_finish)break;
 					for_index_array[0]++;
 			}else{
-				console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+for_alt_array[0]+"、"+len+"中"+for_index_array[0]+"まで実行、終了条件："+for_conditions_array[0]+"："+evalue(for_conditions_array[0]))
+				//console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+for_alt_array[0]+"、"+len+"中"+for_index_array[0]+"まで実行、終了条件："+for_conditions_array[0]+"："+evalue(for_conditions_array[0]))
 				if(syntaxErrorFlag){eval(tempArr[i]);}else{breakflag=true;ANIME_reset();ANIME_error(syntaxStr);}//実行
 				for_index_array[0]++;
 				if(!(tempArr[i].match(/(push)|(plural)|(return)/)))user_pattern_array.push(tempArr[i]);
@@ -951,7 +950,7 @@ function foreval(){
 				if(tempArr[i].match(/^break_js./)&&action_frag){for_index_array[0]=len;breakflag = true;forallfinish();break;}
 			}
 		}//for文の終了
-		console.log("ここまではきてる"+breakflag+"："+for_context_finish+"："+for_alt_array[0]+"："+for_index_array[0]+"："+evalue(for_conditions_array[0]));
+		//console.log("ここまではきてる"+breakflag+"："+for_context_finish+"："+for_alt_array[0]+"："+for_index_array[0]+"："+evalue(for_conditions_array[0]));
 		if(breakflag||for_context_finish)break;
 		jsOfAnimes.push(for_line_array[0]);
 		eval(for_alt_array[0]);
@@ -974,9 +973,9 @@ function foreval(){
 
 function fordeval(){
 	var tempArr = for_contexts_array[1].match(/(.*);$/)[1].split(";");//実行する階層のパーサ配列
-	console.log("for_now_cnt="+for_now_cnt+"："+for_conditions_array[1] + "： "+ for_index_array[1]);
+	//console.log("for_now_cnt="+for_now_cnt+"："+for_conditions_array[1] + "： "+ for_index_array[1]);
 	if(for_index_array[1]==0){
-		console.log('substitute('+for_init_array[1].split(",")[1]+','+for_init_array[1].split(",")[2]+')を実行します。')
+		//console.log('substitute('+for_init_array[1].split(",")[1]+','+for_init_array[1].split(",")[2]+')を実行します。')
 		jsOfAnimes.push(for_line_array[1]);
 		substitute(for_init_array[1].split(",")[1],for_init_array[1].split(",")[2]);
 	}
@@ -987,11 +986,11 @@ function fordeval(){
 		for(var i = for_index_array[1];i < len ;i++){
 			if(tempArr[i].match(/for_next/)){return createSyntaxError("ごめんね、このアプリでは三重ループ以降は対応していないよ。")}
 			else{
-				console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+for_alt_array[1]+"、"+len+"中"+for_index_array[1]+"まで実行、終了条件："+for_conditions_array[1]+"："+evalue(for_conditions_array[1]));
+				//console.log(for_now_cnt+"："+tempArr[i]+"を実行中だぞ！、変化式："+for_alt_array[1]+"、"+len+"中"+for_index_array[1]+"まで実行、終了条件："+for_conditions_array[1]+"："+evalue(for_conditions_array[1]));
 				if(syntaxErrorFlag){eval(tempArr[i]);}else{breakflag=true;ANIME_reset();ANIME_error(syntaxStr);}
 				for_index_array[1]++;
 				if(!(tempArr[i].match(/(push)|(plural)|(return)/)))user_pattern_array.push(tempArr[i]);
-				if(tempArr[i].match(/^scanf_js./)&&action_frag){return createSyntaxError("ごめんね！このアプリでは二重ループ内でscanfはできないよ！");console.log("scanfの実行です。2");breakflag = true;break;}
+				if(tempArr[i].match(/^scanf_js./)&&action_frag){return createSyntaxError("ごめんね！このアプリでは二重ループ内でscanfはできないよ！");breakflag = true;break;}
 				if(tempArr[i].match(/^break_js./)&&action_frag){for_index_array[1]=len;break;}
 			}
 		}
@@ -1002,7 +1001,7 @@ function fordeval(){
 		if(for_index_array[1]>=len-1&&!endflag){
 			doubleroop = false;
 			for_now_cnt = 0;
-			console.log("階層："+for_now_cnt+"実行"+for_contexts_array[1].match(/(.*);$/)[1].split(";").length+"中"+for_index_array[1]+"まで、"+evalue(for_conditions_array[1]))
+			//console.log("階層："+for_now_cnt+"実行"+for_contexts_array[1].match(/(.*);$/)[1].split(";").length+"中"+for_index_array[1]+"まで、"+evalue(for_conditions_array[1]))
 			for_index_array[1]=0;
 			for_index_array[0]++;
 			return 0;
@@ -1192,6 +1191,8 @@ if(action_frag == true){
 				if(variable_value=="?")return createSyntaxError("値の入っていない変数が演算式の中にあるよ！");
 				if(getVariableType(fArray[i])=="char")return createSyntaxError("char型の変数で計算はできないよ！");
 			}else{console.log(fArray[i]+"："+variable_value+"存在しないよ！！！");return createSyntaxError("宣言していない変数を使おうとしている所があるよ！");}
+		}else if(fArray[i].match(/^[A-Z]\w*/)){
+			return createSyntaxError("演算式の中に変な文字があるよ！");
 		}else{
 			fstr += fArray[i];
 		}

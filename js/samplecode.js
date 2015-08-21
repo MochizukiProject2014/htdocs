@@ -183,7 +183,7 @@ ex_231.push("line(4);;setIntr(\"<b>次にxを3倍してxに代入するにゃ。
 ex_231.push("setIntr(\"<b><font size=&quot;3&quot; color=#FF0000>『*』</font>は普段算数や数学で使っている<font size=&quot;3&quot; color=#FF0000>『×』</font>と同じ意味にゃ！<br />つまりかけ算ができるのにゃ！</b>\")");
 ex_231.push("setIntr(\"<b>右辺のxはそれまでのxを指すにゃ。<br />だから、x = 5×3 になって、左辺のxは15、</br>つまりこれ以降、xは15になるにゃ。</b>\")");
 ex_231.push("setIntr(\"<b>『*』の部分を<font size=&quot;3&quot; color=#FF0000>演算子</font>というにゃ。<br />演算子は他にもあって、</b>\")");
-ex_231.push("setIntr(\"<b><font size=&quot;3&quot; color=#FF0000>『+』</font>で足し算、<br /><font size=&quot;3&quot; color=#FF0000>『-』</font>で引き算、</br><font size=&quot;3&quot; color=#FF0000>『/』</font>で割り算を計算できることができるにゃ！<br /></b>\")");
+ex_231.push("setIntr(\"<b><font size=&quot;3&quot; color=#FF0000>『+』</font>で足し算、<br /><font size=&quot;3&quot; color=#FF0000>『-』</font>で引き算、</br><font size=&quot;3&quot; color=#FF0000>『/』</font>で割り算を計算することができるにゃ！<br /></b>\")");
 ex_231.push("setIntr(\"<b>それじゃあもう一度動かしてみるにゃ！</b>\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 
 ex_231.push("baOFF();;line(3);;ANIME_sengen_dainyu(\"int\",\"x\",5);;line(4);;ANIME_enzan_dainyu(\"x\", [\"x\" , \"*\", \"3\"],15);;setIntr(\"<b>簡単だにゃ？じゃあやってみるのにゃ！</b>\");;bRestart();;return_js()");

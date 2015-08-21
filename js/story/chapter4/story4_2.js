@@ -248,7 +248,7 @@ var frame14 = {
 		button.show();
 		goNext.show();
 		button.addEventListener("pointingend", function(e) {
-			document.location.href = "../chapter4.php";
+			document.location.href = "../../../login/top.php";
 		});
 	}
 }

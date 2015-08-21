@@ -164,7 +164,7 @@ var frame10 = {
 
 var frame11 = {
 	speaker : "きなこ",
-	message :"読んだかにゃ？",
+	message :"呼んだかにゃ？",
 	rightChara : "L_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo_smile",
@@ -238,7 +238,7 @@ var frame15 = {
 }
 
 var frame16 = {
-	speaker : "きなこ",
+	speaker : "健吾",
 	message :"ヒントだけじゃわからないよ〜、きなこ。",
 	rightChara : "F_kengo_surprised",
 	leftChara : "R_kinako",

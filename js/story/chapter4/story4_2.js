@@ -173,7 +173,7 @@ var frame8 = {
 }
 
 var frame9 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"『よくあの問題が解けたな。\nこれで君もだいぶC言語が上達してきただろう。",
 	rightChara : "L_kengo",
 	leftChara : "R_kinako",
@@ -185,7 +185,7 @@ var frame9 = {
 }
 
 var frame10 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"だから次が最後だ。\n問題の答えの場所に私は待っている。",
 	rightChara : "L_kengo",
 	leftChara : "R_kinako",
@@ -197,7 +197,7 @@ var frame10 = {
 }
 
 var frame11 = {
-	speaker : "怪盗C",
+	speaker : "怪盗Cからの挑戦状",
 	message :"そこで私の正体を教えてあげよう。』",
 	rightChara : "L_kengo",
 	leftChara : "R_kinako",
@@ -248,7 +248,7 @@ var frame14 = {
 		button.show();
 		goNext.show();
 		button.addEventListener("pointingend", function(e) {
-			document.location.href = "../chapter4.php";
+			document.location.href = "../../../login/top.php";
 		});
 	}
 }

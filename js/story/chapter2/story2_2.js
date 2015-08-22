@@ -38,7 +38,7 @@ var frame1 = {
 
 var frame2 = {
 	speaker : "健吾",
-	message :"これであいつをギャフンを言わせることができるよ！\nそれに、もしまた挑戦状が来ても、\n君と俺なら解くことができるはずさ！",
+	message :"これであいつをギャフンと言わせることができるよ！\nそれに、もしまた挑戦状が来ても、\n君と俺なら解くことができるはずさ！",
 	rightChara : "F_kengo_smile",
 	leftChara : "F_kinako",
 	frontChara : "promin",
@@ -84,7 +84,7 @@ var frame5 = {
 		button.show();
 		goNext.show();
 		button.addEventListener("pointingend", function(e) {
-			document.location.href = "../chapter2.php";
+			document.location.href = "../../../login/top.php";
 		});
 	}
 }

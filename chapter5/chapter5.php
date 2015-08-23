@@ -50,7 +50,7 @@ else{
     </div><br />
 <br />
 
- 現在、不具合のため、第一節配列　問題２がクリアすることができません。申し訳ございません。対応が終わるまでしばらくお待ちください。(8/21 12:00現在)
+ 「第一節　配列　問題２」がクリアできない不具合を修正いたしました。ご迷惑をおかけし、大変申し訳ありませんでした。（8/24 7:30現在)
 <div id=mondai>
     <h3>第一節　配列</h3><br>
     <input type="image" value="お手本１" onclick="location.href='./ex5-1-1.php'" src = "../img/exbtn/ex1btn_on.png" id = "ex15"><div id = "explan15" style="display:inline;"></div>&nbsp;&nbsp;

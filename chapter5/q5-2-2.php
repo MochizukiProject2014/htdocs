@@ -142,7 +142,6 @@ int main(void){
     			<td><font size = "5">ヒント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintq5_2_2_1()"></td>
-    			<td><input type="button" value="２" onClick="hintq5_2_2_2()"></td>
     		</tr>
     	</table>
 	</div>

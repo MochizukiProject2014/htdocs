@@ -2937,7 +2937,7 @@ function ANIME_sengen_enzan(dataType,name,expression,result){
 				var Pspace = tm.app.Shape(80,80);
 				//Pspace.canvas.clearColor("red");
 				Pspace.setPosition((between+(i*between))-250,space.canvas.centerY-80);
-				Pspace.Label = tm.app.Label(expression[i]).addChildTo(Pspace);
+				Pspace.Label = tm.app.Label("").addChildTo(Pspace);
 				Pspace.Label
 					.setFillStyle("rgba(0,0,0,1)")
 					.setFontSize(20);

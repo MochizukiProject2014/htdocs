@@ -17,7 +17,7 @@ var comment = [
 window.onload=function(){
 	var answerId=document.getElementById("state").innerHTML;
 	ajaxPostFunc(answerId,"1","ex1-1-1");
-	console.log(answerId);
+	//console.log(answerId);
 	document.getElementsByClassName("space")[0].innerHTML = comment[0];
 	//document.getElementById("clear").style.display ="none";
 	var Pbutton = document.getElementById("prev")
@@ -65,7 +65,7 @@ function work(num){
 }
 
 function createConsole(){
-	console.log("createConsoleはうごいてます");
+	//console.log("createConsoleはうごいてます");
 	var con = document.createElement('textarea');
     con.style.width="500px";
     con.style.fontSize="13pt";
@@ -89,7 +89,7 @@ function circle_area(){
 		if(!(r.match(/[0-9]+/))){
 			con.value=con.value+"\n半角の整数で入力してください：";
 		}else{
-			var result = (parseInt(r))*(parseInt(r))*3.14;
+			var result = ((parseInt(r))*(parseInt(r))*3.14).toFixed(0);
 			con.value=con.value+"\n半径"+parseInt(r)+"cmの円の面積は"+result+"㎠です。"+"\n\n半径(cm)を整数で入力してください：";
 			doNum++;
 			ojiichan(doNum);

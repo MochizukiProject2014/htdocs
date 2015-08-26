@@ -471,17 +471,23 @@ tm.define("MainScene", {
 
         //メインシーン更新処理
         this.update = function(app) {
-           /*updateCounter++;
-
-            //三角形の点滅処理
-            if(updateCounter<20){
-                nextTriangle.setAlpha(1);
+            /*if(app.pointing.x>1090 && app.pointing.x<1180&& app.pointing.y>850 && app.pointing.y<920){
+                nextTriangle.y  = 890;
+                nextTriangle.x = 1145;
             }else{
-                nextTriangle.setAlpha(0);
+                nextTriangle.y  = 885;
+                nextTriangle.x = 1140;
             }
-            if(updateCounter===40){
-                updateCounter=0;
-            }*/
+
+            if(app.pointing.x>1090 && app.pointing.x<1180 && app.pointing.y>740 && app.pointing.y<830){
+                preTriangle.y  = 790;
+                preTriangle.x = 1145;
+            }else{
+                preTriangle.y  = 785;
+                preTriangle.x = 1140;
+            }
+            */
+
         };
 
     },

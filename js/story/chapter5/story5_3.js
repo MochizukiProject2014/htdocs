@@ -439,7 +439,7 @@ var frame29 = {
 		endButton.show();
 		goNext.show();
 		endButton.addEventListener("pointingend", function(e) {
-			document.location.href = "../../../login/top.php";
+			document.location.href = "../../login/top.php";
 		});
 	}
 }

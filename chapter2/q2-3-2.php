@@ -91,7 +91,7 @@ else{
 	</div>
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br>　int型の変数xと変数yそれぞれに値を入力し、<br />　int型の変数zにx+yを代入しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br>　int型の変数xと変数yそれぞれに値をscanfで<br />　入力し、int型の変数zにx+yを代入しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq2_3_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -162,7 +162,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第三節　数式　>　問題２">
   		<p><br />
-    	<b>int型の変数xとyそれぞれに値を入力し、int型の変数zにx+yを代入しよう。<br />
+    	<b>int型の変数xとyそれぞれに値をscanfで入力し、int型の変数zにx+yを代入しよう。<br />
 		</b><br />
  		</p>
 	</div>

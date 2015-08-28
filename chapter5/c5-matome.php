@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question">問題<font size = "2"><br />大きさが10のint型の配列aを宣言し、「変数bに値を入力し、<br>変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br />（挑戦状にあったように、変数bに入力する値は<br>　「1,9」の順に入力しよう。）</font></p>
+		<p class = "question">問題<br><font size = "2">大きさが10のint型の配列aを宣言し、「変数bに値をscanfで<br>入力し、変数bを使って配列aの要素を指定して出力」を2回<br>繰り返そう。（挑戦状にあったように、変数bに入力する値は<br>「1,9」の順に入力しよう。）</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome5();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -164,7 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　まとめ問題">
   		<p><br />
-    	<b>大きさが10のint型の配列aを宣言し、<br>「変数bに値を入力し、変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br/>（挑戦状にあったように、変数bに入力する値は「1,9」の順に入力しよう。）</b><br />
+    	<b>大きさが10のint型の配列aを宣言し、<br>「変数bに値をscanfで入力し、変数bを使って配列aの要素を指定して出力」を2回繰り返そう。<br/>（挑戦状にあったように、変数bに入力する値は「1,9」の順に入力しよう。）</b><br />
  		</p>
 	</div>
 	<!---  ダイヤログここまで   -->

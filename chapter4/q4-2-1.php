@@ -91,7 +91,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br>　while文での無限ループを使って</br>　変数aに値を入力し続け、<br />　その値が偶数ならwhile文を抜けて<br>　「終了」と出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br>　while文での無限ループを使って</br>　変数aに値をscanfで入力し続け、<br />　その値が偶数ならwhile文を抜けて<br>　「終了」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq4_2_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -168,7 +168,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　第二節　while　>　問題１">
   		<p><br />
-    	<b>while文での無限ループを使って変数aに値を入力し続け、<br />その値が偶数ならwhile文を抜けて「終了」と出力しよう。
+    	<b>while文での無限ループを使って変数aに値をscanfで入力し続け、<br />その値が偶数ならwhile文を抜けて「終了」と出力しよう。
 		</b><br />
  		</p>
 	</div>

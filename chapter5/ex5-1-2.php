@@ -80,7 +80,7 @@ else{
 
 	<div class = "code-box">
 		<p class = "question"><font size="3" color="ff0000"> 
-		<b>お手本</b></font><br><br />　配列に順番に要素を入力し、<br>　その後出力しよう。</p>
+		<b>お手本</b></font><br><br />　配列に順番に要素をscanfで入力し、<br>　その後出力しよう。</p>
 		
 
 		</br><br /><br />
@@ -142,7 +142,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章 配列　>　第一節 配列　>　お手本２">
   		<p><br />
-    	<b>配列に順番に要素を入力し、その後出力しよう。<br />
+    	<b>配列に順番に要素をscanfで入力し、その後出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

@@ -90,7 +90,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "4">問題<br><br />　変数xと変数yに順に値を入力し、<br>　二次元配列の要素data[x][y]を出力しよう。</font></p>
+		<p class = "question"><font size = "4">問題<br><br />　変数xと変数yに順に値をscanfで入力し、<br>　二次元配列の要素data[x][y]を出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq5_2_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -159,7 +159,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第五章　配列　>　第二節　二次元配列　>　問題２">
   		<p><br />
-    	<b>変数xと変数yに順に値を入力し、二次元配列の要素data[x][y]を出力しよう。
+    	<b>変数xと変数yに順に値をscanfで入力し、二次元配列の要素data[x][y]を出力しよう。
 		</b><br />
  		</p>
 	</div>

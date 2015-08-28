@@ -80,7 +80,7 @@ else{
 
 	<div class = "code-box">
 		<p class = "question"><font size="3" color="ff0000"> 
-		<b>お手本</b></font><br><br />　while文での無限ループを使って、</br>　0を入力するまで数字を<br />　入力し続けるプログラムを作ろう。</p>
+		<b>お手本</b></font><br><br />　while文での無限ループを使って、</br>　0をscanfで入力するまで数字を<br />　入力し続けるプログラムを作ろう。</p>
 		
 
 		</br><br /><br />
@@ -144,7 +144,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章 繰り返し　>　第二節 while　>　お手本１">
   		<p><br />
-    	<b>while文での無限ループを使って、</br>0を入力するまで数字を入力し続けるプログラムを作ろう。<br />
+    	<b>while文での無限ループを使って、</br>0をscanfで入力するまで数字を入力し続けるプログラムを作ろう。<br />
 		</b><br />
  		</p>
 	</div>

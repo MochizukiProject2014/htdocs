@@ -93,7 +93,7 @@ else{
 	</div>
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　int型の変数に値を入力し、<br>　入力された変数をprintfで出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br />　int型の変数に値をscanfで入力し、<br>　入力された変数をprintfで出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq2_4_1();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -164,7 +164,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　第四節　printf　>　問題１">
   		<p><br />
-    	<b>int型の変数に値を入力し、入力された変数をprintfで出力しよう。<br />
+    	<b>int型の変数に値をscanfで入力し、入力された変数をprintfで出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

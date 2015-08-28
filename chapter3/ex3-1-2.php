@@ -82,7 +82,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question"><font size="4" color="#ff0000"><b>お手本</b></font><br /><br />　入力された値が『-５以上５未満』のとき<br />　「正解」と出力しよう。</p>
+		<p class = "question"><font size="4" color="#ff0000"><b>お手本</b></font><br /><br />　scanfで入力された値が『-５以上５未満』のとき<br />　「正解」と出力しよう。</p>
 
 		</br><br />
 		<p class = "code">▼プログラム</p>
@@ -138,7 +138,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　お手本２">
   		<p><br />
-    	<b>入力された値が『-５以上５未満』のとき「正解」と出力しよう。<br />
+    	<b>scanfで入力された値が『-５以上５未満』のとき「正解」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

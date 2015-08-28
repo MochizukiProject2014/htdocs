@@ -92,7 +92,7 @@ else{
 	</div>
     
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br /><br />　int型の変数xに入力した値が0以外なら<br />「xは0ではないです。」と出力しよう。</font></p>
+		<p class = "question"><font size = "3">問題<br /><br />　int型の変数xにscanfで入力した値が0以外なら<br />「xは0ではないです。」と出力しよう。</font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="resetq3_1_3();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -163,7 +163,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第一節　if　>　問題３">
   		<p><br />
-    	<b>int型の変数xに入力した値が0以外なら「xは0ではないです。」と出力しよう。<br />
+    	<b>int型の変数xにscanfで入力した値が0以外なら「xは0ではないです。」と出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

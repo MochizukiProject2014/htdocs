@@ -83,7 +83,7 @@ else{
 	</div>
 
 	<div class = "code-box">
-		<p class = "question"><font size="4" color="#ff0000"><b>お手本</b></font><br /><br />　変数xに値を入力し、その値を3で割った余りを<br>　出力しよう。</p>
+		<p class = "question"><font size="4" color="#ff0000"><b>お手本</b></font><br /><br />　変数xに値をscanfで入力し、<br>　その値を3で割った余りを出力しよう。</p>
 
 		</br><br />
 		<p class = "code">▼プログラム</p>
@@ -143,7 +143,7 @@ int main(void){
 <!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　第三節　else if　>　お手本１">
   		<p><br />
-    	<b>変数xに値を入力し、その値を3で割った余りを出力しよう。<br />
+    	<b>変数xに値をscanfで入力し、その値を3で割った余りを出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

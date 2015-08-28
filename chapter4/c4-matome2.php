@@ -91,7 +91,7 @@ else{
 	
 	
 	<div class = "code-box">
-		<p class = "question"><font size = "3">問題<br />　二重ループを使って「*」を１行毎に<br />　１つずつ増やして出力しよう。<br />　また、行数をscanfで指定できるようにしよう。<br /></font></p>
+		<p class = "question"><font size = "3">問題<br />　二重ループを使って「*」を１行毎に<br />　１つずつ増やして出力しよう。<br />　また、行数をscanfで入力できるようにしよう。<br /></font></p>
 		<input class = "resetbut" type="button" value="リセット" onclick="reset_matome4_2();"></br>
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -168,7 +168,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第四章　繰り返し　>　まとめ問題２">
   		<p><br />
-    	<b>二重ループを使って「*」を１行毎に１つずつ増やして出力しよう。<br />また、行数をscanfで指定できるようにしよう。
+    	<b>二重ループを使って「*」を１行毎に１つずつ増やして出力しよう。<br />また、行数をscanfで入力できるようにしよう。
 		</b><br />
  		</p>
 	</div>

@@ -93,7 +93,7 @@ else{
 	
 
 	<div class = "code-box">
-		<p class = "question">問題<br /><br>　int型の変数に値を入力し、<br>　入力された値を３倍して出力しよう。</p>
+		<p class = "question">問題<br /><br>　int型の変数に値をscanfで入力し、<br>　入力された値を３倍して出力しよう。</p>
 		<input class = "resetbut" type="button" value="プログラムリセット" onclick="reset_matome2();"></br><br />
 		<p class = "code">▼プログラムを入力</p>
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
@@ -168,7 +168,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第二章　変数　>　まとめ問題">
   		<p><br />
-    	<b>int型の変数に値を入力し、入力された値を３倍して出力しよう。<br />
+    	<b>int型の変数に値をscanfで入力し、入力された値を３倍して出力しよう。<br />
 		</b><br />
  		</p>
 	</div>

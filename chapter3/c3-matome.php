@@ -91,7 +91,7 @@ else{
 	</div>
 
 	<div class = "code-box">
-		<p class = "question">問題<br />　身長(m)、体重(kg)の順に入力してBMIを計算し、<br>　BMIが適正なら「適正」、<br>　適正より高いなら「太り気味」、<br>
+		<p class = "question">問題<br />　身長(m)、体重(kg)の順にscanfで入力して<br>　BMIを計算し、BMIが適正なら「適正」、<br>　適正より高いなら「太り気味」、<br>
    　適正より低いなら「やせ気味」と出力しよう。</p>
 
 <!-- 		<p class = "question"><font size = "3">   身長(m)、体重(kg)の順に入力して、BMIを計算し、<br>
@@ -175,7 +175,7 @@ int main(void){
 	<!--　ダイアログ　-->
 	<div id="dialog-message" title="第三章　条件分岐　>　まとめ問題">
   		<p><br />
-    	<b>身長(m)、体重(kg)の順に入力して、BMIを計算し、<br>
+    	<b>身長(m)、体重(kg)の順にscanfで入力して、BMIを計算し、<br>
    BMIが適正なら「適正」、<br>適正より高いなら「太り気味」、<br>
    適正より低いなら「やせ気味」と出力しよう。<br />
 		</b><br />

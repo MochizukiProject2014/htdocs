@@ -32,6 +32,7 @@
 <br>
 <p id="page-top"><a href="#wrap"><b>PAGE TOP</b></a></p>
 <br><HR id="dic1" width="50%" align="left" color="black"><br>
+<h1>『言語のルール』</h1><br />
 
 	<img src="../img/dic/c_rule.png">
 
@@ -50,20 +51,21 @@
 
 		<h2>データ型</h2>
 		<p>
-			int　　　整数型　　　ex)1, 5<br />
-			double　浮動小数点型　ex)2.2, 3.0<br />
-			char　　文字型　　　　ex)a, A　※1文字しか入らない　　etc…<br />
+			int（イント）　　　整数型　　　ex)1, 5<br />
+			double（ダブル）　浮動小数点型　ex)2.2, 3.0<br />
+			char（キャラ）　　文字型　　　　ex)a, A　※1文字しか入らない　　etc…<br />
 			<br /></p>
 
 
 			<h2>変数宣言</h2>
 			<p>変数を使用するために行うこと、宣言を行うことで変数を使用することができる。<br />
-				変数に記憶する値によって型を適切に選択する必要がある。<br /><br />
+				変数に記憶する値によってデータ型を適切に選択する必要がある。<br /><br />
 
 				【形式】データ型 変数名;　<I id=cm>//データ型と変数名の間には半角スペースを入れる</I><br /><br />
 
-				【使用例①】double weight;　<I id=cm>//double型の変数weightを宣言している</I><br />
-				【使用例②】int x,y;　<I id=cm>//int型の変数xとyを同時に宣言している</I><br /><br />
+				【使用例①】int x;　<I id=cm>//int型の変数xを宣言している</I><br />
+				【使用例②】int x,y;　<I id=cm>//int型の変数xとyを同時に宣言している</I><br />
+				【使用例③】double weight;　<I id=cm>//double型の変数weightを宣言している</I><br />
 			</p>
 
 	<p>----変数に名前を付けるときのルール----</p>
@@ -94,8 +96,8 @@
 
 <HR id="dic3" width="50%" align="left" color="black"><br>
 
-			<h1>『scanf文』</h1><br />
-			<p>キーボードから入力するために使用する関数</p><br>
+			<h1>『scanf（スキャンエフ）文』</h1><br />
+			<p>キーボードから変数に値を入力するために使用する関数。</p><br>
 
 			<p>【形式】scanf("変換指定文字",&入力先の変数名);</p>
 			<p>入力先の変数は既に宣言されているものを使う。</p><br>
@@ -191,8 +193,9 @@
 
 <HR id="dic5" width="50%" align="left" color="black"><br>
 
-	<h1>『printf文』</h1><br />
-	<p>コンソールに出力するためにprintf関数を用いる。</p><br>
+	<h1>『printf（プリントエフ）文』</h1><br />
+	<p>コンソールに出力するために使用する関数。</p><br>
+
 
 	<p>【形式】printf("書式文字列",出力する変数名);</p>
 	<p>出力する変数は既に宣言されているものを使う。</p>
@@ -226,8 +229,8 @@
 
 <HR id="dic6" width="50%" align="left" color="black"><br>
 
-				<h1>『if文』</h1><br />
-				<h2>if</h2>
+				<h1>『if（イフ）文』</h1><br />
+				<h2>if（イフ）</h2>
 				<p>条件によって実行文を変える関数。</p>
 				<p>ifの中に別のifを入れることもできる。</p><br>
 				<p>【形式】</p>
@@ -241,7 +244,7 @@
 				<p>}</p><br>
 
 
-				<h2>else</h2>
+				<h2>else（エルス）</h2>
 				<p>ifの（）内に書いた条件式に当てはまらない場合の実行文を指定する関数。</p>
 				<p>ifの中に別のifを入れることもできる。</p><br>
 				<p>【形式】</p>
@@ -257,7 +260,7 @@
 				<p>　printf("xは0ではありません");</p>
 				<p>}</p><br>
 
-				<h2>else if</h2>
+				<h2>else if（エルスイフ）</h2>
 				<p>条件が複数ある場合に使う関数。elseとifの間には半角スペースが入る。</p><br>
 				<p>【形式】</p>
 				<p>if(条件式１){</p>
@@ -347,7 +350,7 @@
 
 <HR id="dic7" width="50%" align="left" color="black"><br>
 
-<h1>『for文』</h1><br />
+<h1>『for（フォー）文』</h1><br />
 <p>for文とはプログラムの流れを制御する制御文の一つで、</p>
 <p>定められた回数だけ反復制御をおこなう関数。</p><br>
 <p>【形式】</p>
@@ -385,7 +388,7 @@
 <br><HR id="dic8" width="50%" align="left" color="black"><br>
 
 
-		<h1>『while文』</h1><br />
+		<h1>『while（ホワイル）文』</h1><br />
 		<p>while文とは条件式を前判定して反復制御をおこなう関数である</p>	<br>	
 		<p>【形式】</p>
 		<p>while(継続条件式){</p>

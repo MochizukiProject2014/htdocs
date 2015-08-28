@@ -4,6 +4,7 @@ function answer_check(num){
 		correct_answer();
 		ajaxPostFunc(document.getElementById("state").innerHTML,"1",codeOfUser);
 		movenext();
+		return 0;
 	}
 	var version = Number(num),re;
 	var answer_pattern_array = [];

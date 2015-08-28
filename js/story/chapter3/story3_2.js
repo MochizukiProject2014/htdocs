@@ -108,7 +108,7 @@ var frame6 = {
 		button.show();
 		goNext.show();
 		button.addEventListener("pointingend", function(e) {
-			document.location.href = "../../../login/top.php";
+			document.location.href = "../../login/top.php";
 		});
 	}
 }

@@ -2422,7 +2422,9 @@ function ANIME_printf(contents,variables){
 
 	space.canvas.setFillStyle("black"); //フォントカラー設定
 	space.canvas.font = "20px center"; //フォントサイズ設定
-	var between = 500/(contents.length+1); //between:文字同士の幅
+	//var between = 500/(contents.length+1); //between:文字同士の幅
+	var between = 20;
+	var Xpos = 0;
 	cnt = 0;
 	var P=[];
 	var C=[];
@@ -2433,9 +2435,11 @@ function ANIME_printf(contents,variables){
 				if(variables[cnt]===promin_array[k].name){
 					var Pspace = tm.app.Shape(80,80);
 					//Pspace.canvas.clearColor("red");
-					Pspace.setPosition((between+(i*between))-250,space.canvas.centerY-85);
-					Pspace.Label = tm.app.Label(contents[i])
-						.addChildTo(Pspace);
+					
+					Pspace.setPosition(-180+Xpos,space.canvas.centerY-85);
+					Xpos += 100;
+
+					Pspace.Label = tm.app.Label(contents[i]).addChildTo(Pspace);
 					if(contents[i]==="%d"){
 						Pspace.Label.setFillStyle("blue");
 					}else if(contents[i]==="%f"){
@@ -2476,15 +2480,13 @@ function ANIME_printf(contents,variables){
 
 				}
 			}
-		}
-		/*else if(contents[i]==="%f"){  //double型とか？浮動小数点型のデータ型用
+		}else{ //テキストをそのまま出力
+			space.canvas.fillText(contents[i],20+Xpos,space.canvas.centerY+20); //テキスト描画
+			Xpos += (contents[i].length*20); //文字数×20px分つぎの出力を右にずらす
+			Xpos -= (contents[i].match(/[a-zA-Z]/g)||[]).length*10;//半角英字が含まれる場合はその分だけ左に戻す
+			Xpos -= (contents[i].match(/[0-9]/g)||[]).length*7;//半角数字が含まれる場合はその分だけ左に戻す 
+			//console.log("半角英数字の個数"+(contents[i].match(/[a-zA-Z]/g)||[]).length);
 
-		}else if(contents[i]==="%c"){ //char型(文字型)を一文字として出力する場合
-
-		}else if(contents[i]==="%s"){ //文字列を出力する
-
-		}*/else{ //テキストをそのまま出力
-			space.canvas.fillText(contents[i],between+(i*between),space.canvas.centerY+20); //テキスト描画
 		}
 	}
 	if(cnt>0){
@@ -2500,6 +2502,9 @@ function ANIME_printf(contents,variables){
 				for(var i=0;i<P.length;i++){
 					//Pspace.Label.setFillStyle("black");
 					P[i].Label.text = C[i].value;
+					if(P[i].Label.text.length>5){
+						P[i].Label.setFontSize(10);
+					}
 					C[i].hide();
 				}
 			})

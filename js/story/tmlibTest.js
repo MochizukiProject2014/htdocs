@@ -471,7 +471,7 @@ tm.define("MainScene", {
 
         //メインシーン更新処理
         this.update = function(app) {
-            /*if(app.pointing.x>1090 && app.pointing.x<1180&& app.pointing.y>850 && app.pointing.y<920){
+            if(app.pointing.x>1090 && app.pointing.x<1180&& app.pointing.y>850 && app.pointing.y<920){
                 nextTriangle.y  = 890;
                 nextTriangle.x = 1145;
             }else{
@@ -486,7 +486,6 @@ tm.define("MainScene", {
                 preTriangle.y  = 785;
                 preTriangle.x = 1140;
             }
-            */
 
         };
 

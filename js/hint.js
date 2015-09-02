@@ -32,7 +32,7 @@ function hintq2_2_2_2(){
 }
 
 function hintq2_3_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは変数xを宣言し、scanfを使って代入するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/2<br><br />まずは変数xを宣言し、<br>scanfを使って変数xに値を代入するにゃ。<br>代入する値は好きな数字でいいにゃ。</b></p>";
 }
 function hintq2_3_1_2(){
 	document.getElementById("com").innerHTML = "<p><b>ヒント  2/2<br><br />変数xに5を代入するなら、x=5;と書くにゃ。<br />だったら、変数xにx+3を代入するなら…？</b></p>";

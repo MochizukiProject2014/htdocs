@@ -2428,6 +2428,8 @@ function ANIME_printf(contents,variables){
 	cnt = 0;
 	var P=[];
 	var C=[];
+	var enzanCovers=[];
+	var enzanPspaces=[];
 
 	for(var i=0;i<contents.length;i++){
 		if(contents[i]==="%d"||contents[i]==="%f"||contents[i]==="%c"||contents[i]==="%s"){
@@ -2476,8 +2478,101 @@ function ANIME_printf(contents,variables){
 					C.push(copy);
 					cnt++;
 					break;	
-				}else if(true){
+				}else if(variables[cnt].match(/:/)){
 
+					//console.log("printfに演算を含む場合");
+					var ex = variables[cnt].split(":");
+
+					//console.log("exは : "+ex+",exの長さは"+ex.length);
+					var PspaceWidth = ex.length*80;
+					
+					for(var a=0;a<ex.length;a++){
+						if(ex[a].match(/[\+\-\*\/\%\(\)]/g)){
+							//console.log("演算子マッチ　"+ex[a]);
+							PspaceWidth -= 40;
+						}else if(ex[a].match(/\d+(\.\d+)?/g)){
+							//console.log("りてらるマッチ　"+ex[a]);
+							PspaceWidth -= 40;
+						}
+					}
+					
+
+					var Pspace = tm.app.Shape(PspaceWidth,80);
+					var cover = tm.app.Shape(PspaceWidth,80);
+					//Pspace.canvas.clearColor("red");
+					Pspace.setPosition(-220+Xpos+(Pspace.canvas.width/2),space.canvas.centerY-85);
+					cover.setPosition(-220+Xpos+(Pspace.canvas.width/2),space.canvas.centerY-85);
+					Xpos += PspaceWidth+20;
+
+					
+					for(var a=0;a<promin_array.length;a++){
+						var prominCnt = 0;
+						for(var b=0;b<ex.length;b++){
+							if(promin_array[a].name === ex[b]){
+								if(promin_array[k].arrayFlag===true){
+									var copy = new ArrayPromin(promin_array[k].dataType,promin_array[k].name,promin_array[k].index,promin_array[k].value);
+								}else if(promin_array[k].twoDarrayFlag===true){
+									var copy = new twoDArrayPromin(promin_array[k].dataType, 
+										promin_array[k].name,
+										promin_array[k].index,
+										promin_array[k].LIndex,
+										promin_array[k].RIndex,
+										promin_array[k].value,
+										promin_array[k].arrayName);
+								}else{
+									var copy = new MiniPromin(promin_array[k].dataType,promin_array[k].name,promin_array[k].value);
+								}
+								copy.addChildTo(Pspace);
+								copy.setPosition(-Pspace.canvas.width/2+40+b*40+prominCnt*40,0);
+								//C.push(copy);
+								prominCnt++;
+							}else{
+								Pspace.canvas.font = "20px 'Consolas', 'Monaco', 'ＭＳ ゴシック'";
+								Pspace.canvas.fillText(ex[b],b*40+prominCnt*40+10,45); //テキスト描画
+							}
+						}
+					}
+
+					//P.push(Pspace);
+					Pspace.addChildTo(space);
+					cover.addChildTo(space);
+					//cover.canvas.clearColor("skyblue")
+					if(contents[i]==="%d"){
+						cover.canvas.setFillStyle("blue");
+					}else if(contents[i]==="%f"){
+						cover.canvas.setFillStyle("green");
+					}else if(contents[i]==="%c"){
+						cover.canvas.setFillStyle("orange");
+					}
+					cover.canvas.font = "20px center";
+					cover.canvas.fillText(contents[i],cover.canvas.centerX-20,cover.canvas.centerY+10); //テキスト描画
+					
+					var fullExpression = "";
+					var varCnt = 0;
+
+					//resultの算出用にfullExpressionを作成
+					for(var a=0;a<ex.length;a++){
+						varCnt=0;
+						for(var b=0;b<promin_array.length;b++){
+							if(ex[a]===promin_array[b].name){
+								fullExpression += promin_array[b].value;
+								varCnt++;
+								break;
+							}
+						}
+						if(varCnt===0){
+							fullExpression += ex[a];
+						}
+					}
+					//console.log("fullは"+fullExpression);
+					//cover.result = "result";
+					cover.result = eval(fullExpression);
+					enzanCovers.push(cover);
+					enzanPspaces.push(Pspace);
+
+					Pspace.hide();
+					//Pspace.setPosition(Xpos,50)
+					cnt++;
 				}
 			}
 		}else{ //テキストをそのまま出力
@@ -2496,6 +2591,12 @@ function ANIME_printf(contents,variables){
 				for(var i=0;i<P.length;i++){
 					C[i].show();
 				};
+				for(var i=0;i<enzanCovers.length;i++){
+					enzanCovers[i].hide();
+				}
+				for(var i=0;i<enzanPspaces.length;i++){
+					enzanPspaces[i].show();
+				}
 			})
 			.wait(1500*SPEED)
 			.call(function(){
@@ -2506,6 +2607,15 @@ function ANIME_printf(contents,variables){
 						P[i].Label.setFontSize(10);
 					}
 					C[i].hide();
+				}
+				for(var i=0;i<enzanPspaces.length;i++){
+						enzanPspaces[i].hide();
+					}
+				for(var i=0;i<enzanCovers.length;i++){
+					enzanCovers[i].canvas.clear();
+					enzanCovers[i].canvas.setFillStyle("black");
+					enzanCovers[i].canvas.fillText(enzanCovers[i].result,cover.canvas.centerX-20,cover.canvas.centerY+5);
+					enzanCovers[i].show();
 				}
 			})
 			.wait(1500*SPEED) 
@@ -2518,6 +2628,10 @@ function ANIME_printf(contents,variables){
 			.moveBy(0,700,1000*SPEED) //下（コンソール）のほうへ移動
 			.call(function(){sign=1;BUTTON_ON();})
 			.call(function(){app.currentScene.removeChild(this)}); //もうこのオブジェクトは使わないのでカレントシーンのchildから削除
+	}
+
+	function copyPromin(name){
+
 	}
 }
 

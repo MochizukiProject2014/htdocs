@@ -39,7 +39,7 @@ function hintq2_3_1_2(){
 }
 
 function hintq2_3_2(){
-	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br /><br />変数xとyにscanfを使って好きな値を代入しその後、<font color = red>変数zにx+yを代入</font>するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ヒント  1/1<br /><br />変数xとyにscanfを使って好きな値を代入し<br>その後、<font color = red>変数zにx+yを代入</font>するにゃ。</b></p>";
 }
 
 function hintq2_4_1_1(){

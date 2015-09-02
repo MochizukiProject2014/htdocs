@@ -2333,7 +2333,7 @@ function ANIME_dainyu(target_name,new_value){
 			.wait(500*SPEED)
 			.call(function(){
 				//equal.canvas.clearColor("red");
-				equal.canvas.font = "30px center";
+				equal.canvas.font = "25px center";
 				equal.canvas.fillText("=",80,equal.canvas.centerY);
 				equal.canvas.fillText(new_value,150,equal.canvas.centerY);
 				equal.setPosition(500,110);

@@ -36,11 +36,15 @@ function hintq2_3_1_1(){
 	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />まずは変数xを宣言し、<br>scanfを使って変数xに値を代入するにゃ。<br>代入する値は好きな数字でいいにゃ。</b></p>";
 }
 function hintq2_3_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />変数xに5を代入するなら、x=5;と書くにゃ。<br />だったら、変数xにx+3を代入するなら…？</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />変数<font color=red>xに5を代入</font>するなら、<font color=red>x=5;</font>と書くにゃ。<br />だったら、変数<font color=red>xにx+3を代入</font>するなら…？</b></p>";
 }
 
-function hintq2_3_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/1<br /><br />変数xとyにscanfを使って好きな値を代入し<br>その後、<font color = red>変数zにx+yを代入</font>するにゃ。</b></p>";
+function hintq2_3_2_1(){
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br /><br />変数xとyにscanfを使って好きな値を代入し<br>その後、<font color = red>変数zにx+yを代入</font>するにゃ。</b></p>";
+}
+
+function hintq2_3_2_2(){
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br /><br /><font color=red>変数</font>は使う前に<font color=red>宣言</font>するのを忘れるべからずにゃ！<br>今回使う変数はxとyとzの３つだにゃ〜</b></p>";
 }
 
 function hintq2_4_1_1(){

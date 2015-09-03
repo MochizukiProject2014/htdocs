@@ -144,7 +144,8 @@ int main(void){
   			<tr>
     			<td><font size = "5">ポイント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
-    			<td><input type="button" value="１" onClick="hintq2_3_2()"></td>
+    			<td><input type="button" value="１" onClick="hintq2_3_2_1()"></td>
+    			<td><input type="button" value="２" onClick="hintq2_3_2_2()"></td>
     		</tr>
     	</table>
 	</div>

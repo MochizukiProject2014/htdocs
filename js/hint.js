@@ -59,7 +59,7 @@ function hintq2_4_2_1(){
 }
 
 function hintq2_4_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />printfの\" \"の中身は<font color=red>char型なら%c</font>と書くにゃ。<br />ちなみに<font color=red>double型は%f</font>だにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />printfの\" \"の中身は、<font color=red>double型なら%f</font>と書くにゃ。<br />ちなみに<font color=red>char型は%c</font>だにゃ。</b></p>";
 }
 
 function hintc2_matome1(){

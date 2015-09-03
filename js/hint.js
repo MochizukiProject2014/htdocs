@@ -18,10 +18,11 @@ function hintq2_1_3(){
 }
 
 function hintq2_2_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />問題文の「<font color = red>入力</font>」とはscanfを使って代入することだにゃ。</b></p>";
+	//document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />問題文の「<font color = red>入力</font>」とはscanfを使って代入することだにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />今回はscanfを使ってint型の変数xに入力するので、<br>まずは変数xを使うために「<font color=red>変数宣言</font>」をするにゃ！</b></p>";
 }
 function hintq2_2_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />scanfは「<font color = red>scanf(\" \",&変数名);</font>」と書くにゃ。<br />\" \"の間に、int型に代入したい場合は<font color = red>%d</font>と書くにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />scanfは「<font color = red>scanf(\" \",&変数名);</font>」と書くにゃ。<br />\" \"の間に、int型の変数に代入したい場合は<font color = red>%d</font>と書くにゃ。</b></p>";
 }
 
 function hintq2_2_2_1(){

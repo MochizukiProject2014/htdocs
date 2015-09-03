@@ -934,7 +934,7 @@ function resetq5_1_2(){
     if ( myRet == true ){
 	cEditor.value = 
 		"#include <stdio.h>" + "\n" + "int main(void){" + "\n" +
-		"   int a[5] = {1,2,3,4,5};" + "\n" + 
+		"   int a[5] = {2,1,5,3,4};" + "\n" + 
 		"   int b[5];" + "\n" + 
 		"   int i;" + "\n" + 
 		"   for(i=0; i<5; i++){" + "\n" + 

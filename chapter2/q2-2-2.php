@@ -140,12 +140,12 @@ int main(void){
 		足りないプログラムを書き足して、問題を解くにゃ！</br><br/>
 		・プログラムの<font color="red">文末</font>には<font color="red">セミコロン「 ; 」</font>を忘れちゃ駄目にゃ！<br/>
 		・プログラム文は<font color="red">半角</font>で書くにゃ！<br/>
-		・わからなかったら<font color="red">辞書</font>や<font color="red">ヒント</font>を見てみるんだにゃ！<br/>
+		・わからなかったら<font color="red">辞書</font>や<font color="red">ポイント</font>を見てみるんだにゃ！<br/>
 		・「<font color="red">サンプル実行</font>」で、正解プログラムのアニメが見れるにゃ！
 		</b></p></div>
 		<table class = "hinttable">
   			<tr>
-    			<td><font size = "5">ヒント</font></td>
+    			<td><font size = "5">ポイント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintq2_2_2_1()"></td>
     			<td><input type="button" value="２" onClick="hintq2_2_2_2()"></td>

@@ -225,7 +225,7 @@ var frame14 = {
 
 var frame15 = {
 	speaker : "きなこ",
-	message :"それはかまわないけど答えは教えないにゃ。\nヒントだけにゃ。",
+	message :"それはかまわないけど答えは教えないにゃ。\nポイントだけにゃ。",
 	rightChara : "F_kengo",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",
@@ -239,7 +239,7 @@ var frame15 = {
 
 var frame16 = {
 	speaker : "健吾",
-	message :"ヒントだけじゃわからないよ〜、きなこ。",
+	message :"ポイントだけじゃわからないよ〜、きなこ。",
 	rightChara : "F_kengo_surprised",
 	leftChara : "R_kinako",
 	frontChara : "F_kengo",

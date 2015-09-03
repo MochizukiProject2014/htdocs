@@ -55,11 +55,11 @@ function hintq2_4_1_2(){
 }
 
 function hintq2_4_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />char型というのは<font color = red>半角英数字を一つだけ</font>入れるためのデータ型だにゃ。<br />半角英数字はたとえば、「a」とか、「x」とかのことにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />char型というのは<br><font color = red>半角英数字を一つだけ</font>入れるためのデータ型だにゃ。<br />半角英数字はたとえば、「a」とか「x」とかのことにゃ。</b></p>";
 }
 
 function hintq2_4_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />printfの\" \"の中身はchar型なら%cと書くにゃ。<br />ちなみにdouble型は%fだにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />printfの\" \"の中身は<font color=red>char型なら%c</font>と書くにゃ。<br />ちなみに<font color=red>double型は%f</font>だにゃ。</b></p>";
 }
 
 function hintc2_matome1(){

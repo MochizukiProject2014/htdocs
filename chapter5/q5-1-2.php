@@ -96,7 +96,7 @@ else{
 		<textarea style="resize: none;" id="text" rows="20" cols="75">
 #include <stdio.h>
 int main(void){
-   int a[5] = {1,2,3,4,5};
+   int a[5] = {2,1,5,3,4};
    int b[5];
    int i;
    for(i=0; i<5; i++){

@@ -144,7 +144,7 @@ int main(void){
 		<div class = "com" id = "com"><p><b>この問題はすごく難しいと思うにゃ。<br />よく考えて頑張って解いてほしいにゃ。</b></p></div>
 		<table class = "hinttable">
   			<tr>
-    			<td><font size = "5">ヒント</font></td>
+    			<td><font size = "5">ポイント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintq4_3_1_1()"></td>
     			<td><input type="button" value="２" onClick="hintq4_3_1_2()"></td>

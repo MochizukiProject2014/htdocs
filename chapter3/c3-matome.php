@@ -153,7 +153,7 @@ int main(void){
 		<div class = "com" id = "com"><p><b>問題の補足だにゃ。<br />bmiは18.5以上25.0未満は適正。<br />bmiは体重/（身長×身長)</b></p></div>
 		<table class = "hinttable">
   			<tr>
-    			<td><font size = "5">ヒント</font></td>
+    			<td><font size = "5">ポイント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintc3_matome1()"></td>
     			<td><input type="button" value="２" onClick="hintc3_matome2()"></td>

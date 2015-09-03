@@ -142,10 +142,10 @@ int main(void){
 	
 	<div class = "hint-box">
 		<img class = "chara" src = "../img/character/littlecat.png"/>
-		<div class = "com" id = "com"><p><b>問題に挑戦にゃ！足りないプログラムを書き足して、</br>問題に沿ったプログラムを完成させるにゃ。<br />わからなかったらヒントボタンを押すにゃ！辞書も活用するにゃ。<br />「サンプル実行」をクリックすると、サンプルアニメーション</br>を見ることができるにゃ。それを手掛かりにクリアを目指すにゃ。</b></p></div>
+		<div class = "com" id = "com"><p><b>問題に挑戦にゃ！足りないプログラムを書き足して、</br>問題に沿ったプログラムを完成させるにゃ。<br />わからなかったらポイントボタンを押すにゃ！辞書も活用するにゃ。<br />「サンプル実行」をクリックすると、サンプルアニメーション</br>を見ることができるにゃ。それを手掛かりにクリアを目指すにゃ。</b></p></div>
 		<table class = "hinttable">
   			<tr>
-    			<td><font size = "5">ヒント</font></td>
+    			<td><font size = "5">ポイント</font></td>
     			<td>&nbsp;&nbsp;&nbsp;</td>
     			<td><input type="button" value="１" onClick="hintq4_2_2()"></td>
     		</tr>

@@ -91,19 +91,19 @@ function answer_check(num){
 		break;
 		case 231:
 			re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
-			re = new RegExp(/scanf_js\("x","%d"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/scanf_js\("x",".*%d.*"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/substitute\("x","(x:\+:3)|(3:\+:x)"\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
 		case 2311:
 			re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
-			re = new RegExp(/scanf_js\("x","%d"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/scanf_js\("x",".*%d.*"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/substitute\("x","x:\+:x"\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
 		case 2312:
 			re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
-			re = new RegExp(/scanf_js\("x","%d"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/scanf_js\("x",".*%d.*"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/substitute\("x","x:\+:3:\/:2"\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,true));
 		break;
@@ -165,11 +165,11 @@ function answer_check(num){
 			re = new RegExp(/duplication_judge\("double","x",.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/duplication_judge\("char","y",.+\)/);answer_pattern_array.push(re);
 			flagArr.push(context_check(user_pattern_array,answer_pattern_array,false));
-			re = new RegExp(/printf_js\("x","%."\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_js\("y","%."\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_js\("x",.*\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_js\("y",.*\)/);answer_pattern_array.push(re);
 			tempFlagArr.push(context_check(user_pattern_array,answer_pattern_array,false));
 			re = new RegExp(/.+/);answer_pattern_array.push(re);//reオブジェクトが１つだけだとなぜかバグるので応急措置
-			re = new RegExp(/printf_js\("(x,y)|(y,x)","%."\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_js\("(x,y)|(y,x)",.*\)/);answer_pattern_array.push(re);
 			tempFlagArr.push(context_check(user_pattern_array,answer_pattern_array,false));
 			flagArr.push(tempFlagArr[0]||tempFlagArr[1]);
 		break;
@@ -240,7 +240,7 @@ function answer_check(num){
 		break;
 		case 313:
 			re = new RegExp(/duplication_judge\("int","x",.+\)/);answer_pattern_array.push(re);
-			re = new RegExp(/scanf_js\("x","%d"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/scanf_js\("x",".*%d.*"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/if_js\("(x.*!=.*0)|(0.*!=.*x)"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_djs\(.+xは0ではないです.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/end_of_if\(\)/);answer_pattern_array.push(re);
@@ -527,7 +527,7 @@ function answer_check(num){
 			re = new RegExp(/plural_declaration\("int","i,sum=0"\)/);answer_pattern_array.push(re);
 			re = new RegExp(/for_js\(("false,i,0","i<5")|("false,i,1","i<=5"),"i:\+:1","."\)/);answer_pattern_array.push(re);
 			re = new RegExp(/substitute\("sum","sum:\+:a.i."\)/);answer_pattern_array.push(re);
-			re = new RegExp(/printf_js\("sum","%d"\)/);answer_pattern_array.push(re);
+			re = new RegExp(/printf_js\("sum",.*\)/);answer_pattern_array.push(re);
 			var temp = context_check(result2,answer_pattern_array,true);flagArr.push(temp);
 		break;
 		case 5111:

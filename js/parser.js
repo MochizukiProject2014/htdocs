@@ -384,8 +384,19 @@ parser = (function() {
         peg$c237 = { type: "class", value: "[a-zA-Z0-9]", description: "[a-zA-Z0-9]" },
         peg$c238 = function(char) { return char.join("@").replace(/,/g,""); },
         peg$c239 = function(variable) { return variable.join("").replace(/,/g,""); },
-        peg$c240 = function(variable, num1, num2) { return variable + "[" + num1 + "][" + num2 + "]"  },
-        peg$c241 = function(variable, num) { return variable + "[" + num + "]" },
+        peg$c240 = function(variable, num1, num2) {
+         if(num1.match(":") != 0){
+        			num1 = num1.replace(/:/g,"@");
+        	}
+        if(num2.match(":") != 0){
+        			num2 = num2.replace(/:/g,"@");
+        	}
+        	return variable + "[" + num1 + "][" + num2 + "]"  },
+        peg$c241 = function(variable, num) { 
+          if(num.match(":") != 0){
+        			num = num.replace(/:/g,"@");
+        	}
+        	return variable + "[" + num + "]" },
         peg$c242 = /^[ \n\t]/,
         peg$c243 = { type: "class", value: "[ \\n\\t]", description: "[ \\n\\t]" },
         peg$c244 = function(t) { return t; },
@@ -567,6 +578,8 @@ parser = (function() {
         }
 
         return "Expected " + expectedDesc + " but " + foundDesc + " found.";
+
+
       }
 
       var posDetails = peg$computePosDetails(pos),

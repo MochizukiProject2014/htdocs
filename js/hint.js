@@ -66,7 +66,7 @@ function hintc2_matome1(){
 	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br>怪盗Cからの挑戦状だにゃ!<br /><font color = red>scanfとprintf</font>を使うにゃ。</b></p>";
 }
 function hintc2_matome2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br>scanfで値を入力→値を３倍にして代入→printfで出力の順番にゃ。<br />わからなくなった時は<font color = red>辞書</font>で確認するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br>使用する変数を宣言→scanfで値を入力→<br>値を３倍にして代入→printfで出力の順番にゃ。<br />わからなくなった時は<font color = red>辞書</font>で確認するにゃ。</b></p>";
 }
 
 /*第２章追加問題*/

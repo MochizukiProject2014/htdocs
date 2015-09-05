@@ -248,6 +248,12 @@ div.title-box{
 	right: 150px;
 }
 
+#guide_top_menu{
+	position: fixed;
+	bottom: 80px;
+	right: 230px;
+}
+
 #guide_chapter1{
 	position: fixed;
 	bottom: 80px;

@@ -69,7 +69,7 @@ ex_431.push("baOFF();;line(3);;ANIME_sengen(\"int\",\"i\");;ANIME_sengen(\"int\"
 //---------------------------------------------
 
 var ex_511 = new Array();
-ex_511.push("setIntr(\"<b>今回は「配列」というものを学んでいくにゃ</br>まずはプログラムの動きを見るにゃ</b>\");;baON()");
+ex_511.push("setIntr(\"<b>今回は「<font color=red>配列</font>」というものを学んでいくにゃ</br>まずはプログラムの動きを見るにゃ</b>\");;baON()");
 
 ex_511.push("baOFF();;line(3);;ANIME_array_sengen_dainyu(\"int\",\"a\",3,[\"2\",\"6\",\"3\"],[\"2\",\"6\",\"3\"]);;line(4);;ANIME_sengen(\"int\",\"i\");;line(5);;ANIME_dainyu(\"i\",\"0\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[0]\"]);;setPrintf(\"a[0] = 2\\n\");;;setIntr(\"<b>ここからは早送りするにゃ</b>\");;ANIME_changeSPEED_Ex(2);;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"1\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[1]\"]);;setPrintf(\"a[1] = 6\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"2\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[2]\"]);;setPrintf(\"a[2] = 3\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"3\");;ANIME_compare([\"i:<:3\"],[false],false);;line(8);;ANIME_changeSPEED_Ex(1);;biON();;setIntr(\"<b>じゃあ説明していくにゃ</b>\")");
 
@@ -77,14 +77,14 @@ ex_511.push("line_reset();;setIntr(\"<b>変数くんたちが電車みたいに�
 ex_511.push("line(3);;setIntr(\"<b>プログラムの3行目を見るにゃ。<br>このプログラムで配列を宣言および初期化をしてるにゃ</br>配列というのは、変数の仲間の一つだにゃ</b>\")");
 ex_511.push("setIntr(\"<b>「int a」の部分までは、今までの変数の宣言と一緒だにゃ</br>int型でaという名前の変数を宣言しているのはわかるかにゃ?</b>\")");
 ex_511.push("setIntr(\"<b>でも今回は、変数名aの後ろに[3]というのがついてるにゃ。</br>配列というのは、同じデータ型の変数を<br>いくつか繋げたようなもので、</br>この[3]というのは<font color=#ff0000>つなげる数</font>を決めてるのにゃ</b>\")");
-ex_511.push("setIntr(\"<b>今回は[3]なので3つつなげてるにゃ</br>つまり、「int a[3]」は、<br>「aという名前の、大きさが3のint型の配列を宣言」<br>しているということだにゃ</b>\")");
-ex_511.push("setIntr(\"<b>そして、3行目の右辺で配列を初期化してるにゃ</br>この、配列内の各数字のことを「<font color=#ff0000>配列の要素</font>」というにゃ</b>\")");
-ex_511.push("setIntr(\"<b>配列を初期化するときは、こんなふうに<br><font color=#ff0000>｛｝</font>に入れたい数字を順番に書いていくにゃ</b>\")");
+ex_511.push("setIntr(\"<b>今回は[3]なので3つ繋げているにゃ</br>つまり、「<font color=red>int a[3]</font>」は、<br>「<font color=red>aという名前の、大きさが3のint型の配列を宣言</font>」<br>しているということだにゃ</b>\")");
+ex_511.push("setIntr(\"<b>そして、3行目の右辺 <font color=red>{2,6,3}</font> で</br>配列を<font color=red>初期化</font>してるにゃ</br>この、配列内の各数字のことを「<font color=#ff0000>配列の要素</font>」というにゃ</b>\")");
+ex_511.push("setIntr(\"<b>配列を初期化するときは、こんなふうに<br><font color=#ff0000>｛ ｝</font>に入れたい数字を順番に書いていくにゃ。</br>要素は<font color=red>カンマ</font>( <font color=red>,</font> )で区切って書くにゃ。</b>\")");
 ex_511.push("setIntr(\"<b>じゃあもう一度動きを見てみるにゃ</b>\");;line_reset();;codeArrayInit();;sign=1;;baON()");
 
 ex_511.push("baOFF();;line(3);;ANIME_array_sengen_dainyu(\"int\",\"a\",3,[\"2\",\"6\",\"3\"],[\"2\",\"6\",\"3\"]);;line(4);;ANIME_sengen(\"int\",\"i\");;line(5);;ANIME_dainyu(\"i\",\"0\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[0]\"]);;setPrintf(\"a[0] = 2\\n\");;;setIntr(\"<b>ここからは早送りするにゃ</b>\");;ANIME_changeSPEED_Ex(2);;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"1\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[1]\"]);;setPrintf(\"a[1] = 6\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"2\");;ANIME_compare([\"i:<:3\"],[true],true);;line(6);;ANIME_printf([\"a[\",\"%d\",\"] = \",\"%d\",\"\\n\"],[\"i\",\"a[2]\"]);;setPrintf(\"a[2] = 3\\n\");;line(5);;ANIME_enzan_dainyu(\"i\",\"i+1\",\"3\");;ANIME_compare([\"i:<:3\"],[false],false);;line(8);;ANIME_changeSPEED_Ex(1);;biON();;setIntr(\"<b>どうかにゃ？</br>よくわからなかったらもう一度動きを見るにゃ。</b>\")");
 
-ex_511.push("setIntr(\"<b>いつもならこの後は問題だけど、今回はもう一度別の例題を見てほしいので、次に進んでまた別の説明を聞いてほしいにゃ</br>\");;bRestart();;return_js3()");
+ex_511.push("setIntr(\"<b>いつもならこの後は問題だけど、<br>今回はもう一度別の例題を見てほしいので、<br>次に進んでまた別の説明を聞いてほしいにゃ</br>\");;bRestart();;return_js3()");
 
 //---------------------------------------------
 

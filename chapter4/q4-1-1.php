@@ -38,6 +38,7 @@ else{
 <script type="text/javascript" src="../js/reset.js"></script>
 <script type="text/javascript" src="../js/movenext.js"></script>
 <script type="text/javascript" src="../js/parser_judge_func.js"></script>
+<script type="text/javascript" src="../js/for_cnt_parser.js"></script>
 <script type="text/javascript" src="../js/parser_judge.js"></script>
 <link href="../stylenew.css" rel="stylesheet" type="text/css">
  <!--CodeMirror-->

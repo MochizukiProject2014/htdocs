@@ -45,7 +45,8 @@ statement_double
 
 //複数宣言
 statement_plural
- =  space contents:(initialization/variable)  space ","  space {return contents;} statement_plural_char
+ =  space contents:(initialization/variable)  space ","  space {return contents;}
+ statement_plural_char
  = space contents:(initialization_char/variable) space "," space {return contents;}
 
 //初期化
@@ -268,8 +269,8 @@ comparison_not_equal
 
 //スキャン
 scanf
-  =  "scanf" space "("  space ["] scan_type ["] space "," space "&" space variable:(variable_array/variable) space ")" [\n]* ";"  space{ return variable + "= scan_data[scan_i]; scan_i++;";}
-  / "scanf" space "("  space ["] type1:scan_type[\x20]* type2:scan_type ["] space "," space "&" space variable1:(variable_array/variable) space "," space "&" space variable2:(variable_array/variable) space ")" [\n]* ";"  space{  return variable1 + "= scan_data[scan_i]; scan_i++;" + variable2 + "= scan_data[scan_i]; scan_i++;" ;  }
+  =  "scanf" space "("  space ["] space  scan_type space ["] space "," space "&" space variable:(variable_array/variable) space ")" [\n]* ";"  space{ return variable + "= scan_data[scan_i]; scan_i++;";}
+  / "scanf" space "("  space ["] space type1:scan_type [\x20]* type2:scan_type space ["] space "," space "&" space variable1:(variable_array/variable) space "," space "&" space variable2:(variable_array/variable) space ")" [\n]* ";"  space{  return variable1 + "= scan_data[scan_i]; scan_i++;" + variable2 + "= scan_data[scan_i]; scan_i++;" ;  }
   //  "scanf" space "(" space ["] space   contents:scan_val space ["]   space "," space variable:additive_plural_scan space ")" space ";"  space { return " " ; }
 
 scan_val

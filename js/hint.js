@@ -18,10 +18,11 @@ function hintq2_1_3(){
 }
 
 function hintq2_2_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />問題文の「<font color = red>入力</font>」とはscanfを使って代入することだにゃ。</b></p>";
+	//document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />問題文の「<font color = red>入力</font>」とはscanfを使って代入することだにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />今回はscanfを使ってint型の変数xに入力するので、<br>まずは変数xを使うために「<font color=red>変数宣言</font>」をするにゃ！</b></p>";
 }
 function hintq2_2_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />scanfは「<font color = red>scanf(\" \",&変数名);</font>」と書くにゃ。<br />\" \"の間に、int型に代入したい場合は<font color = red>%d</font>と書くにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />scanfは「<font color = red>scanf(\" \",&変数名);</font>」と書くにゃ。<br />\" \"の間に、int型の変数に代入したい場合は<font color = red>%d</font>と書くにゃ。</b></p>";
 }
 
 function hintq2_2_2_1(){
@@ -35,11 +36,15 @@ function hintq2_3_1_1(){
 	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />まずは変数xを宣言し、<br>scanfを使って変数xに値を代入するにゃ。<br>代入する値は好きな数字でいいにゃ。</b></p>";
 }
 function hintq2_3_1_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />変数xに5を代入するなら、x=5;と書くにゃ。<br />だったら、変数xにx+3を代入するなら…？</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />変数<font color=red>xに5を代入</font>するなら、<font color=red>x=5;</font>と書くにゃ。<br />だったら、変数<font color=red>xにx+3を代入</font>するなら…？</b></p>";
 }
 
-function hintq2_3_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/1<br /><br />変数xとyにscanfを使って好きな値を代入し<br>その後、<font color = red>変数zにx+yを代入</font>するにゃ。</b></p>";
+function hintq2_3_2_1(){
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br /><br />変数xとyにscanfを使って好きな値を代入し<br>その後、<font color = red>変数zにx+yを代入</font>するにゃ。</b></p>";
+}
+
+function hintq2_3_2_2(){
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br /><br /><font color=red>変数</font>は使う前に<font color=red>宣言</font>するのを忘れるべからずにゃ！<br>今回使う変数はxとyとzの３つだにゃ〜</b></p>";
 }
 
 function hintq2_4_1_1(){
@@ -50,18 +55,18 @@ function hintq2_4_1_2(){
 }
 
 function hintq2_4_2_1(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />char型というのは<font color = red>半角英数字を一つだけ</font>入れるためのデータ型だにゃ。<br />半角英数字はたとえば、「a」とか、「x」とかのことにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />char型というのは<br><font color = red>半角英数字を一つだけ</font>入れるためのデータ型だにゃ。<br />半角英数字はたとえば、「a」とか「x」とかのことにゃ。</b></p>";
 }
 
 function hintq2_4_2_2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />printfの\" \"の中身はchar型なら%cと書くにゃ。<br />ちなみにdouble型は%fだにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br />printfの\" \"の中身は、<font color=red>double型なら%f</font>と書くにゃ。<br />ちなみに<font color=red>char型は%c</font>だにゃ。</b></p>";
 }
 
 function hintc2_matome1(){
 	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br>怪盗Cからの挑戦状だにゃ!<br /><font color = red>scanfとprintf</font>を使うにゃ。</b></p>";
 }
 function hintc2_matome2(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br>scanfで値を入力→値を３倍にして代入→printfで出力の順番にゃ。<br />わからなくなった時は<font color = red>辞書</font>で確認するにゃ。</b></p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  2/2<br><br>使用する変数を宣言→scanfで値を入力→<br>値を３倍にして代入→printfで出力の順番にゃ。<br />わからなくなった時は<font color = red>辞書</font>で確認するにゃ。</b></p>";
 }
 
 /*第２章追加問題*/

@@ -56,7 +56,7 @@ else{
 <div class = "guide-box">
   <img src="../img/guide.png">
   <img src="../img/character/littlecat_2.png">
-  <p id="guide_menu"><b><font size = 2>よくきたにゃ～<br>やりたい章を選ぶにゃ</font></p>
+  <p id="guide_top_menu"><b><font size = 2>よくきたにゃ～<br>やりたい章を選ぶにゃ</font></p>
 </div>
 
 </div>

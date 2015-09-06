@@ -1824,7 +1824,7 @@ function ANIME_array_dainyu(name,value){
 
 	equalLabel = tm.app.Label("= "+value).addChildTo(space);
 	equalLabel
-		.setPosition(space.canvas.centerX-350,space.canvas.centerY-120)
+		.setPosition(space.canvas.centerX-350,space.canvas.centerY-200)
 		.setFillStyle("rgba(0,0,0,1)")
 		.setFontSize(25);
 

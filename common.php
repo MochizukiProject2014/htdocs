@@ -92,4 +92,18 @@ function user_check($name,$pass){
 }
 }
 
+function test(){
+	print '可能性の殺されちまうぞ！！！';
+}
+
+function pulldown_month($question_id,$num){
+	$array = array("①","②","③","④","⑤","⑥");
+	$array2 = array("選択無し","ア","イ","ウ","エ","オ","カ","キ","ク","ケ","コ","サ","シ","ス","セ");
+	print '<select name="'.$question_id.'">';
+	for($i = 0;$i < $num;$i++){
+		print '<option value="'.$array2[$i].'">'.$array2[$i].'</option>';
+	}
+	print '</select>';
+}
+
 ?>

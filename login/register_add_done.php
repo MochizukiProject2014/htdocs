@@ -62,8 +62,7 @@ catch (Exception $e)
 }
 
 ?>
-
-<a href="login.html"> 戻る</a>
-
+<a href="login.html"> ログイン画面へ戻る</a><br>
+<p>※ブラウザの戻るボタンは使用しないでください</p>
 </body>
 </html>

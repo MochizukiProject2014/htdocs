@@ -21,6 +21,7 @@ $register_secret_answer=$post['secret_answer'];
 $register_secret=$post['secret'];
 $register_programming=$post['programming'];
 $register_interested=$post['interested'];
+$register_ne27=$post['ne27'];
 
 
 if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
@@ -137,9 +138,20 @@ else
 	print '<br />';
 }
 
+if($register_ne27=='')
+{
+	print '所属が入力されていません。<br />';
+}
+else
+{
+	print '所属の答え：';
+	print $register_ne27;
+	print '<br />';
+}
+
 
 if($register_name=='' || $register_pass=='' || $register_pass!=$register_pass2 ||  
-	$register_gender=='' ||  $register_secret=='' ||  $register_secret_answer=='' || $register_programming == '' || $register_interested=='' || $rec==true)
+	$register_gender=='' ||  $register_secret=='' ||  $register_secret_answer=='' || $register_programming == '' || $register_interested=='' || $register_ne27=='' || $rec==true)
 {
 	print '<form>';
 	print '<input type="button" onclick="history.back()" value="戻る">';
@@ -156,6 +168,7 @@ else
 	print '<input type="hidden" name="secret_answer" value="'.$register_secret_answer.'">';
 	print '<input type="hidden" name="programming" value="'.$register_programming.'">';
 	print '<input type="hidden" name="interested" value="'.$register_interested.'">';
+	print '<input type="hidden" name="ne27" value="'.$register_ne27.'">';
 	print '<br />';
 	print '<input type="button" onclick="history.back()" value="戻る">';
 	print '<input type="submit" value="ＯＫ">';

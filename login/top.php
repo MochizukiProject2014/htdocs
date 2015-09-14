@@ -39,6 +39,9 @@ else{
 }
 ?>
     </div>
+<iframe src="./info.html" id="information">
+インラインフレーム対応ブラウザでご覧いただけます。</iframe>
+
 
 <div id="chapmenu">
     <input type="image" value="　第一章　導入　" onclick="location.href='../chapter1/story/story1_1.html'"  src = "../img/menubtn/c1btn_on.png" id = "c1" ><div id = "chapter1" style="display:inline;"></div><br><br>
@@ -66,7 +69,6 @@ else{
 	menub(state);
 </script><br />
 
-<a href="logout.php">ログアウト</a><br />
 
 </body>
 </html>

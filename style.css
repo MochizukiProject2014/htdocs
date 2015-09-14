@@ -312,8 +312,16 @@ table{
 	width:500px; 	
 }
 
+#information{
+	background-color: #e6e6fa;
+	float: left;
+	width: 400px;
+	height: 250px;
+	margin: 40px;
+	/*border-radius:10px 10px 10px 10px;*/
+	border:   #FF0000 2px;
 
-
+}
 /*Codemirror*/
       .CodeMirror {border-top: 1px solid black; border-bottom: 1px solid black;}
       .CodeMirror-selected  { background-color: (200,200,200,0.2) !important; }

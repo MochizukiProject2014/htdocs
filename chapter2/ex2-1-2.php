@@ -103,7 +103,13 @@ int main(void){
 		</ul>
 		<ul class = "content">
 			<li><div class = "toolbar">
-			
+			<button id="play" value="一時停止" onClick="ANIME_start_or_stop()" style = "vertical-align:0.8em;">play</button>
+	 		<select id="f" style="width: 120px ; margin:0px;" onChange="ANIME_changeSPEED()" class = "select-box">
+	 			<option value="0.5">0.5倍速</option>
+	 			<option selected value="1">1倍速</option>
+	 			<option value="2">2倍速</option>
+	 			<option value="4">4倍速</option>
+	 		</select>
 	 		<div id = "movenext"></div>
 	 		</div>
 	 		<canvas id = "world"></canvas></li>

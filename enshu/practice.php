@@ -158,7 +158,7 @@ int main(void){<br/>
 int main(void){<br/>
 	int x;<br/>
 	printf("数字を入力してください：");<br/>
-	<u>　①　</u>("%d",<u>　②　</u>);<i>//コンソールから3を入力する</i><br/>
+	<u>　①　</u>("%d",<u>　②　</u>);<br/>
 	<u>　③　</u>;<br/>
 	printf("<u>　④　</u>",x);<br/>
 	return 0;<br/>
@@ -172,7 +172,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab3" class="tab"><!--問題3-->
-		<b>問3：①~②に当てはまるものを選択肢ア〜コから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問3：①〜②に当てはまるものを選択肢ア〜コから選んで、入力した数字が0以上かつ10以下なら「xは0以上かつ10以下です。」と出力するプログラムにしよう。</b>
 		<pre><div class="codespace">
 #include <stdio.h><br/>
 int main(void){<br/>

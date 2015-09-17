@@ -27,6 +27,21 @@ function ChangeTab(tabname) {
 	// 指定箇所のみ表示
 	document.getElementById(tabname).style.display = 'block';
 }
+
+//送信時確認アラート
+function check(){
+	if(window.confirm('完了してよろしいですか？')){ // 確認ダイアログを表示
+
+		return true; // 「OK」時は送信を実行
+
+	}
+	else{ // 「キャンセル」時の処理
+
+		window.alert('キャンセルされました'); // 警告ダイアログを表示
+		return false; // 送信を中止
+
+	}
+}
 //--></script>
 
 <style type="text/css"><!--
@@ -116,7 +131,7 @@ else{
 		<a href="#tab9" class="tab9" onclick="ChangeTab('tab9'); return false;">問9</a>
 		<a href="#tab10" class="tab10" onclick="ChangeTab('tab10'); return false;">回答完了</a>
 	</p>
-	<form method="post" action="result_add_done.php"><!--ここからformタグ開始-->
+	<form method="post" action="result_add_done.php" onSubmit="return check()"><!--ここからformタグ開始-->
 	<div id="tab1" class="tab"><!--問題1-->
 		<b>問1：①~⑥に当てはまるものを選択肢ア〜シから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre><div class="codespace">

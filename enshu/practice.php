@@ -113,7 +113,6 @@ if(isset($_SESSION['login'])==false){
 else{
 	print $_SESSION['user_name'];
 	print'さん&nbsp;&nbspログイン中&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp';
-	print '<a href="logout.php">ログアウト</a><br />';
 }
 ?>
 <div id="wrapper">

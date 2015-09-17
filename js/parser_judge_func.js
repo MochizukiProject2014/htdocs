@@ -66,6 +66,7 @@ function hantei_eval(code, scan_data,scan_i){
 	var loop_frg=0;
 	var eval_i;
 	var re_eval
+	var for_cnt_i = 0;
 	for( eval_i=0;  eval_i < code.length; eval_i++){
 		if(code[eval_i].match(";\,") != 0){
 			code[eval_i] = String(code[eval_i]).replace(/[;][,]/g,";");

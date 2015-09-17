@@ -1,3 +1,11 @@
+<?php
+header("Content-Type: text/html; charset=UTF-8");
+session_start();
+session_regenerate_id(true);
+require_once('common.php'); 
+$name = $_SESSION['user_name'];
+$user_id = $_SESSION['user_id'];
+?>
 <!DOCTYPE html>
 <html lang="ja">
  <head>
@@ -15,6 +23,7 @@ function ChangeTab(tabname) {
 	document.getElementById('tab7').style.display = 'none';
 	document.getElementById('tab8').style.display = 'none';
 	document.getElementById('tab9').style.display = 'none';
+	document.getElementById('tab10').style.display = 'none';
 	// 指定箇所のみ表示
 	document.getElementById(tabname).style.display = 'block';
 }
@@ -22,19 +31,35 @@ function ChangeTab(tabname) {
 
 <style type="text/css"><!--
 /* 表示領域全体 */
-div.tabbox { margin: 0px; padding: 0px; width: 400px; }
+div#wrapper {  
+    width: 800px;  
+    margin: 0 auto;  
+    text-align: left;  
+    border: 3px solid #000000;  
+}  
+div.tabbox { margin: 0px; padding: 0px; width: 800px; }
 div.codespace { margin-left: 20px; margin-right: 20px; }
 div.consolespace { background:#ffffff; padding:10px; border:1px solid #000000; border-radius:10px; margin-left: 20px; margin-right: 20px; }
 div.selectspace{ background:#ffffff; padding:10px; border:1px solid #000000; margin-left: 20px; margin-right: 20px; }
 /* タブ部分 */
 p.tabs { margin: 0px; padding: 0px; }
 p.tabs a {
-   display: block; width: 2em; float: left;
+   display: block; width: 4em; float: left;
    margin: 0px 1px 0px 0px; padding: 3px;
    text-align: center;
    border-radius: 12px 12px 0px 0px; /* 角を丸くする */
 }
-p.tabs a.tab1 { background-color: #ff0000; color: white; }
+p.tabs a.tab1 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab2 { background-color: #CC0CCC; color:white;}
+p.tabs a.tab3 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab4 { background-color: #CC0CCC; color: white; }
+p.tabs a.tab5 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab6 { background-color: #CC0CCC; color: white; }
+p.tabs a.tab7 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab8 { background-color: #CC0CCC; color: white; }
+p.tabs a.tab9 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab10 { background-color: #CCCC0C; color: white; width: 9.6em;}
+/*p.tabs a.tab1 { background-color: #ff0000; color: white; }
 p.tabs a.tab2 { background-color: #e199c3; color:white;}
 p.tabs a.tab3 { background-color: #f69177; color: white; }
 p.tabs a.tab4 { background-color: #ffff00; color: white; }
@@ -43,25 +68,41 @@ p.tabs a.tab6 { background-color: #0000ff; color: white; }
 p.tabs a.tab7 { background-color: #ee82ee; color: white; }
 p.tabs a.tab8 { background-color: #f0e68c; color: white; }
 p.tabs a.tab9 { background-color: #cd853f; color: white; }
+p.tabs a.tab10 { background-color: #cd853f; color: white; }*/
 p.tabs a:hover { color: yellow; }
 
 /* タブ中身のボックス */
 div.tab { height: 800px; width: 800px; overflow: auto; clear: left; }
-div#tab1 { border: 2px solid #ff0000; }
-div#tab2 { border: 2px solid #e199c3; }
-div#tab3 { border: 2px solid #f69177; }
-div#tab4 { border: 2px solid #ffff00; }
-div#tab5 { border: 2px solid #00ff00; }
-div#tab6 { border: 2px solid #0000ff; }
-div#tab7 { border: 2px solid #ee82ee; }
-div#tab8 { border: 2px solid #f0e68c; }
-div#tab9 { border: 2px solid #cd853f; }
+/*div#tab1 { border: 2px solid #0CCCCC;}
+div#tab2 { border: 2px solid #CC0CCC;}
+div#tab3 { border: 2px solid #0CCCCC;}
+div#tab4 { border: 2px solid #CC0CCC;}
+div#tab5 { border: 2px solid #0CCCCC;}
+div#tab6 { border: 2px solid #CC0CCC;}
+div#tab7 { border: 2px solid #0CCCCC;}
+div#tab8 { border: 2px solid #CC0CCC;}
+div#tab9 { border: 2px solid #0CCCCC;}
+div#tab10 { border: 2px solid #CCCC0C;}*/
+div#tab10 { text-align: center;  }
 div.tab p { margin: 0.5em; }
 --></style>
 </head>
 
 <body>
-	<?php	require_once('common.php');	?>
+<?php	require_once('common.php');	
+if(isset($_SESSION['login'])==false){
+	print'ログインされていません。<br />';
+	print'<a href="login.html">ログイン画面へ</a>';
+	exit();
+}
+else{
+	print $_SESSION['user_name'];
+	print'さん&nbsp;&nbspログイン中&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp';
+	print '<a href="logout.php">ログアウト</a><br />';
+}
+?>
+<div id="wrapper">
+	
 	<div class="tabbox">
 		<p class="tabs">
 		<a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">問1</a>
@@ -73,10 +114,11 @@ div.tab p { margin: 0.5em; }
 		<a href="#tab7" class="tab7" onclick="ChangeTab('tab7'); return false;">問7</a>
 		<a href="#tab8" class="tab8" onclick="ChangeTab('tab8'); return false;">問8</a>
 		<a href="#tab9" class="tab9" onclick="ChangeTab('tab9'); return false;">問9</a>
+		<a href="#tab10" class="tab10" onclick="ChangeTab('tab10'); return false;">回答完了</a>
 	</p>
-	<form method="post" action="result.php"><!--ここからformタグ開始-->
+	<form method="post" action="result_add_done.php"><!--ここからformタグ開始-->
 	<div id="tab1" class="tab"><!--問題1-->
-		<b>①~⑥に当てはまるものを選択肢ア〜シから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問1：①~⑥に当てはまるものを選択肢ア〜シから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre><div class="codespace">
 #include <stdio.h><br/>
 int main(void){<br/>
@@ -95,7 +137,7 @@ int main(void){<br/>
 	</div>
 		
 	<div id="tab2" class="tab"><!--問題2-->
-		<b>①~④に当てはまるものを選択肢ア〜セから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問2：①~④に当てはまるものを選択肢ア〜セから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre><div class="codespace">
 #include <stdio.h><br/>
 int main(void){<br/>
@@ -115,7 +157,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab3" class="tab"><!--問題3-->
-		<b>①~②に当てはまるものを選択肢ア〜コから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問3：①~②に当てはまるものを選択肢ア〜コから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre><div class="codespace">
 #include <stdio.h><br/>
 int main(void){<br/>
@@ -136,7 +178,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab4" class="tab"><!--問題4-->
-		<b>①~⑤に当てはまるものを選択肢ア〜コから選んで、変数yearに入力した数値がうるう年かどうかを出力するプログラムにしよう。</b><br/>
+		<b>問4：①~⑤に当てはまるものを選択肢ア〜コから選んで、変数yearに入力した数値がうるう年かどうかを出力するプログラムにしよう。</b><br/>
 		(うるう年の条件)<br/>
 		・4で割り切れる年はうるう年<br/>
 		・4で割り切れる年でも100で割り切れる年はうるう年ではない<br/>
@@ -167,7 +209,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab5" class="tab"><!--問題5-->
-		<b>①~③に当てはまるものを選択肢ア〜クから選んで、1から入力された数字までの和を出力するプログラムにしよう。</b>
+		<b>問5：①~③に当てはまるものを選択肢ア〜クから選んで、1から入力された数字までの和を出力するプログラムにしよう。</b>
 		<pre><div class="codespace">
 #include <stdio.h><br/>
 int main(void){<br/>
@@ -190,7 +232,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab6" class="tab"><!--問題6-->
-		<b>①~④に当てはまるものを選択肢ア〜ケから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問6：①~④に当てはまるものを選択肢ア〜ケから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre>
 		<div class="codespace">
 #include <stdio.h><br/>
@@ -214,7 +256,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab7" class="tab"><!--問題7-->
-		<b>①~③に当てはまるものを選択肢ア〜コから選んで、下のコンソールの出力結果のように「＊」を出力するプログラムにしよう。</b>
+		<b>問7：①~③に当てはまるものを選択肢ア〜コから選んで、下のコンソールの出力結果のように「＊」を出力するプログラムにしよう。</b>
 		<pre>
 		<div class="codespace">
 #include <stdio.h><br/>
@@ -238,7 +280,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab8" class="tab"><!--問題8-->
-		<b>①~②に当てはまるものを選択肢ア〜サから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問8：①~②に当てはまるものを選択肢ア〜サから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre>
 		<div class="codespace">
 #include <stdio.h><br/>
@@ -256,7 +298,7 @@ int main(void){<br/>
 	</div>
 	
 	<div id="tab9" class="tab">
-		<b>①~⑤に当てはまるものを選択肢ア〜シから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
+		<b>問9：①~⑤に当てはまるものを選択肢ア〜シから選んで、下のコンソールの出力結果となるようなプログラムにしよう。</b>
 		<pre>
 		<div class="codespace">
 #include <stdio.h><br/>
@@ -276,15 +318,26 @@ int main(void){<br/>
 		<div class="selectspace">ア：[3][2]　　イ：[2][3]　　ウ：[6]　　エ：[1][2]　　オ：[2][1]　　カ：0　　キ：1　　ク：2　　ケ：3　　コ：4　　サ：5　　シ：6</div><br/>
 		①<?php pulldown_month("q91",13); ?>　②<?php pulldown_month("q92",13); ?>　③<?php pulldown_month("q93",13); ?>　④<?php pulldown_month("q94",13); ?>　⑤<?php pulldown_month("q95",13); ?>
 	</div>
+
+	<div id="tab10" class="tab">
+	<br><br>
+		<p>これで演習問題は終了です。<br>空欄や解答欄ずれがないかよく見直しましょう。<br>
+		解答が終わった方は、以下の「解答完了」ボタンを押すと解答が完了します。<br>
+		お疲れさまでした。</p>
+		<input type="submit" value="解答完了">
+	</div>
+
+
 </div>
 
-	<input type="submit" value="回答送信">
+
 </form><!--ここまでformタグわろす-->
 
 <script type="text/javascript"><!--
   // デフォルトのタブを選択
   ChangeTab('tab1');
-// --></script>
+  // --></script>
+  </div>
 </body>
 
 

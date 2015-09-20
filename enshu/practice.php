@@ -2,7 +2,8 @@
 header("Content-Type: text/html; charset=UTF-8");
 session_start();
 session_regenerate_id(true);
-require_once('common.php'); 
+require_once('common.php');  
+require_once('result_common.php');  
 $name = $_SESSION['user_name'];
 $user_id = $_SESSION['user_id'];
 ?>

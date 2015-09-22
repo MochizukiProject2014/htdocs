@@ -580,7 +580,7 @@ if(action_frag == true&&for_flag){
 	var str;
 	var len = variables.length;
 	if(!getVariableExist(name))return createSyntaxError("代入先の変数が存在してないよ！");
-	//console.log("名前" +name+"値"+value);
+	console.log("名前" +name+"値"+value);
 	if(/\[.+\]\[.+\]/.test(name)){//二重配列ならnameとindex1と2(indexが変数なら数字に直す)を。なぜか条件に!(value.match(/:/)があったけどx[i][1] = 4+5;がバグるんで消す
 		var index1 = name.match(/[a-z]\w*\[(.+)\]\[.+\]/)[1];
 		var index2 = name.match(/[a-z]\w*\[.+\]\[(.+)\]/)[1];
@@ -750,7 +750,7 @@ if(action_frag == true&&for_flag){
 	}
 	}
 	}else if(!for_flag){add_forcontext('substitute("'+name+'","'+value+'");')}
-	
+	check_obj(name);
 }
 
 function push_line(line_i){
@@ -1263,7 +1263,7 @@ if(action_frag == true){
 	switch(data_type){
 		case "int":
 			if(value_type){if(value_type=="int"||value_type=="double")return true;}
-			else if(value.match(/^[0-9]+/)){return true;}
+			else if(value.match(/-?[0-9]+/)){return true;}
 		break;
 		case "double":
 			if(value_type){if(value_type=="int"||value_type=="double")return true;}

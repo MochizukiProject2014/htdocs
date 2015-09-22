@@ -129,7 +129,7 @@ else{
 		<a href="#tab7" class="tab7" onclick="ChangeTab('tab7'); return false;">問7</a>
 		<a href="#tab8" class="tab8" onclick="ChangeTab('tab8'); return false;">問8</a>
 		<a href="#tab9" class="tab9" onclick="ChangeTab('tab9'); return false;">問9</a>
-		<a href="#tab10" class="tab10" onclick="ChangeTab('tab10'); return false;">回答完了</a>
+		<a href="#tab10" class="tab10" onclick="ChangeTab('tab10'); return false;">解答完了</a>
 	</p>
 	<form method="post" action="result_add_done.php" onSubmit="return check()"><!--ここからformタグ開始-->
 	<div id="tab1" class="tab"><!--問題1-->

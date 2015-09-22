@@ -109,7 +109,7 @@ catch (Exception $e)
 <p>※ブラウザの戻るボタンは使用しないでください</p>
 
 <br>
-<a href="result_login.php">解説ページはこちら</a>
+<a href="result_login.php">あなたの結果はこちら</a>
 
 
 </body>

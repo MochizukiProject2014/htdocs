@@ -57,7 +57,7 @@ window.onload = function() {
 	document.getElementById("console").value="";
 	htmlversion = document.getElementById("ver").getAttribute("version");
 	if(htmlversion=="211")document.getElementById("click_data").click();
-	if(htmlversion=="debug")SPEED=0.00125;
+	if(htmlversion=="debug")SPEED=0.125;
 }
 
 var scanfSetStr ="<b>コンソールに値を入力するにゃ！<BR>";
@@ -595,7 +595,7 @@ if(action_frag == true&&for_flag){
 			console.log(name,index);
 	}
 	var vtype = getVariableType(name);
-	if(vtype=="char"){
+	if(vtype=="char"){//char型への代入の場合
 		var strlen  = jstrlen(value);
 		switch(getVariableStatus(name)){
 			case "v":if(strlen>1)return createSyntaxError("char型の変数には文字を１つしかいれられないよ！");
@@ -616,7 +616,7 @@ if(action_frag == true&&for_flag){
 				}
 			break;
 		}
-	}else{
+	}else{//char型への代入ではない場合
 		if(/\[.+\]/.test(value)&&/(:)|(\[.*[a-z].*\])/.test(value)){//代入する値の配列のインデックスが演算のものが式の中に入っている場合
 			cvflag = true;
 			var arrarr = value.split(":");
@@ -668,6 +668,7 @@ if(action_frag == true&&for_flag){
 		}else if(/\[.+\]/.test(value)&&!(value.match(/:/))){
 			var valueindex = value.match(/[a-z]\w*\[(.+)\]/)[1];
 			valueindex = calc(valueindex);
+			value = getVariableValue(value);
 			console.log("値3："+valueindex);
 		}else if(value.match(/:/)){//代入する値が計算式の場合
 			cvflag = true;

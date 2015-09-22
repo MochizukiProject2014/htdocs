@@ -581,7 +581,7 @@ function answer_check(num){
 			else { flagArr.push(true); } 
 		break;
 		case 5:
-			re = new RegExp(/array_declare\("int","a","1@0@7@8@3@4@6@5@9@2",10\)/);answer_pattern_array.push(re);
+			re = new RegExp(/array_declare\("int","a","1@0@7@8@3@4@6@5@9@2",.+\)/);answer_pattern_array.push(re);
 			re = new RegExp(/newscanfnext\(b,1\)/);answer_pattern_array.push(re);
 			re = new RegExp(/newscanfnext\(b,9\)/);answer_pattern_array.push(re);
 			re = new RegExp(/printf_js\("a.b.",".*%.*"\)/);answer_pattern_array.push(re);

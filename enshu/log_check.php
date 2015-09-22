@@ -2,7 +2,7 @@
 header("Content-Type:text/html; charset=UTF-8");
 try
 {
-
+session_start();
 require_once('common.php');
 $post=sanitize($_POST);
 $user_name=$post['user_name'];
@@ -26,10 +26,9 @@ if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
 $dbh=new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql='SELECT id,name FROM members WHERE name=? AND password=?';
+$sql='SELECT memberid FROM enshu WHERE memberid=?';
 $stmt=$dbh->prepare($sql);
-$data[]=$user_name;
-$data[]=$user_pass;
+$data[]=$_SESSION['user_id'];
 $stmt->execute($data);
 
 $rec=$stmt->fetch(PDO::FETCH_ASSOC);
@@ -37,23 +36,11 @@ $rec=$stmt->fetch(PDO::FETCH_ASSOC);
 
 if($rec==false)
 {
-	print '名前かパスワードが間違っています。<br />';
-	print '<a href="login.html"> 戻る</a>';
+	header('Location:top.php');
 }
 else
 {
-	session_start();
-	$_SESSION['login']=1;
-	$_SESSION['user_name']=$rec['name'];
-	$_SESSION['user_id']=$rec['id'];
-	// if($rec1 == false)		//管理者ログイン
-	// {
-	// 	header('Location:top.php');
-	// }
-	// else 										//一般ユーザーログイン
-	// {
-		header('Location:log_check.php');
-	// }
+	header('Location:result_login.php');
 	exit();
 }
 

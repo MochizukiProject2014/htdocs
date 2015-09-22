@@ -51,7 +51,7 @@ div#wrapper {
     width: 800px;  
     margin: 0 auto;  
     text-align: left;  
-    border: 3px solid #000000;  
+    border: 3px solid #CC0000;  
 }  
 div.tabbox { margin: 0px; padding: 0px; width: 800px; }
 div.codespace { margin-left: 20px; margin-right: 20px; }

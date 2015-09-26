@@ -48,7 +48,7 @@ else
 	$_SESSION['user_id']=$rec['id'];
 	if($_SESSION['user_name'] == 'ganmo')		//管理者ログイン
 	{
-		header('Location:admin_top.php');
+		header('Location:admin/admin_top.php');
 	}
 	else 										//一般ユーザーログイン
 	{

@@ -4,7 +4,7 @@ session_regenerate_id(true);
 header("Content-Type:text/html; charset=UTF-8");
 if(isset($_SESSION['login'])==false){
 	print'ログインされていません。<br />';
-	print'<a href="login.html">ログイン画面へ</a>';
+	print'<a href="../login.html">ログイン画面へ</a>';
 	exit();
 }
 else{
@@ -43,45 +43,49 @@ if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
 $dbh=new PDO($dsn,$user,$password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-$sql='SELECT id,name,gender FROM members WHERE 1';
+$sql=
+'SELECT name, MAX(question) 
+FROM members INNER JOIN things 
+ON members.id = things.memberid 
+WHERE members.ne27="袖ヶ浦" AND things.answer="1" 
+GROUP BY members.name, things.memberid'
+;
+
 $stmt=$dbh->prepare($sql);
 $stmt->execute();
 
 $dbh=null;
 
-print '管理者トップ画面<br/><br/>';
+$csv='名前,最後に正解した問題';
+$csv.="\n";
 
-print 'メンバー一覧<br/><br/>';
-
-print '<form method="post" action="admin_branch.php">';
-while(true)
-{
+while(true){
 	$rec=$stmt->fetch(PDO::FETCH_ASSOC);
-	if($rec==false)
-	{
+	if($rec==false){ 
 		break;
 	}
-	print '<input type="radio" name="member_id" value="'.$rec['id'].'">';
-	print '<input type="hidden" name="member_name" value="'.$rec['name'].'">';
-	print $rec['id'].'.';
-	print $rec['name'].'　';
-	print $rec['gender'];
-	print '</br>';
+	print $rec['name'];
+	$csv.= $rec['name'];
+	$csv.= ',';
+	$csv.= $rec['MAX(question)'];
+	$csv.= "\n";
 }
-print '<input type="submit" name="disp" value="参照">';
-print '</form>';
+
+
+
+print nl2br($csv);
 
 }
 catch (Exception $e)
 {
-	 print 'ただいま障害により大変ご迷惑をお掛けしております。';
-	 exit();
+	print 'ただいま障害により大変ご迷惑をお掛けしております。';
+	exit();
 }
 
 ?>
 
 <br />
-<a href="logout.php">ログアウト</a><br />
+<a href="../logout.php">ログアウト</a><br />
 
 </body>
 </html>

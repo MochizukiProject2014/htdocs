@@ -382,7 +382,53 @@ function variable_declare(data_type,name,value){
 	for(var i = 0;i < vlen ;i++)if(name==variables[i].name)return createSyntaxError("同じ名前の変数を２回以上宣言しているよ！");
 	if(/:/.test(value)||(/^[a-z]\w*/.test(value)&&!/null/.test(value)&&data_type!="char")){
 		var str = "[";
-		if(/:/.test(value)){
+		if(/\[.+\]/.test(value)&&/(:)|(\[.*[a-z].*\])/.test(value)){//代入する値の配列のインデックスが演算のものが式の中に入っている場合
+			cvflag = true;
+			var arrarr = value.split(":");
+			var arrarrlen = arrarr.length;
+			var calcstr = "";
+			var indexcalcstr="";
+			var indexcalcflag=false;
+			for(var i = 0;i < arrarrlen;i++){
+				if(/\[.+\]\[.+\]/.test(arrarr[i])){
+					var tempindex1 = arrarr[i].match(/[a-z]*\[(.+)\]\[.+\]/)[1];
+					var tempindex2 = arrarr[i].match(/[a-z]*\[.+\]\[(.+)\]/)[1];
+					var calcindex1 = calc(tempindex1);
+					var calcindex2 = calc(tempindex2);
+					arrarr[i] = arrarr[i].replace(tempindex1,calcindex1);
+					arrarr[i] = arrarr[i].replace(tempindex2,calcindex2);
+				}else if(/\[.+\]/.test(arrarr[i])&&!(/\[.+\]/.test(arrarr[i]))){
+					var tempindex = arrarr[i].match(/[a-z]\w*\[(.+)\]/)[1];
+					var calcindex =calc(tempindex);
+					arrarr[i] = arrarr[i].replace(tempindex,calcindex);
+				}
+				if(/\]$/.test(arrarr[i])&&indexcalcflag){
+					indexcalcflag = false;
+					indexcalcstr+=arrarr[i];
+					if(/\[.+\]\[.+\]/.test(indexcalcstr)){
+						var tempindex1 = indexcalcstr.match(/[a-z]*\[(.+)\]\[.+\]/)[1];
+						var tempindex2 = indexcalcstr.match(/[a-z]*\[.+\]\[(.+)\]/)[1];
+						var calcindex1 = calc(tempindex1);
+						var calcindex2 = calc(tempindex2);
+						indexcalcstr = indexcalcstr.replace(tempindex1,calcindex1);
+						indexcalcstr = indexcalcstr.replace(tempindex2,calcindex2);
+					}else if(/\[.+\]/.test(indexcalcstr)){
+						var tempindex = indexcalcstr.match(/[a-z]\w*\[(.+)\]/)[1];
+						var calcindex =calc(tempindex);
+						indexcalcstr = indexcalcstr.replace(tempindex,calcindex);
+					}
+					calcstr+=indexcalcstr;
+				}else if(/\[\w+$/.test(arrarr[i])||indexcalcflag){
+					indexcalcflag = true;
+					indexcalcstr+=(arrarr[i]+":");
+				}else{
+					calcstr+=arrarr[i];
+					if(i<arrarrlen-1){calcstr+=":"}
+				}
+			}
+			value = calc(calcstr);
+			str = getArrStr(calcstr.split(":"),true);
+		}else if(/:/.test(value)){
 			var tempArr = value.split(":");
 			var len = tempArr.length;
 			value = calc(value);
@@ -632,14 +678,12 @@ if(action_frag == true&&for_flag){
 					var calcindex2 = calc(tempindex2);
 					arrarr[i] = arrarr[i].replace(tempindex1,calcindex1);
 					arrarr[i] = arrarr[i].replace(tempindex2,calcindex2);
-					//calcstr+=arrarr[i];
-				}else if(/\[.+\]/.test(arrarr[i])){
+				}else if(/\[.+\]/.test(arrarr[i])&&!(/\[.+\]/.test(arrarr[i]))){
 					var tempindex = arrarr[i].match(/[a-z]\w*\[(.+)\]/)[1];
 					var calcindex =calc(tempindex);
 					arrarr[i] = arrarr[i].replace(tempindex,calcindex);
-					//calcstr+=arrarr[i];
 				}
-				if(/\]/.test(arrarr[i])&&indexcalcflag){
+				if(/\]$/.test(arrarr[i])&&indexcalcflag){
 					indexcalcflag = false;
 					indexcalcstr+=arrarr[i];
 					if(/\[.+\]\[.+\]/.test(indexcalcstr)){
@@ -655,7 +699,7 @@ if(action_frag == true&&for_flag){
 						indexcalcstr = indexcalcstr.replace(tempindex,calcindex);
 					}
 					calcstr+=indexcalcstr;
-				}else if(/\[$/.test(arrarr[i])||indexcalcflag){
+				}else if(/\[\w+$/.test(arrarr[i])||indexcalcflag){
 					indexcalcflag = true;
 					indexcalcstr+=(arrarr[i]+":");
 				}else{

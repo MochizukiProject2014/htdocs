@@ -3,7 +3,7 @@
 /*第２章*/
 
 function hintq2_1_1_1(){
-	document.getElementById("com").innerHTML = "<p><b>ポイント  1/2<br><br />「int型の変数xを宣言」というのは<br/><font color = red>データ型がint</font>で、<font color = red>変数名をx</font>にして宣言することにゃ。<br/>書き方が分からなかったら辞書の「変数宣言」の項を見るにゃ。</p>";
+	document.getElementById("com").innerHTML = "<p><b>ポイント  1/1<br><br />「int型の変数xを宣言」というのは<br/><font color = red>データ型がint</font>で、<font color = red>変数名をx</font>にして宣言することにゃ。<br/>書き方が分からなかったら辞書の「変数宣言」の項を見るにゃ。</p>";
 }
 
 function hintq2_1_2_1(){

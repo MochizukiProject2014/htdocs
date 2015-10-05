@@ -12,7 +12,7 @@ $user_id = $_SESSION['user_id'];
  <head>
  <meta charset="UTF-8">
  <title>演習問題ページ</title>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 function ChangeTab(tabname) {
    // 全部消す
 	document.getElementById('tab1').style.display = 'none';
@@ -43,7 +43,7 @@ function check(){
 
 	}
 }
-//--></script>
+</script>
 
 <style type="text/css"><!--
 /* 表示領域全体 */
@@ -65,15 +65,15 @@ p.tabs a {
    text-align: center;
    border-radius: 12px 12px 0px 0px; /* 角を丸くする */
 }
-p.tabs a.tab1 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab2 { background-color: #CC0CCC; color:white;}
-p.tabs a.tab3 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab4 { background-color: #CC0CCC; color: white; }
-p.tabs a.tab5 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab6 { background-color: #CC0CCC; color: white; }
-p.tabs a.tab7 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab8 { background-color: #CC0CCC; color: white; }
-p.tabs a.tab9 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab1 { background-color: #ffffe0; color: black; }
+p.tabs a.tab2 { background-color: #fafad2; color: black;}
+p.tabs a.tab3 { background-color: #fffacd; color: black; }
+p.tabs a.tab4 { background-color: #f5deb3; color: black; }
+p.tabs a.tab5 { background-color: #deb887; color: black; }
+p.tabs a.tab6 { background-color: #d2b48c; color: black; }
+p.tabs a.tab7 { background-color: #f0e68c; color: black; }
+p.tabs a.tab8 { background-color: #ffff00; color: black; }
+p.tabs a.tab9 { background-color: #ffd700; color: black; }
 p.tabs a.tab10 { background-color: #CCCC0C; color: white; width: 9.6em;}
 /*p.tabs a.tab1 { background-color: #ff0000; color: white; }
 p.tabs a.tab2 { background-color: #e199c3; color:white;}
@@ -88,17 +88,17 @@ p.tabs a.tab10 { background-color: #cd853f; color: white; }*/
 p.tabs a:hover { color: yellow; }
 
 /* タブ中身のボックス */
-div.tab { height: 800px; width: 800px; overflow: auto; clear: left; }
-/*div#tab1 { border: 2px solid #0CCCCC;}
-div#tab2 { border: 2px solid #CC0CCC;}
-div#tab3 { border: 2px solid #0CCCCC;}
-div#tab4 { border: 2px solid #CC0CCC;}
-div#tab5 { border: 2px solid #0CCCCC;}
-div#tab6 { border: 2px solid #CC0CCC;}
-div#tab7 { border: 2px solid #0CCCCC;}
-div#tab8 { border: 2px solid #CC0CCC;}
-div#tab9 { border: 2px solid #0CCCCC;}
-div#tab10 { border: 2px solid #CCCC0C;}*/
+div.tab { height: 700px; width: 800px; overflow: auto; clear: left; }
+div#tab1 { border: 2px solid #ffffe0;}
+div#tab2 { border: 2px solid #fafad2;}
+div#tab3 { border: 2px solid #fffacd;}
+div#tab4 { border: 2px solid #f5deb3;}
+div#tab5 { border: 2px solid #deb887;}
+div#tab6 { border: 2px solid #d2b48c;}
+div#tab7 { border: 2px solid #f0e68c;}
+div#tab8 { border: 2px solid #ffff00;}
+div#tab9 { border: 2px solid #ffd700;}
+div#tab10 { border: 2px solid #CCCC0C;}
 div#tab10 { text-align: center;  }
 div.tab p { margin: 0.5em; }
 --></style>

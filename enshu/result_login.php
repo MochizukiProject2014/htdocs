@@ -13,6 +13,9 @@ $user_id = $_SESSION['user_id'];
 <head>
 <meta charset="UTF-8">
 <title>怪盗C</title>
+	<style type="text/css">
+	body{ background-color:#ffa500; }
+	</style>
 </head>
 <body>
 

@@ -65,15 +65,15 @@ p.tabs a {
    text-align: center;
    border-radius: 12px 12px 0px 0px; /* 角を丸くする */
 }
-p.tabs a.tab1 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab2 { background-color: #CC0CCC; color:white;}
-p.tabs a.tab3 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab4 { background-color: #CC0CCC; color: white; }
-p.tabs a.tab5 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab6 { background-color: #CC0CCC; color: white; }
-p.tabs a.tab7 { background-color: #0CCCCC; color: white; }
-p.tabs a.tab8 { background-color: #CC0CCC; color: white; }
-p.tabs a.tab9 { background-color: #0CCCCC; color: white; }
+p.tabs a.tab1 { background-color: #98FB98; color: black; }
+p.tabs a.tab2 { background-color: #00FF7F; color: black; }
+p.tabs a.tab3 { background-color: #7CFC00; color: black; }
+p.tabs a.tab4 { background-color: #00FF00; color: black; }
+p.tabs a.tab5 { background-color: #7FFF00; color: black; }
+p.tabs a.tab6 { background-color: #00FA9A; color: black; }
+p.tabs a.tab7 { background-color: #ADFF2F; color: black;}
+p.tabs a.tab8 { background-color: #32CD32; color: black; }
+p.tabs a.tab9 { background-color: #3CB371; color: black; }
 p.tabs a.tab10 { background-color: #CCCC0C; color: white; width: 9.6em;}
 /*p.tabs a.tab1 { background-color: #ff0000; color: white; }
 p.tabs a.tab2 { background-color: #e199c3; color:white;}
@@ -88,17 +88,17 @@ p.tabs a.tab10 { background-color: #cd853f; color: white; }*/
 p.tabs a:hover { color: yellow; }
 
 /* タブ中身のボックス */
-div.tab { height: 800px; width: 800px; overflow: auto; clear: left; }
-/*div#tab1 { border: 2px solid #0CCCCC;}
-div#tab2 { border: 2px solid #CC0CCC;}
-div#tab3 { border: 2px solid #0CCCCC;}
-div#tab4 { border: 2px solid #CC0CCC;}
-div#tab5 { border: 2px solid #0CCCCC;}
-div#tab6 { border: 2px solid #CC0CCC;}
-div#tab7 { border: 2px solid #0CCCCC;}
-div#tab8 { border: 2px solid #CC0CCC;}
-div#tab9 { border: 2px solid #0CCCCC;}
-div#tab10 { border: 2px solid #CCCC0C;}*/
+div.tab { height: 700px; width: 792px; overflow: auto; clear: left; }
+div#tab1 { border: 4px solid #98FB98;}
+div#tab2 { border: 4px solid #00FF7F;}
+div#tab3 { border: 4px solid #7CFC00;}
+div#tab4 { border: 4px solid #00FF00;}
+div#tab5 { border: 4px solid #7FFF00;}
+div#tab6 { border: 4px solid #00FA9A;}
+div#tab7 { border: 4px solid #ADFF2F;}
+div#tab8 { border: 4px solid #32CD32;}
+div#tab9 { border: 4px solid #3CB371;}
+div#tab10 { border: 4px solid #CCCC0C;}
 div#tab10 { text-align: center;  }
 div.tab p { margin: 0.5em; }
 --></style>

@@ -10,6 +10,9 @@ $user_id = $_SESSION['user_id'];
 <head>
 <meta charset="UTF-8">
 <title>怪盗C</title>
+	<style type="text/css">
+	body{ background-color:#ffa500; }
+	</style>
 </head>
 <body>
 
@@ -96,7 +99,7 @@ else{
 	print '<a href="logout.php">ログアウト</a><br /><br />';
 }
 
-print '完了しました。<br />';
+	print '<p>解答が完了しました。</p>';
 
 }
 catch (Exception $e)
@@ -106,7 +109,9 @@ catch (Exception $e)
 }
 
 ?>
-<p>※ブラウザの戻るボタンは使用しないでください</p>
+<br>
+<p>※ブラウザの戻るボタンは使用しないでください。</p>
+<p>※指示があるまで、この画面のまま操作しないでください。</p>
 
 <br>
 <a href="result_login.php">あなたの結果はこちら</a>

@@ -46,14 +46,7 @@ else
 	$_SESSION['login']=1;
 	$_SESSION['user_name']=$rec['name'];
 	$_SESSION['user_id']=$rec['id'];
-	// if($rec1 == false)		//管理者ログイン
-	// {
-	// 	header('Location:top.php');
-	// }
-	// else 										//一般ユーザーログイン
-	// {
-		header('Location:log_check.php');
-	// }
+	header('Location:log_check.php');
 	exit();
 }
 

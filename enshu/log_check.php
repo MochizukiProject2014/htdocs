@@ -36,7 +36,7 @@ $rec=$stmt->fetch(PDO::FETCH_ASSOC);
 
 if($rec==false)
 {
-	header('Location:top.php');
+	header('Location:top_login.php');
 }
 else
 {

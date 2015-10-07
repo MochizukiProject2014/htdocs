@@ -147,7 +147,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">5 5.400000 a</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：%d　　イ：&c　　ウ：&lf　　エ：%f　　オ：%c　　カ：int　　キ：&f　　ク：double　　ケ：a　　コ：&d　　サ：%lf　　シ：char</div><br/>
+		<div class="selectspace">ア：%d　　イ：&c　　ウ：&lf　　エ：%f　　オ：%c　　カ：int<br>キ：&f　　ク：double　　ケ：a　　コ：&d　　サ：%lf　　シ：char</div><br/>
 		①<?php pulldown_month("q11",13); ?>　②<?php pulldown_month("q12",13); ?>　③<?php pulldown_month("q13",13); ?>　④<?php pulldown_month("q14",13); ?>　⑤<?php pulldown_month("q15",13); ?>　⑥<?php pulldown_month("q16",13); ?>
 	</div>
 		
@@ -167,7 +167,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">数字を入力してください：3<br/>xを3倍すると9です。</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：int　　イ：scanf　　ウ：%f　　エ：%d　　オ：else　　カ：x*3=x　　キ：printf　　ク：x*3　　ケ：xを3倍すると%xです。　　コ：&x　　サ：x=x*3　　シ：x　ス：xを3倍すると%dです。　セ：&d</div><br/>
+		<div class="selectspace">ア：int　　イ：scanf　　ウ：%f　　エ：%d　　オ：else　　カ：x*3=x<br>キ：printf　　ク：x*3　　ケ：xを3倍すると%xです。　　コ：&x<br>サ：x=x*3　　シ：x　　ス：xを3倍すると%dです。　セ：&d</div><br/>
 		①<?php pulldown_month("q21",15); ?>　②<?php pulldown_month("q22",15); ?>　③<?php pulldown_month("q23",15); ?>　④<?php pulldown_month("q24",15); ?>
 	</div>
 	
@@ -188,7 +188,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">数字を入力してください：3<br/>xは0以上かつ10以下です。</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：if　　イ：else　　ウ：||　　エ：&　　オ：else if　　カ：!=　　キ：&&　　ク：==　　ケ：|　　コ：for</div><br/>
+		<div class="selectspace">ア：if　　イ：else　　ウ：||　　エ：&　　オ：else if<br>カ：!=　　キ：&&　　ク：==　　ケ：|　　コ：for</div><br/>
 		①<?php pulldown_month("q31",11); ?>　②<?php pulldown_month("q32",11); ?>
 	</div>
 	
@@ -219,7 +219,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">西暦を入力してください：2015<br/>うるう年ではありません。</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：else　　イ：!=　　ウ：if else　　エ：%　　オ：if　　カ：else if　　キ：=　　ク：<=　　ケ：/　　コ：==</div><br/>
+		<div class="selectspace">ア：else　　イ：!=　　ウ：if else　　エ：%　　オ：if<br>カ：else if　　キ：=　　ク：<=　　ケ：/　　コ：==</div><br/>
 		①<?php pulldown_month("q41",11); ?>　②<?php pulldown_month("q42",11); ?>　③<?php pulldown_month("q43",11); ?>　④<?php pulldown_month("q44",11); ?>　⑤<?php pulldown_month("q45",11); ?>
 	</div>
 	
@@ -241,7 +241,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">数字を一つ入力してください 5<br/>1から5までの和 = 15</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：i=1　　イ：i&gt1　　ウ：i=5　　エ：i&lt=6　　オ：i--　　カ：i<=x　　キ：i++　　ク：i&ltx
+		<div class="selectspace">ア：i=1　　イ：i&gt1　　ウ：i=5　　エ：i&lt=6　　オ：i--<br>カ：i<=x　　キ：i++　　ク：i&ltx
 		</div><br/>
 		①<?php pulldown_month("q51",14); ?>　②<?php pulldown_month("q52",14); ?>　③<?php pulldown_month("q53",14); ?>
 	</div>
@@ -266,7 +266,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">12345</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：break;　　イ：count==5　　ウ：for　　エ：while　　オ：return;　　カ：1　　キ：0　　ク：count<=5　　ケ：count==6</div><br/>
+		<div class="selectspace">ア：break;　　イ：count==5　　ウ：for　　エ：while　　オ：return;<br>カ：1　　キ：0　　ク：count<=5　　ケ：count==6</div><br/>
 		①<?php pulldown_month("q61",10); ?>　②<?php pulldown_month("q62",10); ?>　③<?php pulldown_month("q63",10); ?>　④<?php pulldown_month("q64",10); ?>
 	</div>
 	
@@ -289,7 +289,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">＊＊＊＊＊＊＊<br/>＊＊＊＊＊<br/>＊＊＊<br/>＊</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：k&lti*3-1　　イ：i--　　ウ：k<8　　エ：i=0　　オ：k&lti*3-2　　カ：i=4　　キ：k&lti*2-1　　ク：i=3　　ケ：i++　　コ：k&gt;i*i-9
+		<div class="selectspace">ア：k&lti*3-1　　イ：i--　　ウ：k<8　　エ：i=0　　オ：k&lti*3-2<br>カ：i=4　　キ：k&lti*2-1　　ク：i=3　　ケ：i++　　コ：k&gt;i*i-9
 		</div><br/>
 		①<?php pulldown_month("q71",11); ?>　②<?php pulldown_month("q72",11); ?>　③<?php pulldown_month("q73",11); ?>
 	</div>
@@ -308,7 +308,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">3</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：a[i]　　イ：a[3]　　ウ：[5,6,1,2,3]　　エ：a[2]　　オ：{'5','6','1','2','3'}　　カ：a[4]　　キ：a[5]　　ク：a[0]　　ケ：{5,6,1,2,3}　　コ：{a,b,c,d,e}　　サ：a[1]</div><br/>
+		<div class="selectspace">ア：a[i]　　イ：a[3]　　ウ：[5,6,1,2,3]　　エ：a[2]　　オ：{'5','6','1','2','3'}　　カ：a[4]<br>キ：a[5]　　ク：a[0]　　ケ：{5,6,1,2,3}　　コ：{a,b,c,d,e}　　サ：a[1]</div><br/>
 		①<?php pulldown_month("q81",12); ?>　②<?php pulldown_month("q82",12); ?>
 	</div>
 	
@@ -330,7 +330,7 @@ int main(void){<br/>
 		コンソール：<br/>
 		<div class="consolespace">6 6</div><br/>
 		選択肢：<br/>
-		<div class="selectspace">ア：[3][2]　　イ：[2][3]　　ウ：[6]　　エ：[1][2]　　オ：[2][1]　　カ：0　　キ：1　　ク：2　　ケ：3　　コ：4　　サ：5　　シ：6</div><br/>
+		<div class="selectspace">ア：[3][2]　　イ：[2][3]　　ウ：[6]　　エ：[1][2]　　オ：[2][1]　　カ：0<br>キ：1　　ク：2　　ケ：3　　コ：4　　サ：5　　シ：6</div><br/>
 		①<?php pulldown_month("q91",13); ?>　②<?php pulldown_month("q92",13); ?>　③<?php pulldown_month("q93",13); ?>　④<?php pulldown_month("q94",13); ?>　⑤<?php pulldown_month("q95",13); ?>
 	</div>
 

@@ -893,7 +893,7 @@ function assess(condition){
 	/*if(/true/.test(condition)){return true;}
 	if(/false/.test(condition)){return false;}
 	if(/undefined/.test(condition)){return 0;}*/
-	//console.log(condition+"のassessを開始するよ！");
+	console.log(condition+"のassessを開始するよ！");
 	var tempStr = condition;
 	var animeExp = [];
 	var animeRes = [];
@@ -920,7 +920,7 @@ function assess(condition){
 			if(/>|<|=|!/.test(animeExpStr.charAt(j))&&/>|<|=/.test(animeExpStr.charAt(j+1))){
 				animeStr+=(":"+animeExpStr.charAt(j) + animeExpStr.charAt(j+1) +":");
 				j++;
-			}else if(/>|<|%/.test(animeExpStr.charAt(j))){
+			}else if(/>|<|%|\+|-/.test(animeExpStr.charAt(j))){
 				animeStr+=(":"+animeExpStr.charAt(j)+":");
 			}else{
 				animeStr += animeExpStr.charAt(j)
@@ -935,7 +935,7 @@ function assess(condition){
 }
 
 function evalue(condition){
-	//console.log(condition+"のevalueを開始するよ！");
+	console.log(condition+"のevalueを開始するよ！");
 	if(/true/.test(condition)){return true;}
 	if(/false/.test(condition)){return false;}
 	if(/undefined/.test(condition)){return 0;}
@@ -946,16 +946,17 @@ function evalue(condition){
 	var variableExist = false;
 	var errorFlag = false;
 	var tempStr = condition;
-	reg = new RegExp("[a-z][a-zA-Z0-9]*","g");
+	reg = new RegExp("[a-z]\[?[a-zA-Z0-9]*\]?","g");
 	if(reg.test(condition)){
 		numOfVariable = condition.match(reg).length;
 		changeVariables = condition.match(reg);
+		console.log(changeVariables,numOfVariable);
 		for(var ai = 0;ai < numOfVariable;ai++){
 			errorFlag =false;
-			for(var aii = 0;aii < variables.length;aii++){
-				if(changeVariables[ai] == variables[aii].name){
+			for(var aii = 0;aii < numOfVariable ;aii++){
+				if(getVariableExist(changeVariables[ai])){
 					if(variables[aii].value=="?")return createSyntaxError("条件式に中身が入っていない変数が入っているよ！");
-					tempStr = tempStr.replace(changeVariables[ai],variables[aii].value);;
+					tempStr = tempStr.replace(changeVariables[ai],getVariableValue(changeVariables[ai]));;
 					errorFlag = true;
 				}
 			}
@@ -963,6 +964,7 @@ function evalue(condition){
 		}
 	}
 	result = (eval(tempStr));
+	console.log(tempStr,result);
 	return result;
 }
 

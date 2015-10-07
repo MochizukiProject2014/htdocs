@@ -5,7 +5,7 @@ require_once('common.php');
 $post=sanitize($_POST);
 $result_pass=$post['result_pass'];
 
-if($result_pass=='otu')
+if($result_pass=='kaisetu')
 {
 	header('Location:result.php');
 }

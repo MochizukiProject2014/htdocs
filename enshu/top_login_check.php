@@ -5,7 +5,7 @@ session_start();
 require_once('common.php');
 $post=sanitize($_POST);
 $top_pass=$post['top_pass'];
-if($top_pass=='enshukaisi'){
+if($top_pass=='041056'){
 	
 	if ($_SERVER['SERVER_NAME'] === 'www.ne.senshu-u.ac.jp') {
 		$dsn='mysql:dbname=mochiken2015;host=db.ne.senshu-u.ac.jp;charset=utf8';

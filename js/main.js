@@ -1299,6 +1299,7 @@ if(action_frag == true){
 			fstr += fArray[i];
 		}
 	}
+	fstr = fstr.replace(/--/g,"\+");
 	return String(eval(fstr));
 }}
 

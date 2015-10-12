@@ -109,12 +109,35 @@ catch (Exception $e)
 }
 
 ?>
-<br>
-<p>※ブラウザの戻るボタンは使用しないでください。</p>
-<p>※指示があるまで、この画面のまま操作しないでください。</p>
 
 <br>
-<a href="result_login.php">あなたの結果はこちら</a>
+<p><u>※ブラウザの戻るボタンは使用しないでください。</u></p>
+
+<br><br>
+<p>〜〜アンケートにご協力ください〜</p>
+
+	<p>授業で使用した「C言語を学ぼう！〜怪盗Cからの挑戦状〜」についてお伺いします。</p>
+	<form method="post" action="result_login.php">
+	<p>問1.（必須）本アプリケーションを使用して学習することは楽しかったですか？</p>
+		<input type="radio" name="ans1" value="とても楽しかった">1.とても楽しかった
+		<input type="radio" name="ans1" value="楽しかった">2.楽しかった
+		<input type="radio" name="ans1" value="どちらともいえない">3.どちらともいえない
+		<input type="radio" name="ans1" value="つまらなかった">4.つまらなかった
+		<input type="radio" name="ans1" value="とてもつまらなかった">5.とてもつまらなかった
+	<p>問1-1.（任意）どんなところでそう思いましたか？</p>
+		<textarea name="ans2" cols="100" rows="3"></textarea>
+	<p>問2.（必須）本アプリケーションでの学習は難しかったですか？</p>
+		<input type="radio" name="ans3" value="とても簡単だった">1.とても簡単だった
+		<input type="radio" name="ans3" value="簡単だった">2.簡単だった
+		<input type="radio" name="ans3" value="どちらともいえない">3.どちらともいえない
+		<input type="radio" name="ans3" value="難しかった">4.難しかった
+		<input type="radio" name="ans3" value="とても難しかった">5.とても難しかった
+	<p>問2-1.（任意）どんなところでそう思いましたか？</p>
+		<textarea name="ans4" cols="100" rows="3"></textarea>
+	<br><br>
+	<input type="submit" value="アンケート送信">
+	</form>
+
 
 
 </body>

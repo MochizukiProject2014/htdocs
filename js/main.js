@@ -397,7 +397,7 @@ function variable_declare(data_type,name,value){
 					var calcindex2 = calc(tempindex2);
 					arrarr[i] = arrarr[i].replace(tempindex1,calcindex1);
 					arrarr[i] = arrarr[i].replace(tempindex2,calcindex2);
-				}else if(/\[.+\]/.test(arrarr[i])&&!(/\[.+\]/.test(arrarr[i]))){
+				}else if(/\[.+\]/.test(arrarr[i])){
 					var tempindex = arrarr[i].match(/[a-z]\w*\[(.+)\]/)[1];
 					var calcindex =calc(tempindex);
 					arrarr[i] = arrarr[i].replace(tempindex,calcindex);
@@ -428,6 +428,7 @@ function variable_declare(data_type,name,value){
 			}
 			value = calc(calcstr);
 			str = getArrStr(calcstr.split(":"),true);
+			console.log(str);
 		}else if(/:/.test(value)){
 			var tempArr = value.split(":");
 			var len = tempArr.length;
@@ -548,6 +549,7 @@ if(action_frag){
 	var animeValue = "[";
 	var objValue = "";
 	var addStr = "?";
+	var len1,len2;
 	if(length2=="undefined"||length1=="undefined")return createSyntaxError("二次元配列の大きさは両方決めてね！") ;//配列の長さは絶対指定;
 	for(var i =0;i <alen;i++)if(variables[i].name == name)return createSyntaxError("同じ名前の変数か配列が２回以上宣言されているよ！");
 	if(value!="undefined"){//初期化されている時
@@ -557,8 +559,8 @@ if(action_frag){
 			for(var i = 0;i < length1-1;i++)value+="^";
 		}
 		var value1arr = value.split("^");
-		var len1 = value1arr.length;
-		var len2 = length2;
+		len1 = value1arr.length;
+		len2 = length2;
 		if(data_type=="char")len2=len2-1;
 		//arr_check("^",value1arr);
 		for(var i = 0;i< len1;i++){
@@ -606,6 +608,8 @@ if(action_frag){
 		}
 	jsOfAnimes.push('ANIME_twoDarray_sengen_dainyu("'+data_type+'","'+name+'",'+len1+','+len2+','+animeEx+','+animeValue+")");
 	}else{//初期化なしの場合
+	len1 = length1;
+	len2 = length2;
 		for(var i = 0;i < length1;i++){
 			for(var j = 0;j < length2;j++){
 				objValue += "?";
@@ -633,7 +637,7 @@ if(action_frag == true&&for_flag){
 		if(/^[a-z]\w*/.test(index1)||/:/.test(index1))index1 =calc(index1);
 		if(/^[a-z]\w*/.test(index2)||/:/.test(index2))index2 =calc(index2);
 		name = name.match(/^([a-z]\w*)\[.+\]\[.+\]/)[1];
-		console.log("二重配列！"+name+"、"+index1+"、"+index2);
+		console.log("二重配列に代入！名前と目標インデックス"+name+"、"+index1+"、"+index2);
 	}else if(/\[.+\]/.test(name)){//もし配列なら、nameとindex(indexが変数の場合数字になおし)を宣言。
 		var index = name.match(/[a-z]\w*\[(.+)\]/)[1];
 		if(/^[a-z]\w*/.test(index)||/:/.test(index))index =calc(index);
@@ -710,10 +714,8 @@ if(action_frag == true&&for_flag){
 			value = calc(calcstr);
 			str = getArrStr(calcstr.split(":"),true);
 		}else if(/\[.+\]/.test(value)&&!(value.match(/:/))){
-			var valueindex = value.match(/[a-z]\w*\[(.+)\]/)[1];
-			valueindex = calc(valueindex);
-			value = getVariableValue(value);
-			console.log("値3："+valueindex);
+			if(/\[.+\]\[.+\]/.test(value)){value = getVariableValue(value);}
+			else if(/\[.+\]/.test(value)){value = getVariableValue(value);}
 		}else if(value.match(/:/)){//代入する値が計算式の場合
 			cvflag = true;
 			str = getArrStr(value.split(":"),true);//'"'+value.replace(/:/g,"")+'"';
@@ -764,7 +766,7 @@ if(action_frag == true&&for_flag){
 			for(var i=0;i<len;i++)if(variables[i].name==name)tempArr=variables[i].value = str;
 			break;
 			case "ma":
-				console.log("二重配列のあれ" +value);
+				console.log("二重配列に代入する値" +value);
 				var tempArr = [];
 				var temp2Arr = [];
 				var arrStr="";//変数の値パラメータを上書きする用の文字列
@@ -1299,6 +1301,7 @@ if(action_frag == true){
 			fstr += fArray[i];
 		}
 	}
+	fstr = fstr.replace(/--/g,"\+");
 	return String(eval(fstr));
 }}
 

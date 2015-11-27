@@ -57,7 +57,7 @@ window.onload = function() {
 	document.getElementById("console").value="";
 	htmlversion = document.getElementById("ver").getAttribute("version");
 	if(htmlversion=="211")document.getElementById("click_data").click();
-	if(htmlversion=="debug")SPEED=0.125;
+	//if(htmlversion=="debug")SPEED=0.125;
 }
 
 var scanfSetStr ="<b>コンソールに値を入力するにゃ！<BR>";

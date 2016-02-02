@@ -51,15 +51,15 @@ $rec=$stmt->fetch(PDO::FETCH_ASSOC);
 
 if($register_name=='')
 {
-	print '名前が入力されていません。<br />';
+	print 'ユーザー名が入力されていません。<br />';
 }
 else if($rec==true)
 {
-	print 'その名前は既に他ユーザーが使っています。<br />';
+	print 'そのユーザー名は既に他ユーザーが使っています。<br />';
 }
 else
 {
-	print '名前：';
+	print 'ユーザー名：';
 	print $register_name;
 	print '<br />';
 }

@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>怪盗C</title>
+</head>
+<body>
+
 <?php
 try
 {
